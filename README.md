@@ -10,7 +10,7 @@ Filter is made for all types of players with focus on crafting, Assassin, being 
 * Never hiding any unique or set, just decrease highlighting/notifications with higher filter levels.
 * I use a "tier highlight system" for how good/rare items are. More info under Uniques/Sets.
 * Some sounds for relatively/very/super rare items.
-* Consistent color scheme for the most part throughout the filter for stats highlighting, map mods etc. Physical gold, Fire red, Cold blue, Lightning yellow, Poison green, Magic orange.
+* Consistent color scheme for the most part throughout the filter for stats highlighting, map mods etc. Physical gold, Fire red, Cold blue, Lightning yellow, Poison green, Magic orange. Staff/pointmods are colored per skill tab for each class.
 * Sample pictures may not be up to date.
 ## Filter levels and what they're designed to do.
 Currently, it is advised to use level 1 or 2 while leveling and up the level later on. By default, certain "trash" items will start to hide between character level 80-90.
