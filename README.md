@@ -10,6 +10,7 @@ Filter is made for all types of players with focus on crafting, Assassin, being 
 * Never hiding any unique or set, just decrease highlighting/notifications with higher filter levels.
 * I use a "tier highlight system" for how good/rare items are. More info under Uniques/Sets.
 * Some sounds for relatively/very/super rare items.
+* Consistent color scheme for the most part throughout the filter for stats highlighting, map mods etc. Physical gold, Fire red, Cold blue, Lightning yellow, Poison green, Magic orange.
 * Sample pictures may not be up to date.
 ## Filter levels and what they're designed to do.
 Currently, it is advised to use level 1 or 2 while leveling and up the level later on. By default, certain "trash" items will start to hide between character level 80-90.
@@ -45,6 +46,14 @@ Claws have a similar tier highlight system as Uniques/Sets with the purposes of 
 * 2 stars is the best claws to craft on. This includes the War Fist Family (highest physical damage) and Greater Talons (fastest trapsin claw with lowest requirement with Fade in mind).
 * 1 star is one of the following with either speed or damage: above average, almost as good as the best or can be upgraded to best (Blade Talons to Greater Talons).
 * 0 star is below average, worse than the above or has too high dexteriy requirement for min-maxing (Runic Talons).
+## Maps
+Highlights for good (green)/bad (red) map affixes. Examples, if a map:
+* has high lightning damage mobs inherently and it rolls Lightning Skill damage, it'll highlight as "!light". This can be for any damage type.
+* rolls Souls and Lightning Skill damage, it'll highlight as "!souls".
+* rolls reduced physical damage taken or elemental absorb, it'll highlight with corresponding color as "Abs".
+* a few other examples of highlighted affixes: double map boss "2boss", "dolls", "witches", deadly strike "ds", crushing blow "cb", maxlife "%hp", "-fhr", -speed etc.
+<img width="493" height="599" alt="map_mods" src="https://github.com/user-attachments/assets/fcac3ea1-ec8f-4027-ac34-37ef8453205d" />
+
 ## Highlighting on items
 * Stats highlighting on Rare/Crafted items.
 * Fully dynamic skill display (I call them "skill notes") on items with 4+ to a certain skill. Missing on Barb Helms, Clubs (Barb skills, although unsure if I want to add that), Amazon Bows, Amazon Javelins and Scepters.
