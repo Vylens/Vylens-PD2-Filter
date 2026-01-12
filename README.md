@@ -61,6 +61,11 @@ Highlights for good (green)/bad (red) map affixes. Examples, if a map:
 * Good/Bad map affixes. Also shows Immunities and highest resists in maps.
 * Resistances of "Added mobs" to maps on Orb of Fortification/Destruction.
 * Charms.
+## Decluttering/Minimizing
+Dropping lots of identified items in the same place can sometimes explode the screen with item names and tooltips, because of this, I have put in certain functions in the filter that is for decluttering purposes. Green ! means that the item is identified. Example below:
+
+<img width="424" height="136" alt="decluttering" src="https://github.com/user-attachments/assets/b9a903ac-d7ba-4dcd-80ed-581b3d4d2e89" />
+
 ## Key
 * Quantity 1-26, Runeword recipes.
 * Quantity 27, Dclone materials and recommended stats for the encounter.
@@ -77,7 +82,7 @@ Highlights for good (green)/bad (red) map affixes. Examples, if a map:
 * Can you hide potions? - No. I will not hide them, but you can search for "Change the FILTLVL to 1 less than yours to hide" in the filter to hide them for yourself (just remember to save as ANSI-encoding). Me and multiple of my friends that I made this filter for uses HP/MP pots. They are hidden on the filter level "Ultimate Tryhard".
 * PoE sounds? - No tinks for you.
 ## Feedback, ideas, bugs and errors
-Feedback, ideas, bugs or errors can be any of the following, but please explain thoroughly why or what. Also, I do not mind if you @ me so I don't miss it!
+Feedback, ideas, bugs or errors can be any of the following, but please explain why, what or how. Also, I do not mind if you @ me so I don't miss it!
 * Report any bugs/errors either in #lootfilter channel on pd2 discord or [my pd2 discord](discord.gg/Fkb9djJJVz). Screenshot for me so I can troubleshoot and fix it.
 * You feel that something doesn't make sense.
 * Something is missing that you would want to see.
