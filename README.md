@@ -3,7 +3,7 @@
 * Base filter (s9) by [Kryszard](https://www.twitch.tv/kryszard).
 * Parts/inspiration from Kassahi and Hiimfilter.
 * Credits to [Krampz](https://www.twitch.tv/krampz_) for help and consultation.
-* Shoutout to all Filter makers <3 This is a lot of work.
+* Shout out to all Filter makers <3 This is a lot of work.
 ## General stuff, disclaimers, info
 Filter is made for all types of players with focus on crafting, Assassin, being educational and helpful.
 * Will show lots of magic/rare bases for crafting.
