@@ -26,7 +26,7 @@ How the "tier highlight" system is designed. Sound notifications are on certain 
 * 7 STARS - Boss Uniques, Vial, Mirror, Unique Sacred Armors.
 Unique Sacred armor is called "IS IT HAPPENING???" or "Another Templar's, my G" if Ethereal.
 * 5 STARS - Very rare and high value items.
-For example Veil of Steel/Nightwing's Veil, Crown of Ages, Ormus, Griffons, Arach, ethereal Grandfather/Schaefer's.
+For example Veil of Steel/Nightwing's Veil, Ormus, Griffons, Arach, ethereal Grandfather/Schaefer's.
 * 3 STARS - Uncommon, but good items.
 Kira's, Harlequin Crest is here but called "Shako is a lie", Larzuk's Puzzlebox etc.
 * 2 STARS - Low level or niche items with low value, but commonly used.
