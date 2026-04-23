@@ -79,7 +79,7 @@ Dropping lots of identified items in the same place can sometimes explode the sc
 * Skill notes: Amazon Bows/Javelins.
 * Skill notes: Scepters.
 ## Frequently asked questions (FAQ)
-* Can you hide potions? - No. I will not hide them, but you can search for "Change the FILTLVL to 1 less than yours to hide" in the filter to hide them for yourself (just remember to save as ANSI-encoding). Me and multiple of my friends that I made this filter for uses HP/MP pots. They are hidden on the filter level "Ultimate Tryhard".
+* Can you hide potions? - No. I will not hide them, but you can search for "Change the FILTLVL to 1 less than yours to hide" in the filter to hide them for yourself. Me and multiple of my friends that I made this filter for uses HP/MP pots. They are hidden on the filter level "Ultimate Tryhard".
 * PoE sounds? - No tinks for you.
 ## Feedback, ideas, bugs and errors
 Feedback, ideas, bugs or errors can be any of the following, but please explain why, what or how. Also, I do not mind if you @ me so I don't miss it!
