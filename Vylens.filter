@@ -1118,7 +1118,8 @@ ItemDisplay[MAG uar !ID]: %BLUE%Fluffy's Demise
 ItemDisplay[MAG uar ETH !ID]: %GRAY%[%WHITE%eth%GRAY%] %BLUE%Fluffy's Demise
 ItemDisplay[MAG uar ID]: %BLUE%%NAME%
 ItemDisplay[MAG uar ETH ID]: %BLUE%%NAME%
-ItemDisplay[HELM RARE !ID !(BAR OR DRU) !CLVL>85]: %NAME%
+//ItemDisplay[HELM RARE !ID !(BAR OR DRU) !CLVL>85]: %NAME% // old
+ItemDisplay[HELM RARE !ID]: %NAME%
 
 // Class dependence highlight items
 // Barbarian
