@@ -4046,6 +4046,7 @@ ItemDisplay[t21]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %BLUE%C:75 %YELLOW%L:80
 ItemDisplay[t26]: %NAME%{%RED%Witches%NL%%WHITE%Highest Res: %GOLD%Ph:50 %BLUE%C:85 %YELLOW%L:75%NL%%WHITE%Immunes: %RED%F:120 %GREEN%P:120 %ORANGE%M:105%NAME%}%CONTINUE% // Shadows of Westmarch 169
 ItemDisplay[t11]: %NAME%{%WHITE%Highest Res: %RED%F:75 %YELLOW%L:75 %GREEN%P:80 %ORANGE%M:50%NL%%WHITE%Immunes: %GOLD%Ph:115 %BLUE%C:120%NAME%}%CONTINUE% // Ruins of Viz-jun 143
 ItemDisplay[t33]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:55 %RED%F:75 %YELLOW%L:80 %GREEN%P:80%NL%%WHITE%Immunes: %BLUE%C:120 %ORANGE%M:105%NAME%}%CONTINUE% // Lost Temple 158
+ItemDisplay[t51]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:65 %RED%F:85 %BLUE%C:85 %YELLOW%L:85 %GREEN%P:95 %ORANGE%M:50%NAME%}%CONTINUE% // Unique: Zhar's Sanctum 177 178 179
 // T2
 ItemDisplay[t16]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:60 %RED%F:75 %BLUE%C:75 %YELLOW%L:75%NL%%WHITE%Immunes: %GREEN%P:120 %ORANGE%M:105%NAME%}%CONTINUE% // Ruined Cistern 174
 ItemDisplay[t12]: %NAME%{%WHITE%Highest Res: %RED%F:75 %BLUE%C:75 %GREEN%P:75 %ORANGE%M:50%NL%%WHITE%Immunes: %GOLD%Ph:115 %YELLOW%L:120 %GREEN%Spire:1000%NAME%}%CONTINUE% // Horazon's Memory 142
@@ -4057,6 +4058,7 @@ ItemDisplay[t38]: %NAME%{%WHITE%Highest Res: %BLUE%C:80 %YELLOW%L:75 %GREEN%P:75
 ItemDisplay[t32]: %NAME%{%WHITE%Highest Res: %RED%F:75 %BLUE%C:75 %YELLOW%L:75 %ORANGE%M:75%NL%%WHITE%Immunes: %GOLD%Ph:115 %GREEN%P:120%NAME%}%CONTINUE% // Throne of Insanity 150
 ItemDisplay[t17]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:75 %GREEN%P:85 %ORANGE%M:35%NL%%WHITE%Immunes: %BLUE%C:120 %YELLOW%L:120%NAME%}%CONTINUE% // Halls of Torture 193
 ItemDisplay[t53]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:65 %RED%F:70 %BLUE%C:75 %YELLOW%L:65 %GREEN%P:80 %ORANGE%M:80%NAME%}%CONTINUE% // Unique: Fallen Gardens 183
+ItemDisplay[t52]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:55 %RED%F:70 %BLUE%C:65 %YELLOW%L:65 %GREEN%P:75 %ORANGE%M:50%NAME%}%CONTINUE% // Unique: Warlord of Blood 181
 // T3
 ItemDisplay[t35]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:65 %BLUE%C:65 %YELLOW%L:65 %GREEN%P:65 %ORANGE%M:33%NAME%}%CONTINUE% // Blood Moon 154
 ItemDisplay[t3b]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:66 %RED%F:75 %BLUE%C:75 %YELLOW%L:75 %GREEN%P:75 %ORANGE%M:50%NAME%}%CONTINUE% // Kyovashad
@@ -4068,8 +4070,6 @@ ItemDisplay[t27]: %NAME%{%WHITE%Highest Res: %BLUE%C:75 %GREEN%P:75 %ORANGE%M:40
 ItemDisplay[t31]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:66 %RED%F:75 %BLUE%C:75%NL%%WHITE%Immunes: %YELLOW%L:120 %GREEN%P:120 %ORANGE%M:105%NAME%}%CONTINUE% // River of Blood 144
 ItemDisplay[t39]: %NAME%{%WHITE%Highest Res: %BLUE%C:75 %YELLOW%L:75 %GREEN%P:75 %ORANGE%M:50%NL%%WHITE%Immunes: %GOLD%Ph:115 %RED%F:120 %GREEN%Tower:1000%NAME%}%CONTINUE% // Kehjistan Marketplace 147
 // T3 Unique
-ItemDisplay[t51]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:65 %RED%F:85 %BLUE%C:85 %YELLOW%L:85 %GREEN%P:95 %ORANGE%M:50%NAME%}%CONTINUE% // Unique: Zhar's Sanctum 177 178 179
-ItemDisplay[t52]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:55 %RED%F:70 %BLUE%C:65 %YELLOW%L:65 %GREEN%P:75 %ORANGE%M:50%NAME%}%CONTINUE% // Unique: Warlord of Blood 181
 ItemDisplay[t54]: %NAME%{%RED%Witches%NL%%WHITE%Highest Res: %GOLD%Ph:20 %RED%F:65 %BLUE%C:65 %YELLOW%L:65 %GREEN%P:65 %ORANGE%M:20%NAME%}%CONTINUE% // Unique: Imperial Palace 192
 ItemDisplay[t55]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:75 %BLUE%C:50 %YELLOW%L:75 %GREEN%P:30 %ORANGE%M:50%NAME%}%CONTINUE% // Unique: Outer Void 180
 ItemDisplay[t56]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:65 %RED%F:85 %BLUE%C:80 %GREEN%P:75 %ORANGE%M:50%NL%%WHITE%Immunes: %YELLOW%L:100%NAME%}%CONTINUE% // Unique: The City of Ureh 196
