@@ -13,7 +13,7 @@ ItemDisplayFilterName[]: ÿc&Krampz
 ItemDisplayFilterName[]: ÿc1Ultimate Tryhard >:)
 
 // Show info about current Filter Level in description of Horadric Cube
-ItemDisplay[box]: %MAP-1F%%NAME%{%NAME%%GRAY%discord.gg/Fkb9djJJVz%NL%Last update 2026-01-10%NL%}%CONTINUE%
+ItemDisplay[box]: %MAP-1F%%NAME%{%NAME%%GRAY%discord.gg/Fkb9djJJVz%NL%Last update 2026-04-25%NL%}%CONTINUE%
 ItemDisplay[box FILTLVL=0]: %NAME%{%NAME%%NL%%WHITE%Can be changed in Settings%NL%0 - %TAN%Show all items%NL%%WHITE%Vylens' Loot Filter level:%NL%}
 ItemDisplay[box FILTLVL=1]: %NAME%{%NAME%%NL%%WHITE%Can be changed in Settings%NL%1 - %TAN%Only hide trash items%NL%%WHITE%Vylens' Loot Filter level:%NL%}
 ItemDisplay[box FILTLVL=2]: %NAME%{%NAME%%NL%%WHITE%Can be changed in Settings%NL%2 - %TAN%Early Season/Leveling%NL%%WHITE%Vylens' Loot Filter level:%NL%}
