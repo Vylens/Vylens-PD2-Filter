@@ -13,7 +13,7 @@ ItemDisplayFilterName[]: ÿc&Krampz
 ItemDisplayFilterName[]: ÿc1Ultimate Tryhard >:)
 
 // Show info about current Filter Level in description of Horadric Cube
-ItemDisplay[box]: %MAP-1F%%NAME%{%NAME%%GRAY%discord.gg/Fkb9djJJVz%NL%Last update 2026-04-25%NL%}%CONTINUE%
+ItemDisplay[box]: %MAP-1F%%NAME%{%NAME%%GRAY%discord.gg/Fkb9djJJVz%NL%Last update 2026-04-26%NL%}%CONTINUE%
 ItemDisplay[box FILTLVL=0]: %NAME%{%NAME%%NL%%WHITE%Can be changed in Settings%NL%0 - %TAN%Show all items%NL%%WHITE%Vylens' Loot Filter level:%NL%}
 ItemDisplay[box FILTLVL=1]: %NAME%{%NAME%%NL%%WHITE%Can be changed in Settings%NL%1 - %TAN%Only hide trash items%NL%%WHITE%Vylens' Loot Filter level:%NL%}
 ItemDisplay[box FILTLVL=2]: %NAME%{%NAME%%NL%%WHITE%Can be changed in Settings%NL%2 - %TAN%Early Season/Leveling%NL%%WHITE%Vylens' Loot Filter level:%NL%}
@@ -1983,7 +1983,7 @@ ItemDisplay[STAFF SOCK=4 NMAG !RW]: %NAME%{%GRAY%Phoenix, Pride, Rampage, Spirit
 ItemDisplay[(whm OR mau OR gma OR 9wh OR 9m9 OR 9gm OR 7wh OR 7m7 OR 7gm) SOCK=4 NMAG !RW]: %NAME%{%GRAY%Justice, Passion, Phoenix%CL%Famine, Fortitude, Hand of%CL%Possible Runewords:}%CONTINUE%
 //Weapons 5soc
 ItemDisplay[WEAPON SOCK=5 NMAG !RW]: %NAME%{%GRAY%Call to Arms%CL%Possible Runewords:}%CONTINUE%
-ItemDisplay[(BOW OR XBOW) SOCK=5 NMAG !RW]: %NAME%{%GRAY%Call to Arms, Mist, Zenith%CL%Possible Runewords:}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) SOCK=5 NMAG !RW]: %NAME%{%GRAY%Mist, Zenith%CL%Possible Runewords:}%CONTINUE%
 ItemDisplay[WEAPON !(BOW OR XBOW OR SOR) SOCK=5 NMAG !RW]: %NAME%{%GRAY%Call to Arms, Eternity, Honor%CL%Possible Runewords:}%CONTINUE%
 ItemDisplay[STAFF SOCK=5 NMAG !RW]: %NAME%{%GRAY%Doom, Eternity, Honor, Zenith%CL%Beast, Call to Arms, Destruction,%CL%Possible Runewords:}%CONTINUE%
 ItemDisplay[SCEPTER SOCK=5 NMAG !RW]: %NAME%{%GRAY%Call to Arms, Doom, Eternity, Honor%CL%Possible Runewords: %GRAY%Beast,}%CONTINUE%
