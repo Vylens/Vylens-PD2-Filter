@@ -972,7 +972,7 @@ ItemDisplay[uap UNI !ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*   
 // Armors
 ItemDisplay[(xhn OR utu OR upl OR uld OR uul) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 // Shields
-ItemDisplay[(paf OR xsh OR xow OR uit OR uts) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
+ItemDisplay[(paf OR xow OR uit OR uts) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 // Gloves
 ItemDisplay[(xtg OR uvg OR umg OR utg OR uhg) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 // Boots
@@ -999,7 +999,7 @@ ItemDisplay[(ltp OR xea OR xpl OR xlt OR xld OR xth OR xtp OR ung) UNI !ID FILTL
 // Non eth Armors
 ItemDisplay[brs UNI !ETH !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
 // Shields
-ItemDisplay[(uml OR uow OR urg OR ush) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
+ItemDisplay[(uml OR uow OR urg OR ush OR xsh) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
 // Gloves
 ItemDisplay[(mgl OR tgl OR hgl OR xvg OR xmg OR xhg) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
 // Boots
@@ -1033,9 +1033,10 @@ ItemDisplay[(xrn OR xsk) UNI !ID FILTLVL>2]: %TAN%*   %GOLD%%NAME%   %TAN%*
 ItemDisplay[(lea OR xul OR xar OR aar) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%*
 ItemDisplay[(stu OR fld OR gth OR xng OR xcl OR xrs) UNI !ID FILTLVL<3]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%*
 // Shields
-ItemDisplay[(kit OR xml OR upk OR xpk) UNI !ID FILTLVL<3]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%*
+ItemDisplay[(xml OR upk OR xpk) UNI !ID FILTLVL<3]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%*
 ItemDisplay[(upk OR xpk) UNI !ID FILTLVL>2]: %TAN%*   %GOLD%%NAME%   %TAN%*
 ItemDisplay[pab UNI !ID]: %TAN%*   %GOLD%%NAME%   %TAN%* // s13
+ItemDisplay[kit UNI !ID]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%*
 // Gloves
 ItemDisplay[(lgl OR vgl OR xlg OR ulg) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%*
 // Boots
@@ -3567,7 +3568,7 @@ ItemDisplay[HighQuality $f(SK88+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK88
 ItemDisplay[HighQuality $f(SK84+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK84+TABSK17+CLSK2+STAT127)bspr %NAME%}%CONTINUE%
 ItemDisplay[HighQuality $f(SK78+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK78+TABSK17+CLSK2+STAT127)wall %NAME%}%CONTINUE%
 ItemDisplay[HighQuality $f(SK83+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK83+TABSK17+CLSK2+STAT127)des %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK68+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK68+TABSK17+CLSK2+STAT127)barm %NAME%}%CONTINUE%
+ItemDisplay[HighQuality $f(SK68+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK68+TABSK17+CLSK2+STAT127)armor %NAME%}%CONTINUE%
 ItemDisplay[HighQuality $f(SK74+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK74+TABSK17+CLSK2+STAT127)ce %NAME%}%CONTINUE%
 ItemDisplay[HighQuality $f(SK67+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK67+TABSK17+CLSK2+STAT127)tth %NAME%}%CONTINUE%
 ItemDisplay[HighQuality $f(SK73+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK73+TABSK17+CLSK2+STAT127)pst %NAME%}%CONTINUE%
