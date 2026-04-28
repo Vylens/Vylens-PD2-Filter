@@ -4119,7 +4119,7 @@ ItemDisplay[t22]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:75 %YELLOW%L:75 
 ItemDisplay[t24]: %NAME%{%WHITE%Highest Res: %RED%F:75 %BLUE%C:75 %YELLOW%L:75 %ORANGE%M:50%NL%%WHITE%Immunes: %GOLD%Ph:115 %GREEN%P:120%NAME%}%CONTINUE% // Tomb of Zoltun Kulle 151
 ItemDisplay[t36]: %NAME%{%RED%Blizzard%NL%%WHITE%Highest Res: %RED%F:75 %BLUE%C:75 %GREEN%P:80%NL%%WHITE%Immunes: %GOLD%Ph:115 %YELLOW%L:120 %ORANGE%M:105%NAME%}%CONTINUE% // Fall of Caldeum 155
 ItemDisplay[t21]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %BLUE%C:75 %YELLOW%L:80 %ORANGE%M:50%NL%%WHITE%Immunes: %RED%F:120 %GREEN%P:120%NAME%}%CONTINUE% // Phlegethon 145
-ItemDisplay[t26]: %NAME%{%RED%Witches%NL%%WHITE%Highest Res: %GOLD%Ph:50 %BLUE%C:85 %YELLOW%L:75%NL%%WHITE%Immunes: %RED%F:120 %GREEN%P:120 %ORANGE%M:105%NAME%}%CONTINUE% // Shadows of Westmarch 169
+ItemDisplay[t26]: %NAME%{%RED%Witches%NL%%WHITE%Highest Res: %GOLD%Ph:50 %BLUE%C:85 %YELLOW%L:75 %GREEN%P:75%NL%%WHITE%Immunes: %RED%F:120 %ORANGE%M:105%NAME%}%CONTINUE% // Shadows of Westmarch 169
 ItemDisplay[t11]: %NAME%{%WHITE%Highest Res: %RED%F:75 %YELLOW%L:75 %GREEN%P:80 %ORANGE%M:50%NL%%WHITE%Immunes: %GOLD%Ph:115 %BLUE%C:120%NAME%}%CONTINUE% // Ruins of Viz-jun 143
 ItemDisplay[t33]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:55 %RED%F:75 %YELLOW%L:80 %GREEN%P:80%NL%%WHITE%Immunes: %BLUE%C:120 %ORANGE%M:105%NAME%}%CONTINUE% // Lost Temple 158
 ItemDisplay[t51]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:65 %RED%F:85 %BLUE%C:85 %YELLOW%L:85 %GREEN%P:95 %ORANGE%M:50%NAME%}%CONTINUE% // Unique: Zhar's Sanctum 177 178 179
@@ -4129,7 +4129,7 @@ ItemDisplay[t12]: %NAME%{%WHITE%Highest Res: %RED%F:75 %BLUE%C:75 %GREEN%P:75 %O
 ItemDisplay[t3a]: %NAME%{%RED%Souls%NL%%WHITE%Highest Res: %GOLD%Ph:50 %YELLOW%L:75 %GREEN%P:75 %ORANGE%M:50%NL%%WHITE%Immunes: %RED%F:120 %BLUE%C:130%NAME%}%CONTINUE% // Ashen Plains 175
 ItemDisplay[t37]: %NAME%{%RED%Witches%NL%%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:75 %YELLOW%L:75 %GREEN%P:80%NL%%WHITE%Immunes: %BLUE%C:120 %ORANGE%M:105%NAME%}%CONTINUE% // Pandemonium Citadel 156
 ItemDisplay[t25]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:66 %BLUE%C:80 %YELLOW%L:75 %ORANGE%M:50%NL%%WHITE%Immunes: %RED%F:120 %GREEN%P:120%NAME%}%CONTINUE% // Sewers of Harrogath 141
-ItemDisplay[t14]: %NAME%{%RED%Souls%NL%%WHITE%Highest Res: %GOLD%Ph:60 %RED%F:75 %BLUE%C:75%NL%%WHITE%Immunes: %YELLOW%L:120 %GREEN%P:120 %ORANGE%M:105%NAME%}%CONTINUE% // Sanatorium 167
+ItemDisplay[t14]: %NAME%{%RED%Souls%NL%%WHITE%Highest Res: %GOLD%Ph:60 %RED%F:75 %BLUE%C:75 %GREEN%P:75%NL%%WHITE%Immunes: %YELLOW%L:120 %ORANGE%M:105%NAME%}%CONTINUE% // Sanatorium 167
 ItemDisplay[t38]: %NAME%{%WHITE%Highest Res: %BLUE%C:80 %YELLOW%L:75 %GREEN%P:75 %ORANGE%M:55%NL%%WHITE%Immunes: %GOLD%Ph:115 %RED%F:120%NAME%}%CONTINUE% // Canyon of Sescheron 160
 ItemDisplay[t32]: %NAME%{%WHITE%Highest Res: %RED%F:75 %BLUE%C:75 %YELLOW%L:75 %ORANGE%M:75%NL%%WHITE%Immunes: %GOLD%Ph:115 %GREEN%P:120%NAME%}%CONTINUE% // Throne of Insanity 150
 ItemDisplay[t17]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:75 %GREEN%P:85 %ORANGE%M:35%NL%%WHITE%Immunes: %BLUE%C:120 %YELLOW%L:120%NAME%}%CONTINUE% // Halls of Torture 193
