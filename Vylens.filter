@@ -958,7 +958,7 @@ ItemDisplay[uar UNI ETH !ID]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%R
 
 // --- 5 STARS - VERY RARE AND HIGH VALUE ITEMS -------------------------------------------------------------
 // Veil of Steel, Ormus' Robes, Griffon's Eye, Arachnid Mesh
-ItemDisplay[(uhm OR uui OR ci3 OR ulc) UNI !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
+ItemDisplay[(uhm OR uui OR ci3 OR ulc OR xlt) UNI !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
 // Ethereal Purgatory, Weapons
 ItemDisplay[(utp OR 7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7p7 OR 7s8 OR 7pa OR 7wc) UNI ETH !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
 // Weapons 6ws mangsong, 7gw deathweb, obf deathfathom
@@ -995,7 +995,7 @@ ItemDisplay[(7vo OR obe) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%
 // Helms
 ItemDisplay[(skp OR xkp OR xhm) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
 // Armors
-ItemDisplay[(ltp OR xea OR xpl OR xlt OR xld OR xth OR xtp OR ung) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
+ItemDisplay[(ltp OR xea OR xpl OR xld OR xth OR xtp OR ung) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
 // Non eth Armors
 ItemDisplay[brs UNI !ETH !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
 // Shields
