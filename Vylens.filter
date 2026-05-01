@@ -957,8 +957,8 @@ ItemDisplay[uar UNI !ETH !ID]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%
 ItemDisplay[uar UNI ETH !ID]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*%TEAL%*     %GOLD%Another Templar's, my G     %TEAL%*%YELLOW%*%ORANGE%*%RED%*%PURPLE%*%CORAL%*%TAN%*
 
 // --- 5 STARS - VERY RARE AND HIGH VALUE ITEMS -------------------------------------------------------------
-// Veil of Steel, Ormus' Robes, Griffon's Eye, Arachnid Mesh
-ItemDisplay[(uhm OR uui OR ci3 OR ulc OR xlt) UNI !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
+// Veil of Steel, Griffon's Eye, Arachnid Mesh
+ItemDisplay[(uhm OR ci3 OR ulc OR xlt) UNI !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
 // Ethereal Purgatory, Weapons
 ItemDisplay[(utp OR 7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7p7 OR 7s8 OR 7pa OR 7wc) UNI ETH !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
 // Weapons 6ws mangsong, 7gw deathweb, obf deathfathom
@@ -970,7 +970,7 @@ ItemDisplay[(xh9 OR ulm OR usk OR (uh9 !MAPID=137 ILVL<96) OR ci2 OR urn) UNI !I
 ItemDisplay[uap UNI ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Ghost Shako     %YELLOW%*%ORANGE%*%TAN%*
 ItemDisplay[uap UNI !ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Shako is a lie     %YELLOW%*%ORANGE%*%TAN%*
 // Armors
-ItemDisplay[(xhn OR utu OR upl OR uld OR uul) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
+ItemDisplay[(xhn OR utu OR upl OR uld OR uul OR uui) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 // Shields
 ItemDisplay[(paf OR xow OR uit OR uts) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 // Gloves
