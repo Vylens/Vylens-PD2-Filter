@@ -989,7 +989,7 @@ ItemDisplay[(xpl OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 9gm OR 9la OR 7wa)
 ItemDisplay[(7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7s8 OR 7pa OR 7wc) UNI !ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 // Weapons
 ItemDisplay[(7xf OR 7ga OR 7cr OR 7ts OR 6lw OR 8rx OR 8ws OR 6bs OR 9bw OR 7bw OR 7ws OR 7tw OR obc OR amb OR amf OR 6cs) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
-ItemDisplay[(7vo OR obe) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%* // s13
+ItemDisplay[obe UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%* // s13
 
 // --- 2 STARS - LOWLVL OR NICHE ITEMS WITH LOW VALUE, BUT COMMONLY USED ------------------------------------
 // Helms
@@ -1062,7 +1062,7 @@ ItemDisplay[(lst OR 7gs OR 9fl OR 9fc OR 7sm OR dgr OR 8cb OR 8lb OR 6hb) UNI !I
 ItemDisplay[(9yw OR mau OR lbb OR 7fb OR 7di OR 9wn OR 7dg OR ob7 OR 9b8 OR 7mt OR 92h OR 7sb OR 7cm OR 9di OR 9bl OR 7kr OR 7bl OR 7st OR scy OR 6rx OR lst OR cst OR wst OR 8bs OR 9ws OR 7sc OR 9ar OR ob6 OR am7 OR amc OR 9ba OR 72a OR 9kr OR 8sw) UNI !ID FILTLVL<3]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%* // 1 star below flvl3
 ItemDisplay[(9wc OR mau OR lbb OR 7fb OR 7di OR 9wn) UNI !ID FILTLVL>2]: %TAN%*   %GOLD%%NAME%   %TAN%* // Show 1 star
 ItemDisplay[(scp OR hax OR ssd) UNI !ID FILTLVL=6]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%* // Krampz Low level weapons
-ItemDisplay[(uhl !MAPID=137) UNI !ID]: %TAN%*   %GOLD%%NAME%   %TAN%* // s13
+ItemDisplay[(7vo OR (uhl !MAPID=137)) UNI !ID]: %TAN%*   %GOLD%%NAME%   %TAN%* // s13
 
 //Rainbow Facet
 ItemDisplay[jew UNI !ID]: %BORDER-68%%SOUNDID-4303%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w     %NAME%%PURPLE%     r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w
