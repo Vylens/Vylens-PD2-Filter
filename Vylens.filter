@@ -192,41 +192,41 @@ Alias[combustion70]: ($f(SK376+TABSK8+CLSK1+STAT127)>3) // Combustion 376
 Alias[firemastery70]: ($f(SK61+TABSK8+CLSK1+STAT127)>3) // Fire Mastery 61
 Alias[hydrasorc70]: ($f(SK62+TABSK8+CLSK1+STAT127)>3) // Hydra 62
 // Sorceress Cold Skills (Staff)
-Alias[icebolt80]: ($f(SK39+TABSK10+CLSK1+STAT127)>4) // Ice Bolt 39
-Alias[coldenchant80]: ($f(SK40+TABSK10+CLSK1+STAT127)>4) // Cold Enchant 40
-Alias[frostnova80]: ($f(SK44+TABSK10+CLSK1+STAT127)>4) // Frost Nova 44
-Alias[iceblast80]: ($f(SK45+TABSK10+CLSK1+STAT127)>4) // Ice Blast 45
-Alias[shiverarmor80]: ($f(SK50+TABSK10+CLSK1+STAT127)>4) // Shiver Armor 50
-Alias[glacialspike80]: ($f(SK55+TABSK10+CLSK1+STAT127)>4) // Glacial Spike 55
-Alias[blizzard80]: ($f(SK59+TABSK10+CLSK1+STAT127)>4) // Blizzard 59
-Alias[icebarrage80]: ($f(SK369+TABSK10+CLSK1+STAT127)>4) // Ice Barrage 369
-Alias[chillingarmor80]: ($f(SK60+TABSK10+CLSK1+STAT127)>4) // Chilling Armor 60
-Alias[frozenorb80]: ($f(SK64+TABSK10+CLSK1+STAT127)>4) // Frozen Orb 64
-Alias[coldmastery80]: ($f(SK65+TABSK10+CLSK1+STAT127)>4) // Cold Mastery 65
+Alias[icebolt80]: ($f(SK39+TABSK10+CLSK1+STAT127)>5) // Ice Bolt 39
+Alias[coldenchant80]: ($f(SK40+TABSK10+CLSK1+STAT127)>5) // Cold Enchant 40
+Alias[frostnova80]: ($f(SK44+TABSK10+CLSK1+STAT127)>5) // Frost Nova 44
+Alias[iceblast80]: ($f(SK45+TABSK10+CLSK1+STAT127)>5) // Ice Blast 45
+Alias[shiverarmor80]: ($f(SK50+TABSK10+CLSK1+STAT127)>5) // Shiver Armor 50
+Alias[glacialspike80]: ($f(SK55+TABSK10+CLSK1+STAT127)>5) // Glacial Spike 55
+Alias[blizzard80]: ($f(SK59+TABSK10+CLSK1+STAT127)>5) // Blizzard 59
+Alias[icebarrage80]: ($f(SK369+TABSK10+CLSK1+STAT127)>5) // Ice Barrage 369
+Alias[chillingarmor80]: ($f(SK60+TABSK10+CLSK1+STAT127)>5) // Chilling Armor 60
+Alias[frozenorb80]: ($f(SK64+TABSK10+CLSK1+STAT127)>5) // Frozen Orb 64
+Alias[coldmastery80]: ($f(SK65+TABSK10+CLSK1+STAT127)>5) // Cold Mastery 65
 // Sorceress Lightning Skills (Staff)
-Alias[staticfield80]: ($f(SK42+TABSK9+CLSK1+STAT127)>4) // Static Field 42
-Alias[chargedbolt80]: ($f(SK38+TABSK9+CLSK1+STAT127)>4) // Charged Bolt 38
-Alias[telekinesis80]: ($f(SK43+TABSK9+CLSK1+STAT127)>4) // Telekinesis 43
-Alias[lightningnova80]: ($f(SK48+TABSK9+CLSK1+STAT127)>4) // Nova 48
-Alias[lightningpewpew80]: ($f(SK49+TABSK9+CLSK1+STAT127)>4) // Lightning 49
-Alias[teleport80]: ($f(SK54+TABSK9+CLSK1+STAT127)>4) // Teleport 54
-Alias[thunderstorm80]: ($f(SK57+TABSK9+CLSK1+STAT127)>4) // Thunder Storm 57
-Alias[chainlightning80]: ($f(SK53+TABSK9+CLSK1+STAT127)>4) // Chain Lightning 53
-Alias[lightningmastery80]: ($f(SK63+TABSK9+CLSK1+STAT127)>4) // Lightning Mastery 63
-Alias[energyshield80]: ($f(SK58+TABSK9+CLSK1+STAT127)>4) // Energy Shield 58
+Alias[staticfield80]: ($f(SK42+TABSK9+CLSK1+STAT127)>5) // Static Field 42
+Alias[chargedbolt80]: ($f(SK38+TABSK9+CLSK1+STAT127)>5) // Charged Bolt 38
+Alias[telekinesis80]: ($f(SK43+TABSK9+CLSK1+STAT127)>5) // Telekinesis 43
+Alias[lightningnova80]: ($f(SK48+TABSK9+CLSK1+STAT127)>5) // Nova 48
+Alias[lightningpewpew80]: ($f(SK49+TABSK9+CLSK1+STAT127)>5) // Lightning 49
+Alias[teleport80]: ($f(SK54+TABSK9+CLSK1+STAT127)>5) // Teleport 54
+Alias[thunderstorm80]: ($f(SK57+TABSK9+CLSK1+STAT127)>5) // Thunder Storm 57
+Alias[chainlightning80]: ($f(SK53+TABSK9+CLSK1+STAT127)>5) // Chain Lightning 53
+Alias[lightningmastery80]: ($f(SK63+TABSK9+CLSK1+STAT127)>5) // Lightning Mastery 63
+Alias[energyshield80]: ($f(SK58+TABSK9+CLSK1+STAT127)>5) // Energy Shield 58
 // Sorceress Fire Skills (Staff)
-Alias[inferno80]: ($f(SK41+TABSK8+CLSK1+STAT127)>4) // Inferno 41
-Alias[firebolt80]: ($f(SK36+TABSK8+CLSK1+STAT127)>4) // Fire Bolt 36
-Alias[warmth80]: ($f(SK37+TABSK8+CLSK1+STAT127)>4) // Warmth 37
-Alias[blaze80]: ($f(SK46+TABSK8+CLSK1+STAT127)>4) // Blaze 46
-Alias[firewall80]: ($f(SK51+TABSK8+CLSK1+STAT127)>4) // Fire Wall 51
-Alias[fireball80]: ($f(SK47+TABSK8+CLSK1+STAT127)>4) // Fire Ball 47
-Alias[lesserhydra80]: ($f(SK383+TABSK8+CLSK1+STAT127)>4) // Lesser Hydra 383
-Alias[enchantfire80]: ($f(SK52+TABSK8+CLSK1+STAT127)>4) // Enchant Fire 52
-Alias[meteor80]: ($f(SK56+TABSK8+CLSK1+STAT127)>4) // Meteor 56
-Alias[combustion80]: ($f(SK376+TABSK8+CLSK1+STAT127)>4) // Combustion 376
-Alias[firemastery80]: ($f(SK61+TABSK8+CLSK1+STAT127)>4) // Fire Mastery 61
-Alias[hydrasorc80]: ($f(SK62+TABSK8+CLSK1+STAT127)>4) // Hydra 62
+Alias[inferno80]: ($f(SK41+TABSK8+CLSK1+STAT127)>5) // Inferno 41
+Alias[firebolt80]: ($f(SK36+TABSK8+CLSK1+STAT127)>5) // Fire Bolt 36
+Alias[warmth80]: ($f(SK37+TABSK8+CLSK1+STAT127)>5) // Warmth 37
+Alias[blaze80]: ($f(SK46+TABSK8+CLSK1+STAT127)>5) // Blaze 46
+Alias[firewall80]: ($f(SK51+TABSK8+CLSK1+STAT127)>5) // Fire Wall 51
+Alias[fireball80]: ($f(SK47+TABSK8+CLSK1+STAT127)>5) // Fire Ball 47
+Alias[lesserhydra80]: ($f(SK383+TABSK8+CLSK1+STAT127)>5) // Lesser Hydra 383
+Alias[enchantfire80]: ($f(SK52+TABSK8+CLSK1+STAT127)>5) // Enchant Fire 52
+Alias[meteor80]: ($f(SK56+TABSK8+CLSK1+STAT127)>5) // Meteor 56
+Alias[combustion80]: ($f(SK376+TABSK8+CLSK1+STAT127)>5) // Combustion 376
+Alias[firemastery80]: ($f(SK61+TABSK8+CLSK1+STAT127)>5) // Fire Mastery 61
+Alias[hydrasorc80]: ($f(SK62+TABSK8+CLSK1+STAT127)>5) // Hydra 62
 
 // ==========================================================================================================
 // Druid Pelts and Club Aliases
@@ -432,7 +432,7 @@ ItemDisplay[NMAG !ID SHOP btx MAPID>132]: %NAME%%GOLD%Hellslayer%NL%%WHITE%Elite
 ItemDisplay[NMAG !ID SHOP gax MAPID>132]: %NAME%%GOLD%Messerschmidt's Reaver%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Boneslayer Blade%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Brainhew%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP gix MAPID>132]: %NAME%%GOLD%Executioner's Justice%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%The Minotaur%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Humongous%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP sbw MAPID>132]: %NAME%%GOLD%Skystrike%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Pluckeye%NL%%WHITE%Normal Tier:%CONTINUE%
-ItemDisplay[NMAG !ID SHOP hbw MAPID>132]: %NAME%%GOLD%Crackleshot%NL%%WHITE%Elite Tier:%NL%%NL%Riphook%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Witherstring%NL%%WHITE%Normal Tier:%CONTINUE%
+ItemDisplay[NMAG !ID SHOP hbw MAPID>132]: %NAME%%GOLD%Crackleshot%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Riphook%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Witherstring%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP lbw MAPID>132]: %NAME%%GOLD%Kuko Shakaku%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Raven Claw%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP cbw MAPID>132]: %NAME%%GOLD%Endlesshail%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Rogue's Bow%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP sbb MAPID>132]: %NAME%%GOLD%Witchwild String%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Stormstrike%NL%%WHITE%Normal Tier:%CONTINUE%
@@ -1171,7 +1171,7 @@ ItemDisplay[(bal OR 9b8 OR 7b8 OR jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp 
 ItemDisplay[(bal OR 9b8 OR 7b8 OR jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR tsp OR 9ts OR 7ts) BARBARIAN MAG ETH !ID ILVL>71 FILTLVL<7]: %DOT-97%%TIER-3%%WHITE%* %NAME% %WHITE%* // Higher end throw weapons
 ItemDisplay[(tax OR 9ta OR 7ta OR bkf OR 9bk OR 7bk) BARBARIAN RARE ETH !ID ILVL>71 FILTLVL<3]: %DOT-A8%%NAME% // Lower end throw weapons
 ItemDisplay[(tax OR 9ta OR 7ta OR bkf OR 9bk OR 7bk) BARBARIAN MAG ETH !ID ILVL>71 FILTLVL<3]: %DOT-97%%NAME% // Lower end throw weapons
-ItemDisplay[BAR BARBARIAN RARE !ID ILVL>71]: %DOT-A8%%TIER-2%%NAME%
+ItemDisplay[BAR BARBARIAN RARE !ID ILVL>71]: %DOT-A8%%TIER-4%%NAME%
 ItemDisplay[BAR BARBARIAN MAG !ID ILVL>71]: %DOT-97%%TIER-2%%NAME%
 // Paladin
 ItemDisplay[DIN PALADIN RARE !ETH !ID ILVL>71]: %DOT-A8%%TIER-2%%NAME%
@@ -3626,39 +3626,39 @@ ItemDisplay[SOR HighQuality (icebolt70 OR coldenchant70 OR frostnova70 OR icebla
 // Sorceress Staff notes
 ItemDisplay[STAFF (icebolt80 OR coldenchant80 OR frostnova80 OR iceblast80 OR shiverarmor80 OR glacialspike80 OR blizzard80 OR icebarrage80 OR chillingarmor80 OR frozenorb80 OR coldmastery80 OR staticfield80 OR chargedbolt80 OR telekinesis80 OR lightningnova80 OR lightningpewpew80 OR teleport80 OR thunderstorm80 OR chainlightning80 OR lightningmastery80 OR energyshield80 OR inferno80 OR firebolt80 OR warmth80 OR blaze80 OR firewall80 OR fireball80 OR lesserhydra80 OR enchantfire80 OR meteor80 OR combustion80 OR firemastery80 OR hydrasorc80) (MAG OR ELT)]: %NAME%{%NAME%}%CONTINUE%
 ItemDisplay[STAFF (icebolt80 OR coldenchant80 OR frostnova80 OR iceblast80 OR shiverarmor80 OR glacialspike80 OR blizzard80 OR icebarrage80 OR chillingarmor80 OR frozenorb80 OR coldmastery80 OR staticfield80 OR chargedbolt80 OR telekinesis80 OR lightningnova80 OR lightningpewpew80 OR teleport80 OR thunderstorm80 OR chainlightning80 OR lightningmastery80 OR energyshield80 OR inferno80 OR firebolt80 OR warmth80 OR blaze80 OR firewall80 OR fireball80 OR lesserhydra80 OR enchantfire80 OR meteor80 OR combustion80 OR firemastery80 OR hydrasorc80) ((RARE OR CRAFT) (NORM OR EXC))]: %NAME%{%NL%%NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK62+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK62+TABSK8+CLSK1+STAT127)hyd %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK61+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK61+TABSK8+CLSK1+STAT127)fma %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK376+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK376+TABSK8+CLSK1+STAT127)cmb %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK56+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK56+TABSK8+CLSK1+STAT127)mtr %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK52+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK52+TABSK8+CLSK1+STAT127)ench %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK383+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK383+TABSK8+CLSK1+STAT127)lhd %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK47+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK47+TABSK8+CLSK1+STAT127)ball %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK51+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK51+TABSK8+CLSK1+STAT127)wall %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK46+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK46+TABSK8+CLSK1+STAT127)blz %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK37+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK37+TABSK8+CLSK1+STAT127)wrm %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK36+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK36+TABSK8+CLSK1+STAT127)bolt %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK41+TABSK8+CLSK1+STAT127)>4]: %NAME%{%RED%$f(SK41+TABSK8+CLSK1+STAT127)inf %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK58+TABSK9+CLSK1+STAT127)>4]: %NAME%{%YELLOW%$f(SK58+TABSK9+CLSK1+STAT127)esh %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK63+TABSK9+CLSK1+STAT127)>4]: %NAME%{%YELLOW%$f(SK63+TABSK9+CLSK1+STAT127)lma %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK53+TABSK9+CLSK1+STAT127)>4]: %NAME%{%YELLOW%$f(SK53+TABSK9+CLSK1+STAT127)chl %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK57+TABSK9+CLSK1+STAT127)>4]: %NAME%{%YELLOW%$f(SK57+TABSK9+CLSK1+STAT127)ts %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK54+TABSK9+CLSK1+STAT127)>4]: %NAME%{%YELLOW%$f(SK54+TABSK9+CLSK1+STAT127)tp %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK49+TABSK9+CLSK1+STAT127)>4]: %NAME%{%YELLOW%$f(SK49+TABSK9+CLSK1+STAT127)lgt %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK48+TABSK9+CLSK1+STAT127)>4]: %NAME%{%YELLOW%$f(SK48+TABSK9+CLSK1+STAT127)nova %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK43+TABSK9+CLSK1+STAT127)>4]: %NAME%{%YELLOW%$f(SK43+TABSK9+CLSK1+STAT127)tk %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK38+TABSK9+CLSK1+STAT127)>4]: %NAME%{%YELLOW%$f(SK38+TABSK9+CLSK1+STAT127)chb %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK42+TABSK9+CLSK1+STAT127)>4]: %NAME%{%YELLOW%$f(SK42+TABSK9+CLSK1+STAT127)stc %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK65+TABSK10+CLSK1+STAT127)>4]: %NAME%{%BLUE%$f(SK65+TABSK10+CLSK1+STAT127)cma %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK64+TABSK10+CLSK1+STAT127)>4]: %NAME%{%BLUE%$f(SK64+TABSK10+CLSK1+STAT127)forb %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK60+TABSK10+CLSK1+STAT127)>4]: %NAME%{%BLUE%$f(SK60+TABSK10+CLSK1+STAT127)chill %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK369+TABSK10+CLSK1+STAT127)>4]: %NAME%{%BLUE%$f(SK369+TABSK10+CLSK1+STAT127)barr %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK59+TABSK10+CLSK1+STAT127)>4]: %NAME%{%BLUE%$f(SK59+TABSK10+CLSK1+STAT127)bliz %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK55+TABSK10+CLSK1+STAT127)>4]: %NAME%{%BLUE%$f(SK55+TABSK10+CLSK1+STAT127)gsp %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK50+TABSK10+CLSK1+STAT127)>4]: %NAME%{%BLUE%$f(SK50+TABSK10+CLSK1+STAT127)shiv %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK45+TABSK10+CLSK1+STAT127)>4]: %NAME%{%BLUE%$f(SK45+TABSK10+CLSK1+STAT127)blst %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK44+TABSK10+CLSK1+STAT127)>4]: %NAME%{%BLUE%$f(SK44+TABSK10+CLSK1+STAT127)nova %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK40+TABSK10+CLSK1+STAT127)>4]: %NAME%{%BLUE%$f(SK40+TABSK10+CLSK1+STAT127)ench %NAME%}%CONTINUE%
-ItemDisplay[STAFF HighQuality $f(SK39+TABSK10+CLSK1+STAT127)>4]: %NAME%{%BLUE%$f(SK39+TABSK10+CLSK1+STAT127)bolt %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK62+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK62+TABSK8+CLSK1+STAT127)hyd %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK61+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK61+TABSK8+CLSK1+STAT127)fma %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK376+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK376+TABSK8+CLSK1+STAT127)cmb %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK56+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK56+TABSK8+CLSK1+STAT127)mtr %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK52+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK52+TABSK8+CLSK1+STAT127)ench %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK383+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK383+TABSK8+CLSK1+STAT127)lhd %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK47+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK47+TABSK8+CLSK1+STAT127)ball %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK51+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK51+TABSK8+CLSK1+STAT127)wall %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK46+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK46+TABSK8+CLSK1+STAT127)blz %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK37+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK37+TABSK8+CLSK1+STAT127)wrm %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK36+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK36+TABSK8+CLSK1+STAT127)bolt %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK41+TABSK8+CLSK1+STAT127)>5]: %NAME%{%RED%$f(SK41+TABSK8+CLSK1+STAT127)inf %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK58+TABSK9+CLSK1+STAT127)>5]: %NAME%{%YELLOW%$f(SK58+TABSK9+CLSK1+STAT127)esh %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK63+TABSK9+CLSK1+STAT127)>5]: %NAME%{%YELLOW%$f(SK63+TABSK9+CLSK1+STAT127)lma %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK53+TABSK9+CLSK1+STAT127)>5]: %NAME%{%YELLOW%$f(SK53+TABSK9+CLSK1+STAT127)chl %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK57+TABSK9+CLSK1+STAT127)>5]: %NAME%{%YELLOW%$f(SK57+TABSK9+CLSK1+STAT127)ts %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK54+TABSK9+CLSK1+STAT127)>5]: %NAME%{%YELLOW%$f(SK54+TABSK9+CLSK1+STAT127)tp %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK49+TABSK9+CLSK1+STAT127)>5]: %NAME%{%YELLOW%$f(SK49+TABSK9+CLSK1+STAT127)lgt %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK48+TABSK9+CLSK1+STAT127)>5]: %NAME%{%YELLOW%$f(SK48+TABSK9+CLSK1+STAT127)nova %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK43+TABSK9+CLSK1+STAT127)>5]: %NAME%{%YELLOW%$f(SK43+TABSK9+CLSK1+STAT127)tk %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK38+TABSK9+CLSK1+STAT127)>5]: %NAME%{%YELLOW%$f(SK38+TABSK9+CLSK1+STAT127)chb %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK42+TABSK9+CLSK1+STAT127)>5]: %NAME%{%YELLOW%$f(SK42+TABSK9+CLSK1+STAT127)stc %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK65+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f(SK65+TABSK10+CLSK1+STAT127)cma %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK64+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f(SK64+TABSK10+CLSK1+STAT127)forb %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK60+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f(SK60+TABSK10+CLSK1+STAT127)chill %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK369+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f(SK369+TABSK10+CLSK1+STAT127)barr %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK59+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f(SK59+TABSK10+CLSK1+STAT127)bliz %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK55+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f(SK55+TABSK10+CLSK1+STAT127)gsp %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK50+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f(SK50+TABSK10+CLSK1+STAT127)shiv %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK45+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f(SK45+TABSK10+CLSK1+STAT127)blst %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK44+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f(SK44+TABSK10+CLSK1+STAT127)nova %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK40+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f(SK40+TABSK10+CLSK1+STAT127)ench %NAME%}%CONTINUE%
+ItemDisplay[STAFF HighQuality $f(SK39+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f(SK39+TABSK10+CLSK1+STAT127)bolt %NAME%}%CONTINUE%
 ItemDisplay[STAFF HighQuality (icebolt80 OR coldenchant80 OR frostnova80 OR iceblast80 OR shiverarmor80 OR glacialspike80 OR blizzard80 OR icebarrage80 OR chillingarmor80 OR frozenorb80 OR coldmastery80 OR staticfield80 OR chargedbolt80 OR telekinesis80 OR lightningnova80 OR lightningpewpew80 OR teleport80 OR thunderstorm80 OR chainlightning80 OR lightningmastery80 OR energyshield80 OR inferno80 OR firebolt80 OR warmth80 OR blaze80 OR firewall80 OR fireball80 OR lesserhydra80 OR enchantfire80 OR meteor80 OR combustion80 OR firemastery80 OR hydrasorc80)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
 
 // Druid Pelts and Club notes
