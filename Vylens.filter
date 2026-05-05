@@ -3512,78 +3512,78 @@ ItemDisplay[WEAPON HighQuality (SUFFIX=594 OR SUFFIX=595) STAT360=0]: %NAME%{%NA
 ItemDisplay[WEAPON HighQuality (SUFFIX=582 OR SUFFIX=583) STAT360=0]: %NAME%{%NAME%%CL%%ORANGE%******   %DARK_GREEN%Life Tap Charges   %ORANGE%******}%CONTINUE%
 
 // Assassin claw notes
-ItemDisplay[(fistsoffire70 OR clawsofthunder70 OR bladesofice70 OR tigerstrike70 OR cobrastrike70 OR phoenixstrike70 OR dragontalon70 OR dragonclaw70 OR dragontail70 OR dragonflight70 OR burstofspeed70 OR fade70 OR venom70 OR clawanddaggermastery70 OR weaponblock70 OR shadowwarrior70 OR shadowmaster70 OR psychichammer70 OR cloakofshadows70 OR mindblast70 OR shockweb70 OR chargedboltsentry70 OR lightningsentry70 OR chainsentry70 OR fireblast70 OR wakeoffire70 OR wakeofinferno70 OR deathsentry70 OR bladesentinel70 OR bladefury70 OR bladeshield70) (MAG OR ELT)]: %NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(fistsoffire70 OR clawsofthunder70 OR bladesofice70 OR tigerstrike70 OR cobrastrike70 OR phoenixstrike70 OR dragontalon70 OR dragonclaw70 OR dragontail70 OR dragonflight70 OR burstofspeed70 OR fade70 OR venom70 OR clawanddaggermastery70 OR weaponblock70 OR shadowwarrior70 OR shadowmaster70 OR psychichammer70 OR cloakofshadows70 OR mindblast70 OR shockweb70 OR chargedboltsentry70 OR lightningsentry70 OR chainsentry70 OR fireblast70 OR wakeoffire70 OR wakeofinferno70 OR deathsentry70 OR bladesentinel70 OR bladefury70 OR bladeshield70) ((RARE OR CRAFT) (NORM OR EXC))]: %NAME%{%NL%%NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK277+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK277+TABSK48+CLSK6+STAT127)bsh %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK266+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK266+TABSK48+CLSK6+STAT127)fury %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK257+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK257+TABSK48+CLSK6+STAT127)sntl %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK276+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK276+TABSK48+CLSK6+STAT127)ds %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK272+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK272+TABSK48+CLSK6+STAT127)woi %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK262+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK262+TABSK48+CLSK6+STAT127)wof %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK251+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK251+TABSK48+CLSK6+STAT127)fb %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK271+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK271+TABSK48+CLSK6+STAT127)cls %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK366+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK366+TABSK48+CLSK6+STAT127)ls %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK261+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK261+TABSK48+CLSK6+STAT127)cbs %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK256+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK256+TABSK48+CLSK6+STAT127)web %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK273+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK273+TABSK49+CLSK6+STAT127)mb %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK264+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK264+TABSK49+CLSK6+STAT127)cos %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK253+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK253+TABSK49+CLSK6+STAT127)ph %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK279+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK279+TABSK49+CLSK6+STAT127)s-m %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK268+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK268+TABSK49+CLSK6+STAT127)s-w %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK263+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK263+TABSK49+CLSK6+STAT127)wbk %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK252+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK252+TABSK49+CLSK6+STAT127)clm %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK278+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK278+TABSK49+CLSK6+STAT127)vnm %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK267+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK267+TABSK49+CLSK6+STAT127)fade %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK258+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK258+TABSK49+CLSK6+STAT127)bos %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK275+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK275+TABSK50+CLSK6+STAT127)df %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK270+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK270+TABSK50+CLSK6+STAT127)dtail %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK260+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK260+TABSK50+CLSK6+STAT127)dcl %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK255+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK255+TABSK50+CLSK6+STAT127)tln %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK280+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK280+TABSK50+CLSK6+STAT127)phx %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK265+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK265+TABSK50+CLSK6+STAT127)cobra %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK254+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK254+TABSK50+CLSK6+STAT127)ts %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK274+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK274+TABSK50+CLSK6+STAT127)boi %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK269+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK269+TABSK50+CLSK6+STAT127)cot %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK259+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK259+TABSK50+CLSK6+STAT127)fof %NAME%}%CONTINUE%
-ItemDisplay[HighQuality (fistsoffire70 OR clawsofthunder70 OR bladesofice70 OR tigerstrike70 OR cobrastrike70 OR phoenixstrike70 OR dragontalon70 OR dragonclaw70 OR dragontail70 OR dragonflight70 OR burstofspeed70 OR fade70 OR venom70 OR clawanddaggermastery70 OR weaponblock70 OR shadowwarrior70 OR shadowmaster70 OR psychichammer70 OR cloakofshadows70 OR mindblast70 OR shockweb70 OR chargedboltsentry70 OR lightningsentry70 OR chainsentry70 OR fireblast70 OR wakeoffire70 OR wakeofinferno70 OR deathsentry70 OR bladesentinel70 OR bladefury70 OR bladeshield70)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) (fistsoffire70 OR clawsofthunder70 OR bladesofice70 OR tigerstrike70 OR cobrastrike70 OR phoenixstrike70 OR dragontalon70 OR dragonclaw70 OR dragontail70 OR dragonflight70 OR burstofspeed70 OR fade70 OR venom70 OR clawanddaggermastery70 OR weaponblock70 OR shadowwarrior70 OR shadowmaster70 OR psychichammer70 OR cloakofshadows70 OR mindblast70 OR shockweb70 OR chargedboltsentry70 OR lightningsentry70 OR chainsentry70 OR fireblast70 OR wakeoffire70 OR wakeofinferno70 OR deathsentry70 OR bladesentinel70 OR bladefury70 OR bladeshield70) (MAG OR ELT)]: %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) (fistsoffire70 OR clawsofthunder70 OR bladesofice70 OR tigerstrike70 OR cobrastrike70 OR phoenixstrike70 OR dragontalon70 OR dragonclaw70 OR dragontail70 OR dragonflight70 OR burstofspeed70 OR fade70 OR venom70 OR clawanddaggermastery70 OR weaponblock70 OR shadowwarrior70 OR shadowmaster70 OR psychichammer70 OR cloakofshadows70 OR mindblast70 OR shockweb70 OR chargedboltsentry70 OR lightningsentry70 OR chainsentry70 OR fireblast70 OR wakeoffire70 OR wakeofinferno70 OR deathsentry70 OR bladesentinel70 OR bladefury70 OR bladeshield70) ((RARE OR CRAFT) (NORM OR EXC))]: %NAME%{%NL%%NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK277+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK277+TABSK48+CLSK6+STAT127)bsh %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK266+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK266+TABSK48+CLSK6+STAT127)fury %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK257+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK257+TABSK48+CLSK6+STAT127)sntl %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK276+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK276+TABSK48+CLSK6+STAT127)ds %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK272+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK272+TABSK48+CLSK6+STAT127)woi %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK262+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK262+TABSK48+CLSK6+STAT127)wof %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK251+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK251+TABSK48+CLSK6+STAT127)fb %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK271+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK271+TABSK48+CLSK6+STAT127)cls %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK366+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK366+TABSK48+CLSK6+STAT127)ls %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK261+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK261+TABSK48+CLSK6+STAT127)cbs %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK256+TABSK48+CLSK6+STAT127)>3]: %NAME%{%ORANGE%$f(SK256+TABSK48+CLSK6+STAT127)web %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK273+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK273+TABSK49+CLSK6+STAT127)mb %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK264+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK264+TABSK49+CLSK6+STAT127)cos %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK253+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK253+TABSK49+CLSK6+STAT127)ph %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK279+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK279+TABSK49+CLSK6+STAT127)s-m %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK268+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK268+TABSK49+CLSK6+STAT127)s-w %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK263+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK263+TABSK49+CLSK6+STAT127)wbk %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK252+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK252+TABSK49+CLSK6+STAT127)clm %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK278+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK278+TABSK49+CLSK6+STAT127)vnm %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK267+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK267+TABSK49+CLSK6+STAT127)fade %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK258+TABSK49+CLSK6+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK258+TABSK49+CLSK6+STAT127)bos %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK275+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK275+TABSK50+CLSK6+STAT127)df %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK270+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK270+TABSK50+CLSK6+STAT127)dtail %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK260+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK260+TABSK50+CLSK6+STAT127)dcl %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK255+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK255+TABSK50+CLSK6+STAT127)tln %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK280+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK280+TABSK50+CLSK6+STAT127)phx %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK265+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK265+TABSK50+CLSK6+STAT127)cobra %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK254+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK254+TABSK50+CLSK6+STAT127)ts %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK274+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK274+TABSK50+CLSK6+STAT127)boi %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK269+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK269+TABSK50+CLSK6+STAT127)cot %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality $f(SK259+TABSK50+CLSK6+STAT127)>3]: %NAME%{%GOLD%$f(SK259+TABSK50+CLSK6+STAT127)fof %NAME%}%CONTINUE%
+ItemDisplay[(SIN OR DAGGER) HighQuality (fistsoffire70 OR clawsofthunder70 OR bladesofice70 OR tigerstrike70 OR cobrastrike70 OR phoenixstrike70 OR dragontalon70 OR dragonclaw70 OR dragontail70 OR dragonflight70 OR burstofspeed70 OR fade70 OR venom70 OR clawanddaggermastery70 OR weaponblock70 OR shadowwarrior70 OR shadowmaster70 OR psychichammer70 OR cloakofshadows70 OR mindblast70 OR shockweb70 OR chargedboltsentry70 OR lightningsentry70 OR chainsentry70 OR fireblast70 OR wakeoffire70 OR wakeofinferno70 OR deathsentry70 OR bladesentinel70 OR bladefury70 OR bladeshield70)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
 
 // Necromancer Shrunken Heads and Wand notes
-ItemDisplay[(skeletonmastery70 OR raiseskeletonwarrior70 OR claygolem70 OR golemmastery70 OR raiseskeletalmage70 OR bloodgolem70 OR bloodwarp70 OR irongolem70 OR raiseskeletonarcher70 OR firegolem70 OR revive70 OR poisonstrike70 OR teeth70 OR corpseexplosion70 OR bonearmor70 OR desecrate70 OR bonewall70 OR bonespear70 OR boneprison70 OR poisonnova70 OR bonespirit70 OR amplifydamage70 OR cursemastery70 OR darkpact70 OR dimvision70 OR ironmaiden70 OR lifetap70 OR terror70 OR weaken70 OR confuse70 OR decrepify70 OR attract70 OR lowerresist70 OR skeletonmastery60 OR raiseskeletonwarrior60 OR claygolem60 OR golemmastery60 OR raiseskeletalmage60 OR bloodgolem60 OR bloodwarp60 OR irongolem60 OR raiseskeletonarcher60 OR firegolem60 OR revive60 OR poisonstrike60 OR teeth60 OR corpseexplosion60 OR bonearmor60 OR desecrate60 OR bonewall60 OR bonespear60 OR boneprison60 OR poisonnova60 OR bonespirit60 OR amplifydamage60 OR cursemastery60 OR darkpact60 OR dimvision60 OR ironmaiden60 OR lifetap60 OR terror60 OR weaken60 OR confuse60 OR decrepify60 OR attract60 OR lowerresist60 OR skeletonmastery50 OR raiseskeletonwarrior50 OR claygolem50 OR golemmastery50 OR raiseskeletalmage50 OR bloodgolem50 OR bloodwarp50 OR irongolem50 OR raiseskeletonarcher50 OR firegolem50 OR revive50 OR poisonstrike50 OR teeth50 OR corpseexplosion50 OR bonearmor50 OR desecrate50 OR bonewall50 OR bonespear50 OR boneprison50 OR poisonnova50 OR bonespirit50 OR amplifydamage50 OR cursemastery50 OR darkpact50 OR dimvision50 OR ironmaiden50 OR lifetap50 OR terror50 OR weaken50 OR confuse50 OR decrepify50 OR attract50 OR lowerresist50 OR skeletonmastery40 OR raiseskeletonwarrior40 OR claygolem40 OR golemmastery40 OR raiseskeletalmage40 OR bloodgolem40 OR bloodwarp40 OR irongolem40 OR raiseskeletonarcher40 OR firegolem40 OR revive40 OR poisonstrike40 OR teeth40 OR corpseexplosion40 OR bonearmor40 OR desecrate40 OR bonewall40 OR bonespear40 OR boneprison40 OR poisonnova40 OR bonespirit40 OR amplifydamage40 OR cursemastery40 OR darkpact40 OR dimvision40 OR ironmaiden40 OR lifetap40 OR terror40 OR weaken40 OR confuse40 OR decrepify40 OR attract40 OR lowerresist40) (MAG OR ELT)]: %NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(skeletonmastery70 OR raiseskeletonwarrior70 OR claygolem70 OR golemmastery70 OR raiseskeletalmage70 OR bloodgolem70 OR bloodwarp70 OR irongolem70 OR raiseskeletonarcher70 OR firegolem70 OR revive70 OR poisonstrike70 OR teeth70 OR corpseexplosion70 OR bonearmor70 OR desecrate70 OR bonewall70 OR bonespear70 OR boneprison70 OR poisonnova70 OR bonespirit70 OR amplifydamage70 OR cursemastery70 OR darkpact70 OR dimvision70 OR ironmaiden70 OR lifetap70 OR terror70 OR weaken70 OR confuse70 OR decrepify70 OR attract70 OR lowerresist70 OR skeletonmastery60 OR raiseskeletonwarrior60 OR claygolem60 OR golemmastery60 OR raiseskeletalmage60 OR bloodgolem60 OR bloodwarp60 OR irongolem60 OR raiseskeletonarcher60 OR firegolem60 OR revive60 OR poisonstrike60 OR teeth60 OR corpseexplosion60 OR bonearmor60 OR desecrate60 OR bonewall60 OR bonespear60 OR boneprison60 OR poisonnova60 OR bonespirit60 OR amplifydamage60 OR cursemastery60 OR darkpact60 OR dimvision60 OR ironmaiden60 OR lifetap60 OR terror60 OR weaken60 OR confuse60 OR decrepify60 OR attract60 OR lowerresist60 OR skeletonmastery50 OR raiseskeletonwarrior50 OR claygolem50 OR golemmastery50 OR raiseskeletalmage50 OR bloodgolem50 OR bloodwarp50 OR irongolem50 OR raiseskeletonarcher50 OR firegolem50 OR revive50 OR poisonstrike50 OR teeth50 OR corpseexplosion50 OR bonearmor50 OR desecrate50 OR bonewall50 OR bonespear50 OR boneprison50 OR poisonnova50 OR bonespirit50 OR amplifydamage50 OR cursemastery50 OR darkpact50 OR dimvision50 OR ironmaiden50 OR lifetap50 OR terror50 OR weaken50 OR confuse50 OR decrepify50 OR attract50 OR lowerresist50 OR skeletonmastery40 OR raiseskeletonwarrior40 OR claygolem40 OR golemmastery40 OR raiseskeletalmage40 OR bloodgolem40 OR bloodwarp40 OR irongolem40 OR raiseskeletonarcher40 OR firegolem40 OR revive40 OR poisonstrike40 OR teeth40 OR corpseexplosion40 OR bonearmor40 OR desecrate40 OR bonewall40 OR bonespear40 OR boneprison40 OR poisonnova40 OR bonespirit40 OR amplifydamage40 OR cursemastery40 OR darkpact40 OR dimvision40 OR ironmaiden40 OR lifetap40 OR terror40 OR weaken40 OR confuse40 OR decrepify40 OR attract40 OR lowerresist40) ((RARE OR CRAFT) (NORM OR EXC))]: %NAME%{%NL%%NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK91+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK91+TABSK16+CLSK2+STAT127)lr %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK86+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK86+TABSK16+CLSK2+STAT127)att %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK87+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK87+TABSK16+CLSK2+STAT127)dcrp %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK81+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK81+TABSK16+CLSK2+STAT127)conf %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK72+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK72+TABSK16+CLSK2+STAT127)wkn %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK77+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK77+TABSK16+CLSK2+STAT127)trr %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK82+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK82+TABSK16+CLSK2+STAT127)ltap %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK76+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK76+TABSK16+CLSK2+STAT127)ima %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK71+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK71+TABSK16+CLSK2+STAT127)dim %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK381+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK381+TABSK16+CLSK2+STAT127)dp %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK374+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK374+TABSK16+CLSK2+STAT127)cma %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK66+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK66+TABSK16+CLSK2+STAT127)amp %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK93+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK93+TABSK17+CLSK2+STAT127)bst %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK92+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK92+TABSK17+CLSK2+STAT127)nova %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK88+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK88+TABSK17+CLSK2+STAT127)pris %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK84+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK84+TABSK17+CLSK2+STAT127)bspr %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK78+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK78+TABSK17+CLSK2+STAT127)wall %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK83+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK83+TABSK17+CLSK2+STAT127)des %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK68+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK68+TABSK17+CLSK2+STAT127)armor %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK74+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK74+TABSK17+CLSK2+STAT127)ce %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK67+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK67+TABSK17+CLSK2+STAT127)tth %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK73+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK73+TABSK17+CLSK2+STAT127)pst %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK95+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK95+TABSK18+CLSK2+STAT127)rev %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK94+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK94+TABSK18+CLSK2+STAT127)fgm %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK89+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK89+TABSK18+CLSK2+STAT127)ska %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK90+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK90+TABSK18+CLSK2+STAT127)igm %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK367+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK367+TABSK18+CLSK2+STAT127)warp %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK85+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK85+TABSK18+CLSK2+STAT127)bgm %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK80+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK80+TABSK18+CLSK2+STAT127)skm %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK79+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK79+TABSK18+CLSK2+STAT127)gma %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK75+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK75+TABSK18+CLSK2+STAT127)cgm %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK70+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK70+TABSK18+CLSK2+STAT127)skw %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK69+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK69+TABSK18+CLSK2+STAT127)sma %NAME%}%CONTINUE%
-ItemDisplay[HighQuality (skeletonmastery70 OR raiseskeletonwarrior70 OR claygolem70 OR golemmastery70 OR raiseskeletalmage70 OR bloodgolem70 OR bloodwarp70 OR irongolem70 OR raiseskeletonarcher70 OR firegolem70 OR revive70 OR poisonstrike70 OR teeth70 OR corpseexplosion70 OR bonearmor70 OR desecrate70 OR bonewall70 OR bonespear70 OR boneprison70 OR poisonnova70 OR bonespirit70 OR amplifydamage70 OR cursemastery70 OR darkpact70 OR dimvision70 OR ironmaiden70 OR lifetap70 OR terror70 OR weaken70 OR confuse70 OR decrepify70 OR attract70 OR lowerresist70)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) (skeletonmastery70 OR raiseskeletonwarrior70 OR claygolem70 OR golemmastery70 OR raiseskeletalmage70 OR bloodgolem70 OR bloodwarp70 OR irongolem70 OR raiseskeletonarcher70 OR firegolem70 OR revive70 OR poisonstrike70 OR teeth70 OR corpseexplosion70 OR bonearmor70 OR desecrate70 OR bonewall70 OR bonespear70 OR boneprison70 OR poisonnova70 OR bonespirit70 OR amplifydamage70 OR cursemastery70 OR darkpact70 OR dimvision70 OR ironmaiden70 OR lifetap70 OR terror70 OR weaken70 OR confuse70 OR decrepify70 OR attract70 OR lowerresist70) (MAG OR ELT)]: %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) (skeletonmastery70 OR raiseskeletonwarrior70 OR claygolem70 OR golemmastery70 OR raiseskeletalmage70 OR bloodgolem70 OR bloodwarp70 OR irongolem70 OR raiseskeletonarcher70 OR firegolem70 OR revive70 OR poisonstrike70 OR teeth70 OR corpseexplosion70 OR bonearmor70 OR desecrate70 OR bonewall70 OR bonespear70 OR boneprison70 OR poisonnova70 OR bonespirit70 OR amplifydamage70 OR cursemastery70 OR darkpact70 OR dimvision70 OR ironmaiden70 OR lifetap70 OR terror70 OR weaken70 OR confuse70 OR decrepify70 OR attract70 OR lowerresist70) ((RARE OR CRAFT) (NORM OR EXC))]: %NAME%{%NL%%NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK91+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK91+TABSK16+CLSK2+STAT127)lr %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK86+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK86+TABSK16+CLSK2+STAT127)att %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK87+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK87+TABSK16+CLSK2+STAT127)dcrp %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK81+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK81+TABSK16+CLSK2+STAT127)conf %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK72+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK72+TABSK16+CLSK2+STAT127)wkn %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK77+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK77+TABSK16+CLSK2+STAT127)trr %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK82+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK82+TABSK16+CLSK2+STAT127)ltap %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK76+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK76+TABSK16+CLSK2+STAT127)ima %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK71+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK71+TABSK16+CLSK2+STAT127)dim %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK381+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK381+TABSK16+CLSK2+STAT127)dp %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK374+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK374+TABSK16+CLSK2+STAT127)cma %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK66+TABSK16+CLSK2+STAT127)>3]: %NAME%{%PURPLE%$f(SK66+TABSK16+CLSK2+STAT127)amp %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK93+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK93+TABSK17+CLSK2+STAT127)bst %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK92+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK92+TABSK17+CLSK2+STAT127)nova %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK88+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK88+TABSK17+CLSK2+STAT127)pris %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK84+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK84+TABSK17+CLSK2+STAT127)bspr %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK78+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK78+TABSK17+CLSK2+STAT127)wall %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK83+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK83+TABSK17+CLSK2+STAT127)des %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK68+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK68+TABSK17+CLSK2+STAT127)armor %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK74+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK74+TABSK17+CLSK2+STAT127)ce %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK67+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK67+TABSK17+CLSK2+STAT127)tth %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK73+TABSK17+CLSK2+STAT127)>3]: %NAME%{%GREEN%$f(SK73+TABSK17+CLSK2+STAT127)pst %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK95+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK95+TABSK18+CLSK2+STAT127)rev %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK94+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK94+TABSK18+CLSK2+STAT127)fgm %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK89+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK89+TABSK18+CLSK2+STAT127)ska %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK90+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK90+TABSK18+CLSK2+STAT127)igm %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK367+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK367+TABSK18+CLSK2+STAT127)warp %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK85+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK85+TABSK18+CLSK2+STAT127)bgm %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK80+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK80+TABSK18+CLSK2+STAT127)skm %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK79+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK79+TABSK18+CLSK2+STAT127)gma %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK75+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK75+TABSK18+CLSK2+STAT127)cgm %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK70+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK70+TABSK18+CLSK2+STAT127)skw %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality $f(SK69+TABSK18+CLSK2+STAT127)>3]: %NAME%{%GOLD%$f(SK69+TABSK18+CLSK2+STAT127)sma %NAME%}%CONTINUE%
+ItemDisplay[(NEC OR WAND) HighQuality (skeletonmastery70 OR raiseskeletonwarrior70 OR claygolem70 OR golemmastery70 OR raiseskeletalmage70 OR bloodgolem70 OR bloodwarp70 OR irongolem70 OR raiseskeletonarcher70 OR firegolem70 OR revive70 OR poisonstrike70 OR teeth70 OR corpseexplosion70 OR bonearmor70 OR desecrate70 OR bonewall70 OR bonespear70 OR boneprison70 OR poisonnova70 OR bonespirit70 OR amplifydamage70 OR cursemastery70 OR darkpact70 OR dimvision70 OR ironmaiden70 OR lifetap70 OR terror70 OR weaken70 OR confuse70 OR decrepify70 OR attract70 OR lowerresist70)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
 
 // Sorceress Orbs notes
 ItemDisplay[SOR (icebolt70 OR coldenchant70 OR frostnova70 OR iceblast70 OR shiverarmor70 OR glacialspike70 OR blizzard70 OR icebarrage70 OR chillingarmor70 OR frozenorb70 OR coldmastery70 OR staticfield70 OR chargedbolt70 OR telekinesis70 OR lightningnova70 OR lightningpewpew70 OR teleport70 OR thunderstorm70 OR chainlightning70 OR lightningmastery70 OR energyshield70 OR inferno70 OR firebolt70 OR warmth70 OR blaze70 OR firewall70 OR fireball70 OR lesserhydra70 OR enchantfire70 OR meteor70 OR combustion70 OR firemastery70 OR hydrasorc70) (MAG OR ELT)]: %NAME%{%NAME%}%CONTINUE%
@@ -3662,48 +3662,48 @@ ItemDisplay[STAFF HighQuality $f(SK39+TABSK10+CLSK1+STAT127)>5]: %NAME%{%BLUE%$f
 ItemDisplay[STAFF HighQuality (icebolt80 OR coldenchant80 OR frostnova80 OR iceblast80 OR shiverarmor80 OR glacialspike80 OR blizzard80 OR icebarrage80 OR chillingarmor80 OR frozenorb80 OR coldmastery80 OR staticfield80 OR chargedbolt80 OR telekinesis80 OR lightningnova80 OR lightningpewpew80 OR teleport80 OR thunderstorm80 OR chainlightning80 OR lightningmastery80 OR energyshield80 OR inferno80 OR firebolt80 OR warmth80 OR blaze80 OR firewall80 OR fireball80 OR lesserhydra80 OR enchantfire80 OR meteor80 OR combustion80 OR firemastery80 OR hydrasorc80)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
 
 // Druid Pelts and Club notes
-ItemDisplay[(firestorm70 OR moltenboulder70 OR arcticblast70 OR fissure70 OR cyclonearmor70 OR twister70 OR volcano70 OR tornado70 OR armageddon70 OR hurricane70 OR gust70 OR lycanthropos70 OR lycanthropy70 OR werebear70 OR feralrage70 OR maul70 OR rabies70 OR fireclaws70 OR hunger70 OR shockwave70 OR angrycanine70 OR raven70 OR poisoncreep70 OR oaksage70 OR wolfpack70 OR carrionvine70 OR heartofwolverine70 OR summondirewolves70 OR sunworm70 OR spiritofbarbs70 OR smngrizzly70) (MAG OR ELT)]: %NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(firestorm70 OR moltenboulder70 OR arcticblast70 OR fissure70 OR cyclonearmor70 OR twister70 OR volcano70 OR tornado70 OR armageddon70 OR hurricane70 OR gust70 OR lycanthropos70 OR lycanthropy70 OR werebear70 OR feralrage70 OR maul70 OR rabies70 OR fireclaws70 OR hunger70 OR shockwave70 OR angrycanine70 OR raven70 OR poisoncreep70 OR oaksage70 OR wolfpack70 OR carrionvine70 OR heartofwolverine70 OR summondirewolves70 OR sunworm70 OR spiritofbarbs70 OR smngrizzly70) ((RARE OR CRAFT) (NORM OR EXC))]: %NAME%{%NL%%NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK247+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK247+TABSK40+CLSK5+STAT127)gzy %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK246+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK246+TABSK40+CLSK5+STAT127)bbs %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK241+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK241+TABSK40+CLSK5+STAT127)scr %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK237+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK237+TABSK40+CLSK5+STAT127)dwf %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK236+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK236+TABSK40+CLSK5+STAT127)wvn %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK231+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK231+TABSK40+CLSK5+STAT127)crv %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK227+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK227+TABSK40+CLSK5+STAT127)swf %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK226+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK226+TABSK40+CLSK5+STAT127)oak %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK222+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK222+TABSK40+CLSK5+STAT127)psc %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK221+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK221+TABSK40+CLSK5+STAT127)rvn %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK248+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK248+TABSK41+CLSK5+STAT127)fury %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK243+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK243+TABSK41+CLSK5+STAT127)sh-w %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK242+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK242+TABSK41+CLSK5+STAT127)hgr %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK239+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK239+TABSK41+CLSK5+STAT127)fcl %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK238+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK238+TABSK41+CLSK5+STAT127)rbs %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK233+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK233+TABSK41+CLSK5+STAT127)maul %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK232+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK232+TABSK41+CLSK5+STAT127)frr %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK228+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK228+TABSK41+CLSK5+STAT127)wbr %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK224+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK224+TABSK41+CLSK5+STAT127)lyc %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK223+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK223+TABSK41+CLSK5+STAT127)wwf %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK370+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK370+TABSK42+CLSK5+STAT127)gst %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK250+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK250+TABSK42+CLSK5+STAT127)hrc %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK249+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK249+TABSK42+CLSK5+STAT127)agn %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK245+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK245+TABSK42+CLSK5+STAT127)nado %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK244+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK244+TABSK42+CLSK5+STAT127)volc %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK240+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK240+TABSK42+CLSK5+STAT127)twst %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK235+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK235+TABSK42+CLSK5+STAT127)cca %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK234+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK234+TABSK42+CLSK5+STAT127)fsr %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK230+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK230+TABSK42+CLSK5+STAT127)acb %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK229+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK229+TABSK42+CLSK5+STAT127)mtb %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(SK225+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK225+TABSK42+CLSK5+STAT127)fst %NAME%}%CONTINUE%
-ItemDisplay[HighQuality (firestorm70 OR moltenboulder70 OR arcticblast70 OR fissure70 OR cyclonearmor70 OR twister70 OR volcano70 OR tornado70 OR armageddon70 OR hurricane70 OR gust70 OR lycanthropos70 OR lycanthropy70 OR werebear70 OR feralrage70 OR maul70 OR rabies70 OR fireclaws70 OR hunger70 OR shockwave70 OR angrycanine70 OR raven70 OR poisoncreep70 OR oaksage70 OR wolfpack70 OR carrionvine70 OR heartofwolverine70 OR summondirewolves70 OR sunworm70 OR spiritofbarbs70 OR smngrizzly70)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) (firestorm70 OR moltenboulder70 OR arcticblast70 OR fissure70 OR cyclonearmor70 OR twister70 OR volcano70 OR tornado70 OR armageddon70 OR hurricane70 OR gust70 OR lycanthropos70 OR lycanthropy70 OR werebear70 OR feralrage70 OR maul70 OR rabies70 OR fireclaws70 OR hunger70 OR shockwave70 OR angrycanine70 OR raven70 OR poisoncreep70 OR oaksage70 OR wolfpack70 OR carrionvine70 OR heartofwolverine70 OR summondirewolves70 OR sunworm70 OR spiritofbarbs70 OR smngrizzly70) (MAG OR ELT)]: %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) (firestorm70 OR moltenboulder70 OR arcticblast70 OR fissure70 OR cyclonearmor70 OR twister70 OR volcano70 OR tornado70 OR armageddon70 OR hurricane70 OR gust70 OR lycanthropos70 OR lycanthropy70 OR werebear70 OR feralrage70 OR maul70 OR rabies70 OR fireclaws70 OR hunger70 OR shockwave70 OR angrycanine70 OR raven70 OR poisoncreep70 OR oaksage70 OR wolfpack70 OR carrionvine70 OR heartofwolverine70 OR summondirewolves70 OR sunworm70 OR spiritofbarbs70 OR smngrizzly70) ((RARE OR CRAFT) (NORM OR EXC))]: %NAME%{%NL%%NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK247+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK247+TABSK40+CLSK5+STAT127)gzy %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK246+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK246+TABSK40+CLSK5+STAT127)bbs %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK241+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK241+TABSK40+CLSK5+STAT127)scr %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK237+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK237+TABSK40+CLSK5+STAT127)dwf %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK236+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK236+TABSK40+CLSK5+STAT127)wvn %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK231+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK231+TABSK40+CLSK5+STAT127)crv %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK227+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK227+TABSK40+CLSK5+STAT127)swf %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK226+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK226+TABSK40+CLSK5+STAT127)oak %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK222+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK222+TABSK40+CLSK5+STAT127)psc %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK221+TABSK40+CLSK5+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK221+TABSK40+CLSK5+STAT127)rvn %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK248+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK248+TABSK41+CLSK5+STAT127)fury %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK243+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK243+TABSK41+CLSK5+STAT127)sh-w %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK242+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK242+TABSK41+CLSK5+STAT127)hgr %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK239+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK239+TABSK41+CLSK5+STAT127)fcl %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK238+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK238+TABSK41+CLSK5+STAT127)rbs %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK233+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK233+TABSK41+CLSK5+STAT127)maul %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK232+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK232+TABSK41+CLSK5+STAT127)frr %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK228+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK228+TABSK41+CLSK5+STAT127)wbr %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK224+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK224+TABSK41+CLSK5+STAT127)lyc %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK223+TABSK41+CLSK5+STAT127)>3]: %NAME%{%GOLD%$f(SK223+TABSK41+CLSK5+STAT127)wwf %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK370+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK370+TABSK42+CLSK5+STAT127)gst %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK250+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK250+TABSK42+CLSK5+STAT127)hrc %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK249+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK249+TABSK42+CLSK5+STAT127)agn %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK245+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK245+TABSK42+CLSK5+STAT127)nado %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK244+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK244+TABSK42+CLSK5+STAT127)volc %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK240+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK240+TABSK42+CLSK5+STAT127)twst %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK235+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK235+TABSK42+CLSK5+STAT127)cca %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK234+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK234+TABSK42+CLSK5+STAT127)fsr %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK230+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK230+TABSK42+CLSK5+STAT127)acb %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK229+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK229+TABSK42+CLSK5+STAT127)mtb %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality $f(SK225+TABSK42+CLSK5+STAT127)>3]: %NAME%{%ORANGE%$f(SK225+TABSK42+CLSK5+STAT127)fst %NAME%}%CONTINUE%
+ItemDisplay[(DRU OR CLUB) HighQuality (firestorm70 OR moltenboulder70 OR arcticblast70 OR fissure70 OR cyclonearmor70 OR twister70 OR volcano70 OR tornado70 OR armageddon70 OR hurricane70 OR gust70 OR lycanthropos70 OR lycanthropy70 OR werebear70 OR feralrage70 OR maul70 OR rabies70 OR fireclaws70 OR hunger70 OR shockwave70 OR angrycanine70 OR raven70 OR poisoncreep70 OR oaksage70 OR wolfpack70 OR carrionvine70 OR heartofwolverine70 OR summondirewolves70 OR sunworm70 OR spiritofbarbs70 OR smngrizzly70)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
 
 // Amazon items notes
-ItemDisplay[(amazonbow70 OR amazonpassive70 OR amazonjavelin70) (MAG OR ELT)]: %NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(amazonbow70 OR amazonpassive70 OR amazonjavelin70) ((RARE OR CRAFT) (NORM OR EXC))]: %NAME%{%NL%%NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(TABSK2+CLSK0+STAT127)>3]: %NAME%{%YELLOW%$f(TABSK2+CLSK0+STAT127)jav %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(TABSK1+CLSK0+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(TABSK1+CLSK0+STAT127)pm %NAME%}%CONTINUE%
-ItemDisplay[HighQuality $f(TABSK0+CLSK0+STAT127)>3]: %NAME%{%ORANGE%$f(TABSK0+CLSK0+STAT127)bow %NAME%}%CONTINUE%
-ItemDisplay[HighQuality (amazonbow70 OR amazonpassive70 OR amazonjavelin70)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
+ItemDisplay[ZON (amazonbow70 OR amazonpassive70 OR amazonjavelin70) (MAG OR ELT)]: %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[ZON (amazonbow70 OR amazonpassive70 OR amazonjavelin70) ((RARE OR CRAFT) (NORM OR EXC))]: %NAME%{%NL%%NAME%}%CONTINUE%
+ItemDisplay[ZON HighQuality $f(TABSK2+CLSK0+STAT127)>3]: %NAME%{%YELLOW%$f(TABSK2+CLSK0+STAT127)jav %NAME%}%CONTINUE%
+ItemDisplay[ZON HighQuality $f(TABSK1+CLSK0+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(TABSK1+CLSK0+STAT127)pm %NAME%}%CONTINUE%
+ItemDisplay[ZON HighQuality $f(TABSK0+CLSK0+STAT127)>3]: %NAME%{%ORANGE%$f(TABSK0+CLSK0+STAT127)bow %NAME%}%CONTINUE%
+ItemDisplay[ZON HighQuality (amazonbow70 OR amazonpassive70 OR amazonjavelin70)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
 // ==================================================================================== ALL ITEM DESCRIPTIONS CLOSER - DESCRIPTIONS ABOVE THIS LINE ================================================================================
 
 // Imbue Bases
