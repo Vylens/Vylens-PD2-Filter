@@ -4237,7 +4237,7 @@ ItemDisplay[t51 ID]: %GRAY%[%ORANGE%T3%GRAY%] %GOLD%Zhar's Sanctum{%NAME%}%CONTI
 ItemDisplay[t52 !ID]: %GOLD%Uniqus Mapimus{%NAME%}%CONTINUE%
 ItemDisplay[t52 ID]: %GRAY%[%ORANGE%T3%GRAY%] %GOLD%Warlord of Blood{%NAME%}%CONTINUE%
 ItemDisplay[t53 !ID]: %GOLD%Uniqus Mapimus{%NAME%}%CONTINUE%
-ItemDisplay[t53 ID]: %GRAY%[%ORANGE%T2%GRAY%] %GOLD%Fallen Gardens{%NAME%}%CONTINUE%
+ItemDisplay[t53 ID]: %GRAY%[%TAN%T2%GRAY%] %GOLD%Fallen Gardens{%NAME%}%CONTINUE%
 ItemDisplay[t54 !ID]: %GOLD%Uniqus Mapimus{%NAME%}%CONTINUE%
 ItemDisplay[t54 ID]: %GRAY%[%ORANGE%T3%GRAY%] %GOLD%Imperial Palace{%NAME%}%CONTINUE%
 ItemDisplay[t55 !ID]: %GOLD%Uniqus Mapimus{%NAME%}%CONTINUE%
@@ -4245,9 +4245,9 @@ ItemDisplay[t55 ID]: %GRAY%[%ORANGE%T3%GRAY%] %GOLD%Outer Void{%NAME%}%CONTINUE%
 ItemDisplay[t56 !ID]: %GOLD%Uniqus Mapimus{%NAME%}%CONTINUE%
 ItemDisplay[t56 ID]: %GRAY%[%ORANGE%T3%GRAY%] %GOLD%The City of Ureh{%NAME%}%CONTINUE%
 ItemDisplay[t57 !ID]: %GOLD%Uniqus Mapimus{%NAME%}%CONTINUE%
-ItemDisplay[t57 ID]: %GRAY%[%ORANGE%T3%GRAY%] %GOLD%Djinn's Domain{%NAME%}%CONTINUE%
+ItemDisplay[t57 ID]: %GRAY%[%TAN%T2%GRAY%] %GOLD%Djinn's Domain{%NAME%}%CONTINUE%
 ItemDisplay[t58 !ID]: %GOLD%Uniqus Mapimus{%NAME%}%CONTINUE%
-ItemDisplay[t58 ID]: %GRAY%[%ORANGE%T3%GRAY%] %GOLD%Na-Krul's Abyss{%NAME%}%CONTINUE%
+ItemDisplay[t58 ID]: %GRAY%[%DARK_GREEN%T1%GRAY%] %GOLD%Na-Krul's Abyss{%NAME%}%CONTINUE%
 // Duel Arenas
 ItemDisplay[t61]: Desert Duel Arena{%NAME%}%CONTINUE%
 ItemDisplay[t62]: Moor Duel Arena{%NAME%}%CONTINUE%
