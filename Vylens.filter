@@ -957,8 +957,8 @@ ItemDisplay[uar UNI !ETH !ID]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%
 ItemDisplay[uar UNI ETH !ID]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*%TEAL%*     %GOLD%Another Templar's, my G     %TEAL%*%YELLOW%*%ORANGE%*%RED%*%PURPLE%*%CORAL%*%TAN%*
 
 // --- 5 STARS - VERY RARE AND HIGH VALUE ITEMS -------------------------------------------------------------
-// Veil of Steel, Griffon's Eye, Arachnid Mesh
-ItemDisplay[(uhm OR ci3 OR ulc OR xlt) UNI !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
+// Veil of Steel, Griffon's Eye
+ItemDisplay[(uhm OR ci3 OR xlt) UNI !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
 // Ethereal Purgatory, Weapons
 ItemDisplay[(utp OR 7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7p7 OR 7s8 OR 7pa OR 7wc) UNI ETH !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
 // Weapons 6ws mangsong, 7gw deathweb, obf deathfathom
@@ -978,7 +978,7 @@ ItemDisplay[(xtg OR uvg OR umg OR utg OR uhg) UNI !ID]: %MAP-68%%SOUNDID-4303%%T
 // Boots
 ItemDisplay[(xvb OR xmb OR xtb OR xhb) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 // Belts
-ItemDisplay[(uhc OR zlb OR ztb OR zhb OR umc) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
+ItemDisplay[(uhc OR zlb OR ztb OR zhb OR umc OR ulc) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 // Barbarian Helms
 ItemDisplay[(baf OR bae) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 // Ring, Amulet, Denmother, Herald of Zakarum and Fenris
@@ -4233,9 +4233,9 @@ ItemDisplay[t41]: Cathedral of Light Dungeon{%NAME%}%CONTINUE%
 ItemDisplay[t42]: Plains of Torment Dungeon{%NAME%}%CONTINUE%
 ItemDisplay[t43]: Sanctuary of Sin Dungeon{%NAME%}%CONTINUE%
 ItemDisplay[t51 !ID]: %GOLD%Uniqus Mapimus{%NAME%}%CONTINUE%
-ItemDisplay[t51 ID]: %GRAY%[%ORANGE%T3%GRAY%] %GOLD%Zhar's Sanctum{%NAME%}%CONTINUE%
+ItemDisplay[t51 ID]: %GRAY%[%DARK_GREEN%T1%GRAY%] %GOLD%Zhar's Sanctum{%NAME%}%CONTINUE%
 ItemDisplay[t52 !ID]: %GOLD%Uniqus Mapimus{%NAME%}%CONTINUE%
-ItemDisplay[t52 ID]: %GRAY%[%ORANGE%T3%GRAY%] %GOLD%Warlord of Blood{%NAME%}%CONTINUE%
+ItemDisplay[t52 ID]: %GRAY%[%TAN%T2%GRAY%] %GOLD%Warlord of Blood{%NAME%}%CONTINUE%
 ItemDisplay[t53 !ID]: %GOLD%Uniqus Mapimus{%NAME%}%CONTINUE%
 ItemDisplay[t53 ID]: %GRAY%[%TAN%T2%GRAY%] %GOLD%Fallen Gardens{%NAME%}%CONTINUE%
 ItemDisplay[t54 !ID]: %GOLD%Uniqus Mapimus{%NAME%}%CONTINUE%
