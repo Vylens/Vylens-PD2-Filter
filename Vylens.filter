@@ -924,6 +924,18 @@ ItemDisplay[cm3 !UNI TABSK48>0]: %ORANGE%Traps%BLUE% %NAME%%CONTINUE%
 ItemDisplay[cm3 !UNI TABSK49>0]: %LIGHT_GRAY%Shadow Disc%BLUE% %NAME%%CONTINUE%
 ItemDisplay[cm3 !UNI TABSK50>0]: %GOLD%Martial Arts%BLUE% %NAME%%CONTINUE%
 
+// Hellfire Torch and Annihilus highlighting on the ground
+ItemDisplay[cm2 UNI ID]: %CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[cm2 UNI ID GROUND CLSK0>0]: %YELLOW%Zon %RED%%STAT3%%LIGHT_GRAY%/%PURPLE%%RES%%NAME%%CONTINUE%
+ItemDisplay[cm2 UNI ID GROUND CLSK1>0]: %YELLOW%Sorc %RED%%STAT3%%LIGHT_GRAY%/%PURPLE%%RES%%NAME%%CONTINUE%
+ItemDisplay[cm2 UNI ID GROUND CLSK2>0]: %YELLOW%Nec %RED%%STAT3%%LIGHT_GRAY%/%PURPLE%%RES%%NAME%%CONTINUE%
+ItemDisplay[cm2 UNI ID GROUND CLSK3>0]: %YELLOW%Pal %RED%%STAT3%%LIGHT_GRAY%/%PURPLE%%RES%%NAME%%CONTINUE%
+ItemDisplay[cm2 UNI ID GROUND CLSK4>0]: %YELLOW%Barb %RED%%STAT3%%LIGHT_GRAY%/%PURPLE%%RES%%NAME%%CONTINUE%
+ItemDisplay[cm2 UNI ID GROUND CLSK5>0]: %YELLOW%Druid %RED%%STAT3%%LIGHT_GRAY%/%PURPLE%%RES%%NAME%%CONTINUE%
+ItemDisplay[cm2 UNI ID GROUND CLSK6>0]: %YELLOW%Sin %RED%%STAT3%%LIGHT_GRAY%/%PURPLE%%RES%%NAME%%CONTINUE%
+ItemDisplay[cm1 UNI ID]: %CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[cm1 UNI ID GROUND ALLSK>0]: %YELLOW%+%STAT127%%LIGHT_GRAY%/%RED%%STAT3%%LIGHT_GRAY%/%BLUE%%STAT1%%LIGHT_GRAY%/%PURPLE%%RES%%LIGHT_GRAY%/%GOLD%%STAT85%%NAME%%CONTINUE%
+
 // Notes about High ilvl Charms
 ItemDisplay[cm3 MAG ID ILVL>90 !(IDSKILLKILL OR IDGCKILL OR IDMFEGKILL)]: %NAME%{%WHITE%3x pgem to reroll. can roll %GREEN%all %WHITE%affixes.%NL%ilvl90+, 2 guaranteed affixes.}
 ItemDisplay[cm3 MAG ID ILVL=90 !(IDSKILLKILL OR IDGCKILL OR IDMFEGKILL)]: %NAME%{%WHITE%3x pgem to reroll.%NL%%RED%Vita 41-45 life requires 91+%NL%%WHITE%ilvl90, 2 guaranteed affixes.}
@@ -966,9 +978,10 @@ ItemDisplay[(6ws OR 7gw OR obf) UNI !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE
 
 // --- 3 STARS - UNCOMMON, BUT GOOD ITEMS -------------------------------------------------------------------
 // Helms+Kira's Guardian and Shako
-ItemDisplay[(xh9 OR ulm OR usk OR (uh9 !MAPID=137 ILVL<96) OR ci2 OR urn) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
-ItemDisplay[uap UNI ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Ghost Shako     %YELLOW%*%ORANGE%*%TAN%*
-ItemDisplay[uap UNI !ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Shako is a lie     %YELLOW%*%ORANGE%*%TAN%*
+ItemDisplay[ulm UNI !ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%* // Non Ethereal
+ItemDisplay[(xh9 OR usk OR (uh9 !MAPID=137 ILVL<96) OR ci2 OR urn) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%* // Any
+ItemDisplay[uap UNI ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Ghost Shako     %YELLOW%*%ORANGE%*%TAN%* // Ethereal Shako
+ItemDisplay[uap UNI !ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Shako is a lie     %YELLOW%*%ORANGE%*%TAN%* // Non Ethereal Shako
 // Armors
 ItemDisplay[(xhn OR utu OR upl OR uld OR uul OR uui) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 // Shields
@@ -988,7 +1001,7 @@ ItemDisplay[(xpl OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 9gm OR 9la OR 7wa)
 // Non-Ethereal Weapons
 ItemDisplay[(7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7s8 OR 7pa OR 7wc) UNI !ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 // Weapons
-ItemDisplay[(7xf OR 7ga OR 7cr OR 7ts OR 6lw OR 8rx OR 8ws OR 6bs OR 9bw OR 7bw OR 7ws OR 7tw OR obc OR amb OR amf OR 6cs) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
+ItemDisplay[(7xf OR 7ga OR 7cr OR 7ts OR 6lw OR 8rx OR 8ws OR 6bs OR 9bw OR 7bw OR 7ws OR 7tw OR amb OR amf OR 6cs) UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%*
 ItemDisplay[obe UNI !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%TAN%* // s13
 
 // --- 2 STARS - LOWLVL OR NICHE ITEMS WITH LOW VALUE, BUT COMMONLY USED ------------------------------------
@@ -1058,8 +1071,8 @@ ItemDisplay[(9gm OR 9gs) UNI !ETH !ID FILTLVL>3]: %TAN%*   %GOLD%%NAME%   %TAN%*
 ItemDisplay[(7ha OR 7gi OR 7sp OR 9bs OR 7sr OR 7br OR am5) UNI !ETH !ID FILTLVL<3]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%*
 ItemDisplay[(7ha OR 7gi OR 7sr OR 7br) UNI !ETH !ID FILTLVL>2]: %TAN%*   %GOLD%%NAME%   %TAN%*
 // Weapons
-ItemDisplay[(lst OR 7gs OR 9fl OR 9fc OR 7sm OR dgr OR 8cb OR 8lb OR 6hb) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%* // Notify with 1 star
-ItemDisplay[(9yw OR mau OR lbb OR 7fb OR 7di OR 9wn OR 7dg OR ob7 OR 9b8 OR 7mt OR 92h OR 7sb OR 7cm OR 9di OR 9bl OR 7kr OR 7bl OR 7st OR scy OR 6rx OR lst OR cst OR wst OR 8bs OR 9ws OR 7sc OR 9ar OR ob6 OR am7 OR amc OR 9ba OR 72a OR 9kr OR 8sw) UNI !ID FILTLVL<3]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%* // 1 star below flvl3
+ItemDisplay[(lst OR 7gs OR 9fl OR 9fc OR 7sm OR dgr OR 8cb OR 8lb OR 6hb OR 7bl OR obc) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%* // Notify with 1 star
+ItemDisplay[(9yw OR mau OR lbb OR 7fb OR 7di OR 9wn OR 7dg OR ob7 OR 9b8 OR 7mt OR 92h OR 7sb OR 7cm OR 9di OR 9bl OR 7kr OR 7st OR scy OR 6rx OR lst OR cst OR wst OR 8bs OR 9ws OR 7sc OR 9ar OR ob6 OR am7 OR amc OR 9ba OR 72a OR 9kr OR 8sw) UNI !ID FILTLVL<3]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%* // 1 star below flvl3
 ItemDisplay[(9wc OR mau OR lbb OR 7fb OR 7di OR 9wn) UNI !ID FILTLVL>2]: %TAN%*   %GOLD%%NAME%   %TAN%* // Show 1 star
 ItemDisplay[(scp OR hax OR ssd) UNI !ID FILTLVL=6]: %DOT-68%%TAN%*   %GOLD%%NAME%   %TAN%* // Krampz Low level weapons
 ItemDisplay[(7vo OR (uhl !MAPID=137)) UNI !ID]: %TAN%*   %GOLD%%NAME%   %TAN%* // s13
@@ -1155,8 +1168,10 @@ ItemDisplay[MAG uar !ID]: %BLUE%Fluffy's Demise
 ItemDisplay[MAG uar ETH !ID]: %GRAY%[%WHITE%eth%GRAY%] %BLUE%Fluffy's Demise
 ItemDisplay[MAG uar ID]: %BLUE%%NAME%
 ItemDisplay[MAG uar ETH ID]: %BLUE%%NAME%
-//ItemDisplay[HELM RARE !ID !(BAR OR DRU) !CLVL>85]: %NAME% // old
-ItemDisplay[HELM RARE !ID]: %NAME%
+//ItemDisplay[HELM RARE !ID !(BAR OR DRU) !FILTLVL>3]: %NAME%
+ItemDisplay[(HELM !(BAR OR DRU)) RARE !ID FILTLVL<4]: %NAME%
+ItemDisplay[BAR RARE !BARBARIAN !ID]: %NAME%
+ItemDisplay[DRU RARE !DRUID !ID]: %NAME%
 
 // Class dependence highlight items
 // Barbarian
@@ -3439,7 +3454,7 @@ ItemDisplay[ci3 ID RARE ILVL>67 STAT486=0 !EQUIPPED !STAT360>0]: %NAME%{%NAME%%N
 
 // Shop Hunting / Good Items Highlighting
 // Cheap items for crafting
-ItemDisplay[(WAND OR STAFF) MAG SHOP CLVL>66 BUYPRICE<70000 !FILTLVL=6]: %NAME%%GREEN%{%NAME%}
+ItemDisplay[(WAND OR STAFF) MAG SHOP CLVL>66 BUYPRICE<100000 !FILTLVL=6]: %NAME%%GREEN%{%NAME%}
 ItemDisplay[SIN MAG SHOP CLVL>66 BUYPRICE<105000 !FILTLVL=6]: %NAME%%GREEN%{%NAME%}
 ItemDisplay[CHEST MAG SHOP CLVL>66 BUYPRICE<60000 !FILTLVL=6]: %NAME%%GREEN%{%NAME%}
 // Highlights
@@ -3825,7 +3840,8 @@ ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 SOCK=3 FILTLVL<4]: %NAME%{%NAME%
 ItemDisplay[(am1 OR am6 OR amb OR am2 OR am7 OR amc) NMAG !INF !RW TABSK0>0 CLVL<80]: %NAME%{%NAME%} // Show any skill
 // Amazon Javelins
 ItemDisplay[(am5 OR ama OR amf) NMAG !INF !RW AMAZON TABSK2>2 !SOCK=1 FILTLVL<3]: %DOT-D6%%NAME%{%NAME%}
-ItemDisplay[(am5 OR ama OR amf) NMAG !INF !RW TABSK2>0 CLVL<80]: %NAME%{%NAME%} // Show any skill
+ItemDisplay[(am5 OR ama OR amf) NMAG !INF !RW TABSK2>2 !SOCK=1 CLVL<80]: %NAME%{%NAME%} // Show +3
+ItemDisplay[(am5 OR ama OR amf) NMAG !INF !RW TABSK2>0 (CLVL<70 FILTLVL<3)]: %NAME%{%NAME%} // Show any skill
 // Throwing
 ItemDisplay[(7b8 OR 7ja OR 7pi OR 7s7 OR 7gl OR 7ts) NMAG !INF ETH !RW !SOCK=1 ED>14]: %DOT-D6%%GRAY%*%WHITE%* %NAME% %WHITE%*%GRAY%*{%NAME%}
 ItemDisplay[(7b8 OR 7ja OR 7pi OR 7s7 OR 7gl OR 7ts) NMAG !INF ETH !RW !SOCK=1 ED>4 FILTLVL<7]: %GRAY%* %NAME% %GRAY%*{%NAME%}
@@ -3888,7 +3904,7 @@ ItemDisplay[SCEPTER (SK101>2 OR SK112>2 OR SK121>2) !INF NMAG !RW !SOCK=1 FILTLV
 ItemDisplay[SCEPTER (SK96>0 OR SK97>0 OR SK98>0 OR SK99>0 OR SK100>0 OR SK101>0 OR SK102>0 OR SK103>0 OR SK104>0 OR SK105>0 OR SK106>0 OR SK107>0 OR SK108>0 OR SK109>0 OR SK110>0 OR SK111>0 OR SK112>0 OR SK113>0 OR SK114>0 OR SK115>0 OR SK116>0 OR SK117>0 OR SK118>0 OR SK119>0 OR SK120>0 OR SK121>0 OR SK122>0 OR SK123>0 OR SK124>0 OR SK125>0 OR SK364>0 OR SK371>0 OR SK378>0) !INF !ETH NMAG !RW CLVL<80]: %NAME%{%NAME%} // Show any skill
 // Swords
 ItemDisplay[crs NMAG !INF !RW SOCK=5 FILTLVL<4]: %NAME%{%NAME%}
-ItemDisplay[((crs (ILVL>25 ILVL<41)) OR ((bsd OR lsd) ILVL>25)) NMAG !INF !RW (SOCK=0 OR SOCK=4) (CLVL<80 OR FILTLVL<3)]: %NAME%%GOLD%*{%NAME%}
+ItemDisplay[((crs (ILVL>25 ILVL<41)) OR ((bsd OR lsd) ILVL>25)) NMAG !INF !RW (SOCK=0 OR SOCK=4) (CLVL<80 FILTLVL<3)]: %NAME%%GOLD%*{%NAME%}
 ItemDisplay[7cr NMAG !RW !INF !SOCK~1-2 ED>14 FILTLVL<4]: %DOT-D6%%NAME%{%NAME%} // 15ed Phase Blade
 ItemDisplay[7cr NMAG !RW !INF !SOCK~1-3 ED>4 FILTLVL<7]: %NAME%{%NAME%} // Show 4+ os Phase Blade with ed
 ItemDisplay[7cr NMAG !RW !INF !SOCK=1 FILTLVL<3]: %NAME%{%NAME%} // Show any Phase Blade below flvl3
@@ -4314,11 +4330,11 @@ ItemDisplay[(ILVL>1 OR QTY>0 OR PRICE>1 OR SELLPRICE>1) !(ARMOR OR WEAPON OR amu
 // --- Quivers ---
 ItemDisplay[QUIVER NMAG SHOP]: %NAME%{%NAME%}
 ItemDisplay[(aqv OR cqv) NMAG CLVL<4]: %NAME%{%NAME%}
-ItemDisplay[(aqv2 OR cqv2) NMAG CLVL<30]: %NAME%{%NAME%}
-ItemDisplay[(aqv3 OR cqv3) NMAG CLVL<70]: %NAME%{%NAME%}
-ItemDisplay[(aqv OR cqv) MAG !AMAZON !ID CLVL<30]: %NAME%{%NAME%}
-ItemDisplay[(aqv3 OR cqv3) MAG !AMAZON !ID CLVL<70]: %NAME%{%NAME%}
-ItemDisplay[(aqv2 OR cqv2) MAG !AMAZON !ID CLVL<50]: %NAME%{%NAME%}
+ItemDisplay[(aqv2 OR cqv2) NMAG !SOCK=1 CLVL<30]: %NAME%{%NAME%}
+ItemDisplay[(aqv3 OR cqv3) NMAG !SOCK=1 CLVL<70]: %NAME%{%NAME%}
+ItemDisplay[(aqv OR cqv) MAG !SOCK=1 !AMAZON !ID CLVL<30]: %NAME%{%NAME%}
+ItemDisplay[(aqv3 OR cqv3) MAG !SOCK=1 !AMAZON !ID CLVL<70]: %NAME%{%NAME%}
+ItemDisplay[(aqv2 OR cqv2) MAG !SOCK=1 !AMAZON !ID CLVL<50]: %NAME%{%NAME%}
 // --- Weapons ---
 ItemDisplay[(AXE OR MACE OR SWORD OR (THROWING !THROWPOTS) OR SPEAR OR POLEARM OR BOW OR XBOW OR TMACE) NMAG !INF !leg NORM SOCK~0-1 CLVL>7 FILTLVL>1 !SHOP !EQUIPPED !INVENTORY]: {%NAME%} //
 ItemDisplay[DAGGER !(ASNSTAFF OR NECSTAFF) NMAG !INF NORM SOCK~0-1 CLVL>7 FILTLVL>1]: {%NAME%} //
