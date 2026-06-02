@@ -308,6 +308,7 @@ ItemDisplay[INF !(rin OR amu) ID]: %GRAY%Inf %BASENAME%%CONTINUE%
 ItemDisplay[MAG ID GROUND !TOWN CHARM]: %GREEN%!%BLUE%%BASENAME%%CONTINUE%
 ItemDisplay[MAG ID GROUND !(rin OR amu OR jew OR cm1 OR cm2 OR cm3)]: %GREEN%!%BLUE%%BASENAME%%CONTINUE%
 ItemDisplay[RARE ID GROUND !(rin OR amu OR jew)]: %GREEN%!%YELLOW%%BASENAME%%CONTINUE%
+ItemDisplay[CRAFT ID GROUND !(rin OR amu)]: %GREEN%!%ORANGE%%BASENAME%%CONTINUE%
 
 // Let's keep original coloring for items
 ItemDisplay[UNI]: %GOLD%%NAME%%CONTINUE%
@@ -536,9 +537,9 @@ ItemDisplay[(GLOVES OR QUIVER OR SHIELD) (RARE OR CRAFT) STAT86>0 STATHLPOS]: %R
 ItemDisplay[(HELM OR CHEST OR SHIELD OR BELT) (RARE OR CRAFT) STAT36>0 STATHLPOS]: %GOLD%%STAT36%pdr %NAME%%CONTINUE% // pdr
 ItemDisplay[(BELT OR BOOTS) (RARE OR CRAFT) GFIND>0 STATHLPOS]: %YELLOW%%GFIND%eg %NAME%%CONTINUE%
 ItemDisplay[BELT (RARE OR CRAFT) STAT78>0 !FILTLVL=6 STATHLPOS]: %BLUE%atd %NAME%%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR GLOVES OR BELT OR BOOTS OR QUIVER) (RARE OR CRAFT) QuadrupleResist STATHLPOS]: %PURPLE%@Res %NAME%%CONTINUE% // all res
-ItemDisplay[(HELM OR CHEST OR SHIELD OR GLOVES OR BELT OR BOOTS OR QUIVER) (RARE OR CRAFT) (TripleFireColdLightningResist OR TripleFireColdPoisonResist OR TripleFireLightningPoisonResist OR TripleColdLightningPoisonResist) STATHLPOS]: %PURPLE%3Res %NAME%%CONTINUE% // tri res
-ItemDisplay[(HELM OR CHEST OR SHIELD OR GLOVES OR BELT OR BOOTS OR QUIVER) (RARE OR CRAFT) (DoubleFireColdResist OR DoubleFireLightningResist OR DoubleFirePoisonResist OR DoubleColdLightningResist OR DoubleColdPoisonResist OR DoubleLightningPoisonResist) STATHLPOS]: %PURPLE%2Res %NAME%%CONTINUE% // duo res
+ItemDisplay[(HELM OR CHEST OR SHIELD OR GLOVES OR BELT OR BOOTS OR QUIVER) (RARE OR CRAFT) QuadrupleResist STATHLPOS $f(STAT39+STAT41+STAT43+STAT45)>0]: %PURPLE%@Res%WHITE%:%PURPLE%$f(STAT39+STAT41+STAT43+STAT45) %NAME%%CONTINUE% // all res
+ItemDisplay[(HELM OR CHEST OR SHIELD OR GLOVES OR BELT OR BOOTS OR QUIVER) (RARE OR CRAFT) (TripleFireColdLightningResist OR TripleFireColdPoisonResist OR TripleFireLightningPoisonResist OR TripleColdLightningPoisonResist) STATHLPOS $f(STAT39+STAT41+STAT43+STAT45)>0]: %PURPLE%3Res%WHITE%:%PURPLE%$f(STAT39+STAT41+STAT43+STAT45) %NAME%%CONTINUE% // tri res
+ItemDisplay[(HELM OR CHEST OR SHIELD OR GLOVES OR BELT OR BOOTS OR QUIVER) (RARE OR CRAFT) (DoubleFireColdResist OR DoubleFireLightningResist OR DoubleFirePoisonResist OR DoubleColdLightningResist OR DoubleColdPoisonResist OR DoubleLightningPoisonResist) STATHLPOS $f(STAT39+STAT41+STAT43+STAT45)>0]: %PURPLE%2Res%WHITE%:%PURPLE%$f(STAT39+STAT41+STAT43+STAT45) %NAME%%CONTINUE% // duo res
 ItemDisplay[(GLOVES OR BELT OR BOOTS) (RARE OR CRAFT) SinglePoisonResist STATHLPOS]: %GREEN%pr %NAME%%CONTINUE% // poison res
 ItemDisplay[(GLOVES OR BELT OR BOOTS) (RARE OR CRAFT) SingleLightningResist STATHLPOS]: %YELLOW%lr %NAME%%CONTINUE% // lightning res
 ItemDisplay[(GLOVES OR BELT OR BOOTS) (RARE OR CRAFT) SingleColdResist STATHLPOS]: %BLUE%cr %NAME%%CONTINUE% // cold res
@@ -1247,7 +1248,9 @@ ItemDisplay[ZON AMAZON (MAG OR RARE) !ID]: %NAME%
 ItemDisplay[SOR SORCERESS RARE !ID ILVL>71]: %DOT-A8%%TIER-2%%NAME%
 ItemDisplay[(ob5 OR oba OR obf) SORCERESS MAG !ID ILVL>71]: %DOT-97%%TIER-2%%NAME%
 // Druid
-ItemDisplay[(DRU OR (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)) DRUID (MAG OR RARE) !ID]: %NAME%
+ItemDisplay[DRU DRUID !ETH MAG !ID]: %NAME%
+ItemDisplay[DRU DRUID RARE !ID]: %NAME%
+ItemDisplay[(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) DRUID (MAG OR RARE) !ID]: %NAME%
 // Assassin claws
 ItemDisplay[(axf OR 9xf OR 7xf OR 9tw) RARE !ID ILVL>71]: %DOT-A8%%TAN%*%WHITE%* %NAME% %WHITE%*%TAN%* // Rare War Fist Family and Greater Talons
 ItemDisplay[(axf OR 9xf OR 7xf OR 9tw) MAG !ID ILVL>71]: %DOT-97%%TIER-2%%TAN%*%WHITE%* %NAME% %WHITE%*%TAN%* // Magic War Fist Family and Greater Talons
@@ -3054,6 +3057,7 @@ ItemDisplay[BOOTS ELT NMAG !INF !ETH ASSASSIN CLVL<86]: %NAME%{%NAME%} // Assass
 ItemDisplay[((WAND NECSTAFF) OR (SOR SORSTAFF) OR (DAGGER (NECSTAFF OR ASNSTAFF)) OR ((clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (BARSTAFF OR DRUSTAFF)) OR (SCEPTER !(wsp OR 9ws OR 7ws) PALSTAFF)) NMAG !INF !RW SELLPRICE>34501 GROUND FILTLVL>5]: {%NAME%}
 // --- Armors ---
 ItemDisplay[((HELM !(BAR OR DRU)) OR (SHIELD !(NEC OR DIN))) NMAG !INF NORM SOCK~0-1 !SHOP FILTLVL>1]: {%NAME%} //
+ItemDisplay[DRU DRUID ETH MAG !ID (CLVL>39 OR FILTLVL>2)]: {%NAME%} //
 ItemDisplay[CHEST NMAG !INF NORM SOCK~0-1 !SHOP FILTLVL>1]: {%NAME%} //
 ItemDisplay[(GLOVES OR BELT OR BOOTS) NMAG !INF NORM !SHOP FILTLVL>1]: {%NAME%} //
 ItemDisplay[BAR !BARSTAFF NMAG !INF NORM CLVL>4 FILTLVL>1]: {%NAME%} //
