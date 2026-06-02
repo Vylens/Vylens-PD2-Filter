@@ -914,12 +914,12 @@ ItemDisplay[RUNE>27]: %BORDER-62%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YE
 // ==========================================================================================================
 // All Charms
 // ==========================================================================================================
-ItemDisplay[CHARM MAG ILVL>89 !ID]: %DOT-9B%%PURPLE%*%BLUE%   %NAME% %GOLD%(%BLUE%%ILVL%%GOLD%)   %PURPLE%*
-ItemDisplay[(cm1 OR cm3) MAG ILVL<90 !ID]: %DOT-9B%%PURPLE%*%BLUE%   %NAME%   %PURPLE%*
-ItemDisplay[cm2 MAG (ILVL<90 FILTLVL<3) !ID]: %DOT-9B%%PURPLE%*%BLUE%   %NAME%   %PURPLE%*
-ItemDisplay[cm2 MAG (ILVL<90 FILTLVL=3) !ID]: %PURPLE%*%BLUE%   %NAME%   %PURPLE%*
+ItemDisplay[CHARM MAG ILVL>89 !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME% %GOLD%(%BLUE%%ILVL%%GOLD%)  %PURPLE%*
+ItemDisplay[(cm1 OR cm3) MAG ILVL<90 !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME%  %PURPLE%*
+ItemDisplay[cm2 MAG (ILVL<90 FILTLVL<3) !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME%  %PURPLE%*
+ItemDisplay[cm2 MAG (ILVL<90 FILTLVL=3) !ID]: %PURPLE%*%BLUE%  %NAME%  %PURPLE%*
 ItemDisplay[cm2 MAG (ILVL<90 FILTLVL>3) !ID]: {%NAME%}
-ItemDisplay[CHARM UNI !ID]: %MAP-68%%PURPLE%*%GOLD%   %NAME%   %PURPLE%*
+ItemDisplay[CHARM UNI !ID]: %MAP-68%%PURPLE%*  %GOLD%%NAME%  %PURPLE%*
 
 // CL when needed
 ItemDisplay[CHARM MAG ID]: %CL%%NAME%{%NAME%}%CONTINUE%
@@ -1083,7 +1083,7 @@ ItemDisplay[(7ha OR 7gi OR 7sp OR 9bs OR 9gs OR 7sr OR 7br OR am5) UNI ETH !ID F
 // Non-Ethereal Weapons
 ItemDisplay[(7p7 OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 7wa) UNI !ETH !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
 // Weapons
-ItemDisplay[(obd OR 7yw OR 7mp OR 8hx OR 9wh OR 9ls OR 9gd OR 7ta OR 9s8 OR 8s8 OR 8lw OR 6sw OR 8mx OR 6hx OR 9gw OR 7qs OR 9tw OR 7wb OR 7cs OR 7lw OR oba OR ame OR 6l7 OR 7ls) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
+ItemDisplay[(obd OR 7yw OR 7mp OR 8hx OR 9wh OR 9ls OR 9gd OR 7ta OR 9s8 OR 8s8 OR 8lw OR 6sw OR 8mx OR 6hx OR 9gw OR 7qs OR 9tw OR 7wb OR 7cs OR 7lw OR oba OR ame OR 6l7 OR 7ls OR 9m9) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
 // Quivers Exceptional/Elite
 ItemDisplay[(aqv3 OR cqv2 OR cqv3) UNI !ID FILTLVL<7]: %DOT-68%%TAN%*%ORANGE%*   %GOLD%%NAME%   %ORANGE%*%TAN%*
 
