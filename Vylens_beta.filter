@@ -297,6 +297,43 @@ Alias[amazonjavelin70]: ($f(TABSK2+CLSK0+STAT127)>3)
 Alias[amazonpassive70]: ($f(TABSK1+CLSK0+STAT127)>3)
 // Amazon Bow and Crossbow Skills
 Alias[amazonbow70]: ($f(TABSK0+CLSK0+STAT127)>3)
+
+// ==========================================================================================================
+// Barbarian Primal Helm Aliases
+// ==========================================================================================================
+// Barbarian Warcries Skills
+Alias[howl70]: ($f(SK130+TABSK34+CLSK4+STAT127)>3) // Howl 130
+Alias[findpotion70]: ($f(SK131+TABSK34+CLSK4+STAT127)>3) // Find Potion 131
+Alias[shout70]: ($f(SK138+TABSK34+CLSK4+STAT127)>3) // Shout 138
+Alias[warcry70]: ($f(SK154+TABSK34+CLSK4+STAT127)>3) // War Cry 154
+Alias[finditem70]: ($f(SK142+TABSK34+CLSK4+STAT127)>3) // Find Item 142
+Alias[taunt70]: ($f(SK137+TABSK34+CLSK4+STAT127)>3) // Taunt 137
+Alias[battleorders70]: ($f(SK149+TABSK34+CLSK4+STAT127)>3) // Battle Orders 149
+Alias[grimward70]: ($f(SK150+TABSK34+CLSK4+STAT127)>3) // Grim Ward 150
+Alias[battlecommand70]: ($f(SK155+TABSK34+CLSK4+STAT127)>3) // Battle Command 155
+Alias[battlecry70]: ($f(SK146+TABSK34+CLSK4+STAT127)>3) // Battle Cry 146
+// Barbarian Masteries Skills
+Alias[onemastery70]: ($f(SK128+TABSK33+CLSK4+STAT127)>3) // One-Handed Mastery 128
+Alias[throwmastery70]: ($f(SK135+TABSK33+CLSK4+STAT127)>3) // Throwing Mastery 135
+Alias[twomastery70]: ($f(SK134+TABSK33+CLSK4+STAT127)>3) // Two-Handed Mastery 134 (136 SPEAR)
+Alias[combatreflexes70]: ($f(SK141+TABSK33+CLSK4+STAT127)>3) // Combat Reflexes 141
+Alias[ironskin70]: ($f(SK145+TABSK33+CLSK4+STAT127)>3) // Iron Skin 145
+Alias[increasedspeed70]: ($f(SK148+TABSK33+CLSK4+STAT127)>3) // Increased Speed 148
+Alias[deepwounds70]: ($f(SK368+TABSK33+CLSK4+STAT127)>3) // Deep Wounds 368
+Alias[naturalres70]: ($f(SK153+TABSK33+CLSK4+STAT127)>3) // Natural Resistance 153
+// Barbarian Combat Skills
+Alias[bash70]: ($f(SK126+TABSK32+CLSK4+STAT127)>3) // Bash 126
+Alias[doubleswing70]: ($f(SK133+TABSK32+CLSK4+STAT127)>3) // Double Swing 133
+Alias[stun70]: ($f(SK139+TABSK32+CLSK4+STAT127)>3) // Stun 139
+Alias[frenzy70]: ($f(SK147+TABSK32+CLSK4+STAT127)>3) // Frenzy 147
+Alias[leap70]: ($f(SK132+TABSK32+CLSK4+STAT127)>3) // Leap 132
+Alias[concentrate70]: ($f(SK144+TABSK32+CLSK4+STAT127)>3) // Concentrate 144
+Alias[doublethrow70]: ($f(SK140+TABSK32+CLSK4+STAT127)>3) // Double Throw 140
+Alias[leapattack70]: ($f(SK143+TABSK32+CLSK4+STAT127)>3) // Leap Attack 143
+Alias[berserk70]: ($f(SK152+TABSK32+CLSK4+STAT127)>3) // Berserk 152
+Alias[whirlwind70]: ($f(SK151+TABSK32+CLSK4+STAT127)>3) // Whirlwind 151
+Alias[splitthrow70]: ($f(SK375+TABSK32+CLSK4+STAT127)>3) // Split Throw 375
+
 // ======================================================================================================== END OF ALIASES =========================================================================================================
 
 // Gold
@@ -1510,7 +1547,7 @@ ItemDisplay[NMAG !RW !DAGGER (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>
 
 // Barbarian ------------------------------------------------------------------------------------------------
 ItemDisplay[NMAG !RW (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK135>0 OR (SK134>0 OR SK136>0) OR SK137>0 OR SK138>0 OR SK139>0 OR SK140>0 OR SK141>0 OR SK142>0 OR SK143>0 OR SK144>0 OR SK145>0 OR SK146>0 OR SK147>0 OR SK148>0 OR SK149>0 OR SK150>0 OR SK151>0 OR SK152>0 OR SK153>0 OR SK154>0 OR SK155>0 OR SK368>0 OR SK375>0)]: %GRAY%] %NAME%%CONTINUE%
-ItemDisplay[NMAG !RW SK375>0]: %LIGHT_GRAY%sth%NAME%%CONTINUE% // Skill:Split Throw
+ItemDisplay[NMAG !RW SK375>0]: %GOLD%splt%NAME%%CONTINUE% // Skill:Split Throw
 ItemDisplay[NMAG !RW SK375>0]: %TEAL%%SK375%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK375>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK135>0 OR (SK134>0 OR SK136>0) OR SK137>0 OR SK138>0 OR SK139>0 OR SK140>0 OR SK141>0 OR SK142>0 OR SK143>0 OR SK144>0 OR SK145>0 OR SK146>0 OR SK147>0 OR SK148>0 OR SK149>0 OR SK150>0 OR SK151>0 OR SK152>0 OR SK153>0 OR SK154>0 OR SK155>0 OR SK368>0)]: %CONTINUE% %NAME%
 ItemDisplay[NMAG !RW SK368>0]: %LIGHT_GRAY%dw%NAME%%CONTINUE% // Skill:Deep Wounds
@@ -1525,7 +1562,7 @@ ItemDisplay[NMAG !RW SK154>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>
 ItemDisplay[NMAG !RW SK153>0]: %LIGHT_GRAY%res%NAME%%CONTINUE% // Skill:Natural Resistance
 ItemDisplay[NMAG !RW SK153>0]: %TEAL%%SK153%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK153>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK135>0 OR (SK134>0 OR SK136>0) OR SK137>0 OR SK138>0 OR SK139>0 OR SK140>0 OR SK141>0 OR SK142>0 OR SK143>0 OR SK144>0 OR SK145>0 OR SK146>0 OR SK147>0 OR SK148>0 OR SK149>0 OR SK150>0 OR SK151>0 OR SK152>0)]: %CONTINUE% %NAME%
-ItemDisplay[NMAG !RW SK152>0]: %GOLD%ber%NAME%%CONTINUE% // Skill:Berserk
+ItemDisplay[NMAG !RW SK152>0]: %GOLD%brz%NAME%%CONTINUE% // Skill:Berserk
 ItemDisplay[NMAG !RW SK152>0]: %TEAL%%SK152%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK152>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK135>0 OR (SK134>0 OR SK136>0) OR SK137>0 OR SK138>0 OR SK139>0 OR SK140>0 OR SK141>0 OR SK142>0 OR SK143>0 OR SK144>0 OR SK145>0 OR SK146>0 OR SK147>0 OR SK148>0 OR SK149>0 OR SK150>0 OR SK151>0)]: %CONTINUE% %NAME%
 ItemDisplay[NMAG !RW SK151>0]: %GOLD%ww%NAME%%CONTINUE% // Skill:Whirlwind
@@ -1546,7 +1583,7 @@ ItemDisplay[NMAG !RW SK147>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>
 ItemDisplay[NMAG !RW SK146>0]: %ORANGE%bcry%NAME%%CONTINUE% // Skill:Battle Cry
 ItemDisplay[NMAG !RW SK146>0]: %TEAL%%SK146%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK146>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK135>0 OR (SK134>0 OR SK136>0) OR SK137>0 OR SK138>0 OR SK139>0 OR SK140>0 OR SK141>0 OR SK142>0 OR SK143>0 OR SK144>0 OR SK145>0)]: %CONTINUE% %NAME%
-ItemDisplay[NMAG !RW SK145>0]: %LIGHT_GRAY%isk%NAME%%CONTINUE% // Skill:Iron Skin
+ItemDisplay[NMAG !RW SK145>0]: %LIGHT_GRAY%skin%NAME%%CONTINUE% // Skill:Iron Skin
 ItemDisplay[NMAG !RW SK145>0]: %TEAL%%SK145%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK145>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK135>0 OR (SK134>0 OR SK136>0) OR SK137>0 OR SK138>0 OR SK139>0 OR SK140>0 OR SK141>0 OR SK142>0 OR SK143>0 OR SK144>0)]: %CONTINUE% %NAME%
 ItemDisplay[NMAG !RW SK144>0]: %GOLD%conc%NAME%%CONTINUE% // Skill:Concentrate
@@ -1561,7 +1598,7 @@ ItemDisplay[NMAG !RW SK142>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>
 ItemDisplay[NMAG !RW SK141>0]: %LIGHT_GRAY%crx%NAME%%CONTINUE% // Skill:Combat Reflexes
 ItemDisplay[NMAG !RW SK141>0]: %TEAL%%SK141%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK141>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK135>0 OR (SK134>0 OR SK136>0) OR SK137>0 OR SK138>0 OR SK139>0 OR SK140>0)]: %CONTINUE% %NAME%
-ItemDisplay[NMAG !RW SK140>0]: %GOLD%dthr%NAME%%CONTINUE% // Skill:Double Throw
+ItemDisplay[NMAG !RW SK140>0]: %GOLD%d-th%NAME%%CONTINUE% // Skill:Double Throw
 ItemDisplay[NMAG !RW SK140>0]: %TEAL%%SK140%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK140>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK135>0 OR (SK134>0 OR SK136>0) OR SK137>0 OR SK138>0 OR SK139>0)]: %CONTINUE% %NAME%
 ItemDisplay[NMAG !RW SK139>0]: %GOLD%stun%NAME%%CONTINUE% // Skill:Stun
@@ -1576,7 +1613,7 @@ ItemDisplay[NMAG !RW SK137>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>
 ItemDisplay[NMAG !RW (SK134>0 OR SK136>0)]: %LIGHT_GRAY%2hm%NAME%%CONTINUE% // Skill:Two-handed Mastery
 ItemDisplay[NMAG !RW (SK134>0 OR SK136>0)]: %TEAL%%SK134%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW (SK134>0 OR SK136>0) (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK135>0)]: %CONTINUE% %NAME%
-ItemDisplay[NMAG !RW SK135>0]: %LIGHT_GRAY%trma%NAME%%CONTINUE% // Skill:Throwing Mastery
+ItemDisplay[NMAG !RW SK135>0]: %LIGHT_GRAY%tma%NAME%%CONTINUE% // Skill:Throwing Mastery
 ItemDisplay[NMAG !RW SK135>0]: %TEAL%%SK135%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK135>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0)]: %CONTINUE% %NAME%
 ItemDisplay[NMAG !RW SK133>0]: %GOLD%dsw%NAME%%CONTINUE% // Skill:Double Swing
@@ -2426,6 +2463,41 @@ ItemDisplay[ZON HighQuality $f(TABSK2+CLSK0+STAT127)>3]: %NAME%{%YELLOW%$f(TABSK
 ItemDisplay[ZON HighQuality $f(TABSK1+CLSK0+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(TABSK1+CLSK0+STAT127)pm %NAME%}%CONTINUE%
 ItemDisplay[ZON HighQuality $f(TABSK0+CLSK0+STAT127)>3]: %NAME%{%ORANGE%$f(TABSK0+CLSK0+STAT127)bow %NAME%}%CONTINUE%
 ItemDisplay[ZON HighQuality (amazonbow70 OR amazonpassive70 OR amazonjavelin70)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
+
+// Barbarian Primal Helm notes
+ItemDisplay[BAR (howl70 OR findpotion70 OR shout70 OR warcry70 OR finditem70 OR taunt70 OR battleorders70 OR grimward70 OR battlecommand70 OR battlecry70 OR onemastery70 OR throwmastery70 OR twomastery70 OR combatreflexes70 OR ironskin70 OR increasedspeed70 OR deepwounds70 OR naturalres70 OR bash70 OR doubleswing70 OR stun70 OR frenzy70 OR leap70 OR concentrate70 OR doublethrow70 OR leapattack70 OR berserk70 OR whirlwind70 OR splitthrow70) (MAG OR ELT)]: %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[BAR (howl70 OR findpotion70 OR shout70 OR warcry70 OR finditem70 OR taunt70 OR battleorders70 OR grimward70 OR battlecommand70 OR battlecry70 OR onemastery70 OR throwmastery70 OR twomastery70 OR combatreflexes70 OR ironskin70 OR increasedspeed70 OR deepwounds70 OR naturalres70 OR bash70 OR doubleswing70 OR stun70 OR frenzy70 OR leap70 OR concentrate70 OR doublethrow70 OR leapattack70 OR berserk70 OR whirlwind70 OR splitthrow70) ((RARE OR CRAFT) (NORM OR EXC))]: %NAME%{%NL%%NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK375+TABSK32+CLSK4+STAT127)>3]: %NAME%{%GOLD%$f(SK375+TABSK32+CLSK4+STAT127)splt %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK151+TABSK32+CLSK4+STAT127)>3]: %NAME%{%GOLD%$f(SK151+TABSK32+CLSK4+STAT127)ww %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK152+TABSK32+CLSK4+STAT127)>3]: %NAME%{%GOLD%$f(SK152+TABSK32+CLSK4+STAT127)brz %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK143+TABSK32+CLSK4+STAT127)>3]: %NAME%{%GOLD%$f(SK143+TABSK32+CLSK4+STAT127)latk %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK140+TABSK32+CLSK4+STAT127)>3]: %NAME%{%GOLD%$f(SK140+TABSK32+CLSK4+STAT127)d-th %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK144+TABSK32+CLSK4+STAT127)>3]: %NAME%{%GOLD%$f(SK144+TABSK32+CLSK4+STAT127)conc %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK132+TABSK32+CLSK4+STAT127)>3]: %NAME%{%GOLD%$f(SK132+TABSK32+CLSK4+STAT127)leap %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK147+TABSK32+CLSK4+STAT127)>3]: %NAME%{%GOLD%$f(SK147+TABSK32+CLSK4+STAT127)fzy %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK139+TABSK32+CLSK4+STAT127)>3]: %NAME%{%GOLD%$f(SK139+TABSK32+CLSK4+STAT127)stun %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK133+TABSK32+CLSK4+STAT127)>3]: %NAME%{%GOLD%$f(SK133+TABSK32+CLSK4+STAT127)dsw %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK126+TABSK32+CLSK4+STAT127)>3]: %NAME%{%GOLD%$f(SK126+TABSK32+CLSK4+STAT127)bsh %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK153+TABSK33+CLSK4+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK153+TABSK33+CLSK4+STAT127)res %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK368+TABSK33+CLSK4+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK368+TABSK33+CLSK4+STAT127)dw %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK148+TABSK33+CLSK4+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK148+TABSK33+CLSK4+STAT127)isp %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK145+TABSK33+CLSK4+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK145+TABSK33+CLSK4+STAT127)skin %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK141+TABSK33+CLSK4+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK141+TABSK33+CLSK4+STAT127)crx %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK134+TABSK33+CLSK4+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK134+TABSK33+CLSK4+STAT127)2hm %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK135+TABSK33+CLSK4+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK135+TABSK33+CLSK4+STAT127)tma %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK128+TABSK33+CLSK4+STAT127)>3]: %NAME%{%LIGHT_GRAY%$f(SK128+TABSK33+CLSK4+STAT127)1hm %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK146+TABSK34+CLSK4+STAT127)>3]: %NAME%{%ORANGE%$f(SK146+TABSK34+CLSK4+STAT127)bcry %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK155+TABSK34+CLSK4+STAT127)>3]: %NAME%{%ORANGE%$f(SK155+TABSK34+CLSK4+STAT127)bc %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK150+TABSK34+CLSK4+STAT127)>3]: %NAME%{%ORANGE%$f(SK150+TABSK34+CLSK4+STAT127)gw %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK149+TABSK34+CLSK4+STAT127)>3]: %NAME%{%ORANGE%$f(SK149+TABSK34+CLSK4+STAT127)bo %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK137+TABSK34+CLSK4+STAT127)>3]: %NAME%{%ORANGE%$f(SK137+TABSK34+CLSK4+STAT127)tnt %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK142+TABSK34+CLSK4+STAT127)>3]: %NAME%{%ORANGE%$f(SK142+TABSK34+CLSK4+STAT127)item %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK154+TABSK34+CLSK4+STAT127)>3]: %NAME%{%ORANGE%$f(SK154+TABSK34+CLSK4+STAT127)wcry %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK138+TABSK34+CLSK4+STAT127)>3]: %NAME%{%ORANGE%$f(SK138+TABSK34+CLSK4+STAT127)sht %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK131+TABSK34+CLSK4+STAT127)>3]: %NAME%{%ORANGE%$f(SK131+TABSK34+CLSK4+STAT127)pot %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality $f(SK130+TABSK34+CLSK4+STAT127)>3]: %NAME%{%ORANGE%$f(SK130+TABSK34+CLSK4+STAT127)hwl %NAME%}%CONTINUE%
+ItemDisplay[BAR HighQuality (howl70 OR findpotion70 OR shout70 OR warcry70 OR finditem70 OR taunt70 OR battleorders70 OR grimward70 OR battlecommand70 OR battlecry70 OR onemastery70 OR throwmastery70 OR twomastery70 OR combatreflexes70 OR ironskin70 OR increasedspeed70 OR deepwounds70 OR naturalres70 OR bash70 OR doubleswing70 OR stun70 OR frenzy70 OR leap70 OR concentrate70 OR doublethrow70 OR leapattack70 OR berserk70 OR whirlwind70 OR splitthrow70)]: %NAME%{%RED%>>>>>> %NAME%}%CONTINUE%
+
 // ==================================================================================== ALL ITEM DESCRIPTIONS CLOSER - DESCRIPTIONS ABOVE THIS LINE ================================================================================
 
 // Imbue Bases
@@ -2513,9 +2585,9 @@ ItemDisplay[DRU (SK221>0 OR SK222>0 OR SK223>0 OR SK224>0 OR SK225>0 OR SK226>0 
 ItemDisplay[DIN ELT !INF NMAG !RW (SOCK=0 OR SOCK=4) EDEF>4 (EDAM>59 OR RES>29)]: %DOT-D6%%BASE_T2% // 5+ ed, 0/4os
 ItemDisplay[DIN ELT !INF NMAG !RW ETH (SOCK=0 OR SOCK=4) RES>24 FILTLVL<7]: %DOT-D6%%NAME%{%NAME%} // Ethereal 0/4os
 ItemDisplay[DIN ELT !INF !ETH NMAG !RW SOCK=3 EDEF>4 (EDAM>59 OR RES>24)]: %DOT-D6%%BASE_T2% // Non-eth 5+ ed, 3os
-ItemDisplay[DIN ELT !INF NMAG !RW ((SOCK=0 (EDAM>54 OR RES>24)) OR (SOCK=3 RES>24 !ETH) OR (SOCK=4 (EDAM>54 OR RES>24))) FILTLVL<7]: %DOT-D6%%TIER-4%NAME%{%NAME%} // 55+ ed or 25@+, 0/3/4os
+ItemDisplay[DIN ELT !INF NMAG !RW ((SOCK=0 (EDAM>54 OR RES>19)) OR (SOCK=3 RES>19 !ETH) OR (SOCK=4 (EDAM>54 OR RES>19))) FILTLVL<7]: %DOT-D6%%TIER-4%NAME%{%NAME%} // 55+ ed or 20@+, 0/3/4os
 ItemDisplay[DIN !INF !ETH NMAG !RW !SOCK=1 (EDAM>44 OR RES>19) PALADIN FILTLVL<3]: %DOT-D6%%NAME%{%NAME%} // Notify for Paladins while leveling
-ItemDisplay[DIN !INF !ETH NMAG !RW !SOCK=1 RES>19 FILTLVL<3]: %NAME%{%NAME%} // Show 20@+ Paladin Shields for all
+ItemDisplay[DIN !INF NMAG !RW !SOCK=1 RES>19 FILTLVL<3]: %NAME%{%NAME%} // Show 20@+ Paladin Shields for all
 ItemDisplay[DIN !INF !ETH NMAG !RW !SOCK=1 RES>0 CLVL<80]: %NAME%{%NAME%} // Show Resist Paladin Shields for all
 ItemDisplay[(uit OR uow) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=4) ED>14]: %DOT-D6%%BASE_T2% // Non-eth 15ed 0/4 socket Monarch/Aegis
 ItemDisplay[(uit OR uow) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=4) ED>4]: %DOT-D6%%TIER-3%%BASE_T1% // Non-eth 5+ ed 0/4 socket Monarch/Aegis
