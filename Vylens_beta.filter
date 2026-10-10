@@ -2585,7 +2585,7 @@ ItemDisplay[DRU (SK221>0 OR SK222>0 OR SK223>0 OR SK224>0 OR SK225>0 OR SK226>0 
 ItemDisplay[DIN ELT !INF NMAG !RW (SOCK=0 OR SOCK=4) EDEF>4 (EDAM>59 OR RES>29)]: %DOT-D6%%BASE_T2% // 5+ ed, 0/4os
 ItemDisplay[DIN ELT !INF NMAG !RW ETH (SOCK=0 OR SOCK=4) RES>24 FILTLVL<7]: %DOT-D6%%NAME%{%NAME%} // Ethereal 0/4os
 ItemDisplay[DIN ELT !INF !ETH NMAG !RW SOCK=3 EDEF>4 (EDAM>59 OR RES>24)]: %DOT-D6%%BASE_T2% // Non-eth 5+ ed, 3os
-ItemDisplay[DIN ELT !INF NMAG !RW ((SOCK=0 (EDAM>54 OR RES>19)) OR (SOCK=3 RES>19 !ETH) OR (SOCK=4 (EDAM>54 OR RES>19))) FILTLVL<7]: %DOT-D6%%TIER-4%NAME%{%NAME%} // 55+ ed or 20@+, 0/3/4os
+ItemDisplay[DIN ELT !INF NMAG !RW ((SOCK=0 (EDAM>54 OR RES>19)) OR (SOCK=3 RES>19 !ETH) OR (SOCK=4 (EDAM>54 OR RES>19))) FILTLVL<7]: %DOT-D6%%TIER-4%%NAME%{%NAME%} // 55+ ed or 20@+, 0/3/4os
 ItemDisplay[DIN !INF !ETH NMAG !RW !SOCK=1 (EDAM>44 OR RES>19) PALADIN FILTLVL<3]: %DOT-D6%%NAME%{%NAME%} // Notify for Paladins while leveling
 ItemDisplay[DIN !INF NMAG !RW !SOCK=1 RES>19 FILTLVL<3]: %NAME%{%NAME%} // Show 20@+ Paladin Shields for all
 ItemDisplay[DIN !INF !ETH NMAG !RW !SOCK=1 RES>0 CLVL<80]: %NAME%{%NAME%} // Show Resist Paladin Shields for all
