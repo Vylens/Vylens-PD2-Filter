@@ -79,8 +79,8 @@ Alias[HighQuality]: (MAG OR RARE OR CRAFT)
 Alias[HighestQuality]: (RARE OR CRAFT OR UNI OR SET)
 // --- Highlight stars ---
 // Combined
-Alias[BASE_T1]: %GRAY%* %NAME% %GRAY%*{%NAME%}
-Alias[BASE_T2]: %GRAY%*%WHITE%* %NAME% %WHITE%*%GRAY%*{%NAME%}
+Alias[BASE_T1]: %GRAY%* %NAME% %GRAY%*
+Alias[BASE_T2]: %GRAY%*%WHITE%* %NAME% %WHITE%*%GRAY%*
 Alias[DROP_T1]: %TAN%* %NAME% %TAN%*%YELLOW%
 Alias[DROP_T2]: %TAN%*%WHITE%* %NAME% %WHITE%*%TAN%*%YELLOW%
 Alias[DROPS_T1]: %TAN%*  %NAME%  %TAN%*%YELLOW%
@@ -387,6 +387,10 @@ ItemDisplay[ETH]: %GRAY%[%WHITE%eth%GRAY%] %NAME%%CONTINUE%
 
 // Show me number of sockets of every socketed item
 ItemDisplay[SOCK>0]: %NAME% %TAN%[%WHITE%%SOCKETS%%TAN%]%CONTINUE%
+
+// GRAIL
+ItemDisplay[UNI !ID !ALLDISCOVERED !jew]: %GOLD%%NAME% %TEAL%Grail%CONTINUE%
+ItemDisplay[SET !ID !ALLDISCOVERED]: %GREEN%%NAME% %TEAL%Grail%CONTINUE%
 
 // ==========================================================================================================
 // Show Item Names On Gheed Map Event
@@ -1225,7 +1229,8 @@ ItemDisplay[jew RARE !ID]: %DOT-87%%DROPS_T2%
 // Chest Armor
 //ItemDisplay[CHEST RARE !uar !ID ALVL>84]: %DOT-6F%%PX-EF%%TIER-1%%DROP_T1% // ALVL85+
 //ItemDisplay[CHEST RARE !uar !ID ALVL<85]: %DOT-6F%%PX-EF%%TIER-1%%NAME% // ALVL<85
-ItemDisplay[CHEST RARE !uar !ID ALVL>84 MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-4%%TAN%*%WHITE%* %NAME% %GOLD%(%TEAL%%ALVL%%GOLD%) %TAN%[%WHITE%%MAXSOCKETS%pos%TAN%] %WHITE%*%TAN%*%YELLOW% // 4os, ALVL85+
+//ItemDisplay[CHEST RARE !uar !ID ALVL>84 MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-4%%TAN%*%WHITE%* %NAME% %GOLD%(%TEAL%%ALVL%%GOLD%) %TAN%[%WHITE%%MAXSOCKETS%pos%TAN%] %WHITE%*%TAN%*%YELLOW% // 4os, ALVL85+
+ItemDisplay[CHEST RARE !uar !ID ALVL>84 MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-4%%TAN%*%WHITE%* %NAME%² %TAN%[%WHITE%%MAXSOCKETS%os pos%TAN%] %WHITE%*%TAN%*%YELLOW% // 4os, ALVL85+
 ItemDisplay[CHEST RARE !uar !ID ALVL>84 MAXSOCKETS<4]: %DOT-6F%%PX-EF%%TIER-1%%TAN%* %NAME% %GOLD%(%TEAL%%ALVL%%GOLD%) %TAN%*%YELLOW% // 2-3os, ALVL85+
 ItemDisplay[CHEST RARE !uar !ID ALVL<85 MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-1%%NAME% %TAN%[%WHITE%%MAXSOCKETS%pos%TAN%] // 4os, ALVL<85
 ItemDisplay[CHEST RARE !uar !ID ALVL<85 MAXSOCKETS<4]: %DOT-6F%%PX-EF%%TIER-1%%NAME% // 2-3os, ALVL<85
@@ -2501,25 +2506,24 @@ ItemDisplay[(7ja OR 7pi OR 7s7 OR 7gl OR 7ts OR 7ta) (BARBARIAN OR FILTLVL<2) NM
 // --- Chests ---
 ItemDisplay[(xcl OR xhn OR xpl OR xlt OR xld OR xth OR uui OR uea OR ula OR utu OR utp OR urs) !INF ETH NMAG !RW SOCK=2 ED>4 FILTLVL<3]: %DOT-D6%%NAME%{%NAME%} // Prudence
 // Non-Ethereal 15ed 0, 3 and 4 socket Armors
-//ItemDisplay[(ltp OR ful OR aar OR xrs OR xtp OR xul) !INF !ETH NMAG !RW !SOCK~1-2 ED>14]: %DOT-D6%%BASE_T2% // 15+ed more popular Normal/Exceptional
-ItemDisplay[(ltp OR ful OR aar OR xrs OR xtp OR xul) !INF !ETH NMAG !RW !SOCK~1-2 ED>14]: %DOT-D6%%BASE_T2% // 15+ed more popular Normal/Exceptional
-ItemDisplay[(gth OR xng OR xcl OR xhn OR xpl OR xlt OR xld OR xar) !INF !ETH NMAG !RW !SOCK~1-2 ED>14]: %DOT-D6%%TIER-4%%BASE_T2% // 15+ed less popular Normal/Exceptional
-ItemDisplay[(uui OR uea OR ula OR utu OR ucl OR urs OR utp) !INF !ETH NMAG !RW !SOCK~1-2 ED>14]: %DOT-D6%%BASE_T2% // 15+ed more popular Elite
-ItemDisplay[(upl OR ult OR uld OR uth OR uul OR ung OR uhn) !INF !ETH NMAG !RW !SOCK~1-2 ED>14]: %DOT-D6%%TIER-4%%BASE_T2% // 15+ed less popular Elite
+ItemDisplay[(ltp OR ful OR aar OR xrs OR xtp OR xul) !INF !ETH NMAG !RW !SOCK~1-2 ED>14]: %DOT-D6%%BASE_T2%{%NAME%} // 15+ed more popular Normal/Exceptional
+ItemDisplay[(gth OR xng OR xcl OR xhn OR xpl OR xlt OR xld OR xar) !INF !ETH NMAG !RW !SOCK~1-2 ED>14]: %DOT-D6%%TIER-4%%BASE_T2%{%NAME%} // 15+ed less popular Normal/Exceptional
+ItemDisplay[(uui OR uea OR ula OR utu OR ucl OR urs OR utp) !INF !ETH NMAG !RW !SOCK~1-2 ED>14]: %DOT-D6%%BASE_T2%{%NAME%} // 15+ed more popular Elite
+ItemDisplay[(upl OR ult OR uld OR uth OR uul OR ung OR uhn) !INF !ETH NMAG !RW !SOCK~1-2 ED>14]: %DOT-D6%%TIER-4%%BASE_T2%{%NAME%} // 15+ed less popular Elite
 // Non-Ethereal 5+ ed 0, 3 and 4 socket Armors
-ItemDisplay[(ltp OR ful OR aar OR xrs OR xtp OR xul) !INF !ETH NMAG !RW !SOCK~1-2 ED>4]: %DOT-D6%%TIER-4%%BASE_T1% // ed more popular Normal/Exceptional
-ItemDisplay[(gth OR xng OR xcl OR xhn OR xpl OR xlt OR xld OR xar) !INF !ETH NMAG !RW !SOCK~1-2 ED>4]: %DOT-D6%%TIER-3%%BASE_T1% // ed less popular Normal/Exceptional
-ItemDisplay[(uui OR uea OR ula OR utu OR ucl OR urs OR utp) !INF !ETH NMAG !RW !SOCK~1-2 ED>4]: %DOT-D6%%TIER-4%%BASE_T1% // ed more popular Elite
-ItemDisplay[(upl OR ult OR uld OR uth OR uul OR ung OR uhn) !INF !ETH NMAG !RW !SOCK~1-2 ED>4]: %DOT-D6%%TIER-3%%BASE_T1% // ed less popular Elite
+ItemDisplay[(ltp OR ful OR aar OR xrs OR xtp OR xul) !INF !ETH NMAG !RW !SOCK~1-2 ED>4]: %DOT-D6%%TIER-4%%BASE_T1%{%NAME%} // ed more popular Normal/Exceptional
+ItemDisplay[(gth OR xng OR xcl OR xhn OR xpl OR xlt OR xld OR xar) !INF !ETH NMAG !RW !SOCK~1-2 ED>4]: %DOT-D6%%TIER-3%%BASE_T1%{%NAME%} // ed less popular Normal/Exceptional
+ItemDisplay[(uui OR uea OR ula OR utu OR ucl OR urs OR utp) !INF !ETH NMAG !RW !SOCK~1-2 ED>4]: %DOT-D6%%TIER-4%%BASE_T1%{%NAME%} // ed more popular Elite
+ItemDisplay[(upl OR ult OR uld OR uth OR uul OR ung OR uhn) !INF !ETH NMAG !RW !SOCK~1-2 ED>4]: %DOT-D6%%TIER-3%%BASE_T1%{%NAME%} // ed less popular Elite
 // Ethereal 3 socket Armors
-ItemDisplay[CHEST ELT !uar !INF ETH NMAG !RW SOCK=3 ED>14]: %DOT-D6%%TIER-4%%BASE_T2% // 15ed Elite
-ItemDisplay[(xth OR xul OR uui OR uea OR ula OR utp OR utu OR urs OR ung) !INF ETH NMAG !RW SOCK=3 ED>4 FILTLVL<4]: %DOT-D6%%TIER-2%%BASE_T2% // Duress, Gloom, Hustle ~77-140 str req
+ItemDisplay[CHEST ELT !uar !INF ETH NMAG !RW SOCK=3 ED>14]: %DOT-D6%%TIER-4%%BASE_T2%{%NAME%} // 15ed Elite
+ItemDisplay[(xth OR xul OR uui OR uea OR ula OR utp OR utu OR urs OR ung) !INF ETH NMAG !RW SOCK=3 ED>4 FILTLVL<4]: %DOT-D6%%TIER-2%%BASE_T2%{%NAME%} // Duress, Gloom, Hustle ~77-140 str req
 // Ethereal 15ed 0/4 socket Armors
-ItemDisplay[(uui OR uea OR ula OR utu OR ucl OR urs OR utp) !INF ETH NMAG !RW !SOCK~1-3 ED>14]: %DOT-D6%%BASE_T2% // 15ed more popular Elite
-ItemDisplay[(upl OR ult OR uld OR uth OR uul OR ung OR uhn) !INF ETH NMAG !RW !SOCK~1-3 ED>14]: %DOT-D6%%BASE_T2% // 15ed less popular Elite
+ItemDisplay[(uui OR uea OR ula OR utu OR ucl OR urs OR utp) !INF ETH NMAG !RW !SOCK~1-3 ED>14]: %DOT-D6%%BASE_T2%{%NAME%} // 15ed more popular Elite
+ItemDisplay[(upl OR ult OR uld OR uth OR uul OR ung OR uhn) !INF ETH NMAG !RW !SOCK~1-3 ED>14]: %DOT-D6%%BASE_T2%{%NAME%} // 15ed less popular Elite
 // Ethereal 5+ ed 0/4 socket Armors
-ItemDisplay[(uui OR uea OR ula OR utu OR ucl OR urs OR utp) !INF ETH NMAG !RW !SOCK~1-3 ED>4]: %DOT-D6%%TIER-6%%BASE_T1% // ed more popular Elite
-ItemDisplay[(upl OR ult OR uld OR uth OR uul OR ung OR uhn) !INF ETH NMAG !RW !SOCK~1-3 ED>4]: %DOT-D6%%TIER-6%%BASE_T1% // ed less popular Elite
+ItemDisplay[(uui OR uea OR ula OR utu OR ucl OR urs OR utp) !INF ETH NMAG !RW !SOCK~1-3 ED>4]: %DOT-D6%%TIER-6%%BASE_T1%{%NAME%} // ed more popular Elite
+ItemDisplay[(upl OR ult OR uld OR uth OR uul OR ung OR uhn) !INF ETH NMAG !RW !SOCK~1-3 ED>4]: %DOT-D6%%TIER-6%%BASE_T1%{%NAME%} // ed less popular Elite
 // Ethereal Sacred Armor - Fluffy's Demise
 ItemDisplay[uar !INF ETH SUP NMAG !RW SOCK~2-4 ED>4]: %DOT-D6%%GOLD%*%TAN%*%GRAY%* [%BLUE%%ED%%%GRAY%] %NAME% %GRAY%*%TAN%*%GOLD%*{%NAME%}
 ItemDisplay[uar ETH SUP NMAG SOCK=0 ED>4]: %DOT-D6%%GOLD%*%TAN%*%GRAY%* [%BLUE%%ED%%%GRAY%] %NAME% %GRAY%*%TAN%*%GOLD%*{%NAME%}
@@ -2533,10 +2537,9 @@ ItemDisplay[uar !ETH !SUP NMAG !RW SOCK~1-3]: Fluffy's Demise %TAN%[%WHITE%%SOCK
 
 // --- Helms ---
 // Non-Ethereal 15ed 0/3 socket Helms
-ItemDisplay[(xhm OR ulm OR uhl OR usk OR uh9 OR uhm OR urn OR ci3) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=3) ED>14]: %DOT-D6%%TIER-4%%BASE_T1%
+ItemDisplay[(xhm OR ulm OR uhl OR usk OR uh9 OR uhm OR urn OR ci3) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=3) ED>14]: %DOT-D6%%TIER-4%%BASE_T1%{%NAME%}
 // Ethereal 5+ ed 0/3 socket helms
-ItemDisplay[(ulm OR uhl OR usk OR uh9 OR uhm OR urn OR ci3) !INF ETH NMAG !RW (SOCK=0 OR SOCK=3) ED>4]: %DOT-D6%%TIER-6%%BASE_T2%
-ItemDisplay[xhm !INF ETH NMAG !RW (SOCK=0 OR SOCK=3) ED>4]: %DOT-D6%%TIER-4%%BASE_T1%{%NAME%}
+ItemDisplay[(xhm OR ulm OR uhl OR usk OR uh9 OR uhm OR urn OR ci3) !INF ETH NMAG !RW (SOCK=0 OR SOCK=3) ED>4]: %DOT-D6%%TIER-6%%BASE_T2%{%NAME%}
 // Show Ethereal Elite Helms
 ItemDisplay[(ulm OR uhl OR usk OR uh9 OR uhm OR urn OR ci3) !INF ETH NMAG !RW (SOCK=0 OR SOCK=3)]: %NAME%{%NAME%}
 // Barbarian Helms
@@ -2550,35 +2553,33 @@ ItemDisplay[BAR (SK126>0 OR SK127>0 OR SK128>0 OR SK129>0 OR SK130>0 OR SK131>0 
 // Ethereal Barbarian Helms
 ItemDisplay[BAR (SK126>2 OR SK144>2 OR SK149>2 OR SK151>2 OR SK155>2) !INF ETH NMAG !RW (SOCK=0 OR SOCK=3) FILTLVL<7]: %NAME%{%NAME%} // Show +3 ethereal plain
 ItemDisplay[BAR ELT (SK133>2 OR SK140>2 OR SK142>2 OR SK143>2 OR SK144>2 OR SK149>2 OR SK151>2 OR SK152>2 OR SK154>2 OR SK368>2) !INF ETH NMAG !RW (SOCK=0 OR SOCK=3)]: %NAME%{%NAME%} // Show +3 plain ethereal elite
-// Druid Pelts
 // Non-Ethereal Druid Pelts
-ItemDisplay[DRU (SK230>2 (SK250>0 OR SK235>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK370>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Arctic Blast with add for Druids
-ItemDisplay[DRU (SK234>2 (SK244>0 OR SK249>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Fissure with Volcano/Armageddon for Druids
-ItemDisplay[DRU (SK244>2 (SK234>0 OR SK249>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Volcano with Fissure/Armageddon for Druids
-ItemDisplay[DRU (SK240>2 (SK245>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK370>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Twister with add for Druids
-ItemDisplay[DRU (SK243>2 (SK250>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK241>0 OR SK228>0 OR SK224>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Shock Wave with add for Druids
-ItemDisplay[DRU (SK248>2 (SK250>0 OR SK247>0 OR SK223>0 OR SK224>0 OR SK236>0 OR SK232>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Fury with add for Druids
-ItemDisplay[DRU (SK239>2 (SK250>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK223>0 OR SK228>0 OR SK224>0 OR SK236>0 OR SK232>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Fire Claws with add for Druids
-ItemDisplay[DRU (SK238>2 (SK250>0 OR SK226>0 OR SK247>0 OR SK222>0 OR SK231>0 OR SK223>0 OR SK224>0 OR SK236>0 OR SK232>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Rabies with add for Druids
-ItemDisplay[DRU (SK221>2 (SK227>0 OR SK237>0 OR SK247>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // Raven with add for Druids
-ItemDisplay[DRU (SK227>2 (SK237>0 OR SK247>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // Spirit Wolf with add for Druids
-ItemDisplay[DRU (SK237>2 (SK227>0 OR SK247>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // Dire Wolf with add for Druids
-ItemDisplay[DRU (SK247>2 (SK227>0 OR SK237>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // Grizzly with add for Druids
-ItemDisplay[DRU (SK222>2 (SK250>0 OR SK235>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK370>0 OR SK223>0 OR SK228>0 OR SK236>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Poison Creeper with add for Druids
+ItemDisplay[DRU (SK230>2 (SK250>0 OR SK235>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK370>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Arctic Blast with add for Druids
+ItemDisplay[DRU (SK234>2 (SK244>0 OR SK249>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Fissure with Volcano/Armageddon for Druids
+ItemDisplay[DRU (SK244>2 (SK234>0 OR SK249>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Volcano with Fissure/Armageddon for Druids
+ItemDisplay[DRU (SK240>2 (SK245>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK370>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Twister with add for Druids
+ItemDisplay[DRU (SK243>2 (SK250>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK241>0 OR SK228>0 OR SK224>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Shock Wave with add for Druids
+ItemDisplay[DRU (SK248>2 (SK250>0 OR SK247>0 OR SK223>0 OR SK224>0 OR SK236>0 OR SK232>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Fury with add for Druids
+ItemDisplay[DRU (SK239>2 (SK250>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK223>0 OR SK228>0 OR SK224>0 OR SK236>0 OR SK232>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Fire Claws with add for Druids
+ItemDisplay[DRU (SK238>2 (SK250>0 OR SK226>0 OR SK247>0 OR SK222>0 OR SK231>0 OR SK223>0 OR SK224>0 OR SK236>0 OR SK232>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Rabies with add for Druids
+ItemDisplay[DRU (SK221>2 (SK227>0 OR SK237>0 OR SK247>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // Raven with add for Druids
+ItemDisplay[DRU (SK227>2 (SK237>0 OR SK247>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // Spirit Wolf with add for Druids
+ItemDisplay[DRU (SK237>2 (SK227>0 OR SK247>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // Dire Wolf with add for Druids
+ItemDisplay[DRU (SK247>2 (SK227>0 OR SK237>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // Grizzly with add for Druids
+ItemDisplay[DRU (SK222>2 (SK250>0 OR SK235>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK370>0 OR SK223>0 OR SK228>0 OR SK236>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Poison Creeper with add for Druids
 ItemDisplay[DRU (SK221>2 OR SK222>2 OR SK223>2 OR SK227>2 OR SK228>2 OR SK230>2 OR SK233>2 OR SK234>2 OR SK237>2 OR SK238>2 OR SK239>2 OR SK240>2 OR SK243>2 OR SK244>2 OR SK245>2 OR SK247>2 OR SK248>2 OR SK249>2 OR SK250>2) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%NAME%{%NAME%} // Notify +3 plain while leveling for Druids
 ItemDisplay[DRU (SK221>2 OR SK222>2 OR SK223>2 OR SK227>2 OR SK228>2 OR SK230>2 OR SK233>2 OR SK234>2 OR SK237>2 OR SK238>2 OR SK239>2 OR SK240>2 OR SK243>2 OR SK244>2 OR SK245>2 OR SK247>2 OR SK248>2 OR SK249>2 OR SK250>2) !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %NAME%{%NAME%} // Show +3 plain
 ItemDisplay[DRU (SK221>0 OR SK222>0 OR SK223>0 OR SK224>0 OR SK225>0 OR SK226>0 OR SK227>0 OR SK228>0 OR SK229>0 OR SK230>0 OR SK231>0 OR SK232>0 OR SK233>0 OR SK234>0 OR SK235>0 OR SK236>0 OR SK237>0 OR SK238>0 OR SK239>0 OR SK240>0 OR SK241>0 OR SK242>0 OR SK243>0 OR SK244>0 OR SK245>0 OR SK246>0 OR SK247>0 OR SK248>0 OR SK249>0 OR SK250>0 OR SK370>0) !INF !ETH NMAG !RW CLVL<80]: %NAME%{%NAME%} // Show any skill
-// --- Shields ---
-// Generally 55/60+ ed or 25@ Paladin Shields
-ItemDisplay[DIN ELT !INF NMAG !RW (SOCK=0 OR SOCK=4) EDEF>4 (EDAM>59 OR RES>29)]: %DOT-D6%%BASE_T2% // 5+ ed, 0/4os
+// Paladin Shields Generally 55/60+ ed or 25@+
+ItemDisplay[DIN ELT !INF NMAG !RW (SOCK=0 OR SOCK=4) EDEF>4 (EDAM>59 OR RES>29)]: %DOT-D6%%BASE_T2%{%NAME%} // 5+ ed, 0/4os
 ItemDisplay[DIN ELT !INF NMAG !RW ETH (SOCK=0 OR SOCK=4) RES>24 FILTLVL<7]: %DOT-D6%%NAME%{%NAME%} // Ethereal 0/4os
-ItemDisplay[DIN ELT !INF !ETH NMAG !RW SOCK=3 EDEF>4 (EDAM>59 OR RES>24)]: %DOT-D6%%BASE_T2% // Non-eth 5+ ed, 3os
+ItemDisplay[DIN ELT !INF !ETH NMAG !RW SOCK=3 EDEF>4 (EDAM>59 OR RES>24)]: %DOT-D6%%BASE_T2%{%NAME%} // Non-eth 5+ ed, 3os
 ItemDisplay[DIN ELT !INF NMAG !RW ((SOCK=0 (EDAM>54 OR RES>19)) OR (SOCK=3 RES>19 !ETH) OR (SOCK=4 (EDAM>54 OR RES>19))) FILTLVL<7]: %DOT-D6%%TIER-4%%NAME%{%NAME%} // 55+ ed or 20@+, 0/3/4os
 ItemDisplay[DIN !INF !ETH NMAG !RW !SOCK=1 (EDAM>44 OR RES>19) PALADIN FILTLVL<3]: %DOT-D6%%NAME%{%NAME%} // Notify for Paladins while leveling
 ItemDisplay[DIN !INF NMAG !RW !SOCK=1 RES>19 FILTLVL<3]: %NAME%{%NAME%} // Show 20@+ Paladin Shields for all
 ItemDisplay[DIN !INF !ETH NMAG !RW !SOCK=1 RES>0 CLVL<80]: %NAME%{%NAME%} // Show Resist Paladin Shields for all
-ItemDisplay[(uit OR uow) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=4) ED>14]: %DOT-D6%%BASE_T2% // Non-eth 15ed 0/4 socket Monarch/Aegis
-ItemDisplay[(uit OR uow) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=4) ED>4]: %DOT-D6%%TIER-3%%BASE_T1% // Non-eth 5+ ed 0/4 socket Monarch/Aegis
+ItemDisplay[(uit OR uow) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=4) ED>14]: %DOT-D6%%BASE_T2%{%NAME%} // Non-eth 15ed 0/4 socket Monarch/Aegis
+ItemDisplay[(uit OR uow) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=4) ED>4]: %DOT-D6%%TIER-3%%BASE_T1%{%NAME%} // Non-eth 5+ ed 0/4 socket Monarch/Aegis
 ItemDisplay[(xsh OR ush OR upk) !INF NMAG !ETH !RW !SOCK=1 ED>4 FILTLVL<3]: %NAME%{%NAME%} // Show Grim Shield, Troll Nest and Blade Barrier
 ItemDisplay[(uit OR uow OR uts) !INF NMAG !ETH !RW (SOCK=0 OR SOCK=4) FILTLVL<3]: %NAME%{%NAME%} // Show Monarch, Aegis and Ward
 // Splendor/Rhyme Shields/Shrunken Heads
@@ -2592,8 +2593,8 @@ ItemDisplay[(aqv3 OR cqv3) SOCK=2 NMAG !RW (CLVL<70 OR FILTLVL<4)]: %NAME%{%NAME
 
 // --- Weapons ---
 // Amazon Bows
-ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=0 OR SOCK=4 OR SOCK=5) ED>14]: %DOT-D6%%BASE_T2%
-ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=0 OR SOCK=4 OR SOCK=5) ED>4 FILTLVL<6]: %DOT-D6%%TIER-3%%BASE_T1%
+ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=0 OR SOCK=4 OR SOCK=5) ED>14]: %DOT-D6%%BASE_T2%{%NAME%}
+ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=0 OR SOCK=4 OR SOCK=5) ED>4 FILTLVL<6]: %DOT-D6%%TIER-3%%BASE_T1%{%NAME%}
 ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=0 OR SOCK=4 OR SOCK=5) FILTLVL<3]: %DOT-D6%%NAME%{%NAME%}
 ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 SOCK=3 FILTLVL<4]: %NAME%{%NAME%}
 ItemDisplay[(am1 OR am6 OR amb OR am2 OR am7 OR amc) NMAG !INF !RW TABSK0>0 CLVL<80]: %NAME%{%NAME%} // Show any skill
@@ -2605,34 +2606,34 @@ ItemDisplay[(am5 OR ama OR amf) NMAG !INF !RW AMAZON TABSK2>2 !SOCK=1 FILTLVL<3]
 ItemDisplay[(am5 OR ama OR amf) NMAG !INF !RW TABSK2>2 !SOCK=1 CLVL<80]: %NAME%{%NAME%} // Show +3
 ItemDisplay[(am5 OR ama OR amf) NMAG !INF !RW TABSK2>0 (CLVL<70 FILTLVL<3)]: %NAME%{%NAME%} // Show any skill
 // Throwing
-ItemDisplay[(7b8 OR 7ja OR 7pi OR 7s7 OR 7gl OR 7ts) NMAG !INF ETH !RW !SOCK=1 ED>14]: %DOT-D6%%BASE_T2%
-ItemDisplay[(7b8 OR 7ja OR 7pi OR 7s7 OR 7gl OR 7ts) NMAG !INF ETH !RW !SOCK=1 ED>4 FILTLVL<7]: %BASE_T1%
+ItemDisplay[(7b8 OR 7ja OR 7pi OR 7s7 OR 7gl OR 7ts) NMAG !INF ETH !RW !SOCK=1 ED>14]: %DOT-D6%%BASE_T2%{%NAME%}
+ItemDisplay[(7b8 OR 7ja OR 7pi OR 7s7 OR 7gl OR 7ts) NMAG !INF ETH !RW !SOCK=1 ED>4 FILTLVL<7]: %BASE_T1%{%NAME%}
 ItemDisplay[(7b8 OR 7ja OR 7pi OR 7s7 OR 7gl OR 7ts) NMAG !INF ETH !RW !SOCK=1 BARBARIAN FILTLVL<4]: %DOT-D6%%NAME%{%NAME%}
 ItemDisplay[(7b8 OR 7ja OR 7pi OR 7s7 OR 7gl OR 7ts) NMAG !INF ETH !RW !SOCK=1 FILTLVL<4]: %NAME%{%NAME%}
 ItemDisplay[(bal OR glv OR tsp OR 9b8 OR 9gl OR 9ts) NMAG !INF ETH !RW !SOCK=1 BARBARIAN CLVL<80]: %NAME%{%NAME%}
 // Bows
-ItemDisplay[(6lw OR 6l7 OR 6hx) NMAG !INF !RW (SOCK=0 OR SOCK~4-6) ED>14]: %DOT-D6%%BASE_T2%
+ItemDisplay[(6lw OR 6l7 OR 6hx) NMAG !INF !RW (SOCK=0 OR SOCK~4-6) ED>14]: %DOT-D6%%BASE_T2%{%NAME%}
 ItemDisplay[(6lw OR 6l7 OR 6hx) NMAG !INF !RW (SOCK=0 OR SOCK~4-6) ED>4 FILTLVL<6]: %DOT-D6%%TIER-3%%NAME%{%NAME%}
 ItemDisplay[(6lw OR 6l7 OR 6hx OR 6cb) NMAG !INF !RW (SOCK=0 OR SOCK~4-6) FILTLVL<4]: %NAME%{%NAME%}
 ItemDisplay[(6cb OR 6hb) NMAG !INF !RW SOCK=3 FILTLVL<4]: %NAME%{%NAME%}
 ItemDisplay[(hbw OR cbw OR mxb) NMAG !INF !RW SOCK=4 ILVL>25 FILTLVL<4]: %TEAL%* %NAME% %TEAL%*{%WHITE%for vendor shopping%NL%Low req Harmony base%NL%%NL%%NAME%} // Low req Harmony
 // Crossbows
-ItemDisplay[(6rx OR 6lx OR 6mx OR 6hx) NMAG !INF !RW (SOCK=0 OR SOCK=4 OR SOCK=5) ED>14]: %DOT-D6%%BASE_T2%
-ItemDisplay[(6rx OR 6lx OR 6mx OR 6hx) NMAG !INF !RW (SOCK=0 OR SOCK=4 OR SOCK=5) ED>4 FILTLVL<6]: %DOT-D6%%TIER-3%%BASE_T1%
+ItemDisplay[(6rx OR 6lx OR 6mx OR 6hx) NMAG !INF !RW (SOCK=0 OR SOCK=4 OR SOCK=5) ED>14]: %DOT-D6%%BASE_T2%{%NAME%}
+ItemDisplay[(6rx OR 6lx OR 6mx OR 6hx) NMAG !INF !RW (SOCK=0 OR SOCK=4 OR SOCK=5) ED>4 FILTLVL<6]: %DOT-D6%%TIER-3%%BASE_T1%{%NAME%}
 ItemDisplay[(6rx OR 6lx OR 6mx OR 6hx) NMAG !INF !RW (SOCK=0 OR SOCK=4 OR SOCK=5) FILTLVL<4]: %NAME%{%NAME%}
 ItemDisplay[(6rx OR 6lx) NMAG !INF !RW SOCK=3 FILTLVL<4]: %NAME%{%NAME%}
 ItemDisplay[6rx NMAG !INF !RW (SOCK=0 OR SOCK=4) FILTLVL<4]: %NAME%{%NAME%}
 // Clubs
-ItemDisplay[CLUB (SK230>2 (SK250>0 OR SK235>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK370>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Arctic Blast with add for Druids
-ItemDisplay[CLUB (SK234>2 (SK244>0 OR SK249>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Fissure with Volcano/Armageddon for Druids
-ItemDisplay[CLUB (SK244>2 (SK234>0 OR SK249>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Volcano with Fissure/Armageddon for Druids
-ItemDisplay[CLUB (SK243>2 (SK250>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK241>0 OR SK228>0 OR SK224>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Shock Wave with add for Druids
-ItemDisplay[CLUB (SK238>2 (SK250>0 OR SK226>0 OR SK247>0 OR SK222>0 OR SK231>0 OR SK223>0 OR SK224>0 OR SK236>0 OR SK232>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Rabies with add for Druids
-ItemDisplay[CLUB (SK221>2 (SK227>0 OR SK237>0 OR SK247>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // Raven with add for Druids
-ItemDisplay[CLUB (SK227>2 (SK237>0 OR SK247>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // Spirit Wolf with add for Druids
-ItemDisplay[CLUB (SK237>2 (SK227>0 OR SK247>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // Dire Wolf with add for Druids
-ItemDisplay[CLUB (SK247>2 (SK227>0 OR SK237>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // Grizzly with add for Druids
-ItemDisplay[CLUB (SK222>2 (SK250>0 OR SK235>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK370>0 OR SK223>0 OR SK228>0 OR SK236>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1% // +3 Poison Creeper with add for Druids
+ItemDisplay[CLUB (SK230>2 (SK250>0 OR SK235>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK370>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Arctic Blast with add for Druids
+ItemDisplay[CLUB (SK234>2 (SK244>0 OR SK249>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Fissure with Volcano/Armageddon for Druids
+ItemDisplay[CLUB (SK244>2 (SK234>0 OR SK249>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Volcano with Fissure/Armageddon for Druids
+ItemDisplay[CLUB (SK243>2 (SK250>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK241>0 OR SK228>0 OR SK224>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Shock Wave with add for Druids
+ItemDisplay[CLUB (SK238>2 (SK250>0 OR SK226>0 OR SK247>0 OR SK222>0 OR SK231>0 OR SK223>0 OR SK224>0 OR SK236>0 OR SK232>0)) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Rabies with add for Druids
+ItemDisplay[CLUB (SK221>2 (SK227>0 OR SK237>0 OR SK247>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // Raven with add for Druids
+ItemDisplay[CLUB (SK227>2 (SK237>0 OR SK247>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // Spirit Wolf with add for Druids
+ItemDisplay[CLUB (SK237>2 (SK227>0 OR SK247>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // Dire Wolf with add for Druids
+ItemDisplay[CLUB (SK247>2 (SK227>0 OR SK237>0 OR SK221>0 OR SK250>0 OR SK235>0 OR SK226>0 OR SK231>0 OR SK370>0 OR SK236>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // Grizzly with add for Druids
+ItemDisplay[CLUB (SK222>2 (SK250>0 OR SK235>0 OR SK226>0 OR SK247>0 OR SK231>0 OR SK370>0 OR SK223>0 OR SK228>0 OR SK236>0)) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Poison Creeper with add for Druids
 ItemDisplay[CLUB (SK221>2 OR SK222>2 OR SK227>2 OR SK230>2 OR SK234>2 OR SK237>2 OR (SK238>2 !ETH) OR SK240>2 OR SK243>2 OR SK244>2 OR SK247>2) DRUID !INF NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%NAME%{%NAME%} // Notify +3 plain while leveling for Druids
 ItemDisplay[CLUB (SK221>2 OR SK222>2 OR SK247>2) DRUID !INF NMAG !RW !SOCK~1-2 FILTLVL<7]: %NAME%{%NAME%} // Plague Bases
 ItemDisplay[CLUB (SK221>2 OR SK222>2 OR SK227>2 OR SK230>2 OR SK234>2 OR SK237>2 OR SK238>2 OR SK240>2 OR SK243>2 OR SK244>2 OR SK247>2) !INF NMAG !RW !SOCK=1 FILTLVL<4]: %NAME%{%NAME%} // Show +3 plain
@@ -2644,7 +2645,7 @@ ItemDisplay[(DAGGER !(THROWING OR dgr OR dir)) (SK73>0 OR SK254>0 OR SK259>0 OR 
 ItemDisplay[DAGGER (SK252>0 OR SK254>0 SK255>0 OR SK257>0 OR SK259>0 OR SK265>0 OR SK266>0 OR SK269>0 OR SK270>0 OR SK274>0 OR SK275>0 OR SK280>0 OR SK66>0 OR SK67>0 OR SK68>0 OR SK69>0 OR SK70>0 OR SK71>0 OR SK72>0 OR SK73>0 OR SK74>0 OR SK75>0 OR SK76>0 OR SK77>0 OR SK78>0 OR SK79>0 OR SK80>0 OR SK81>0 OR SK82>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK86>0 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>0 OR SK91>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0 OR SK367>0 OR SK374>0 OR SK381>0) !INF !ETH NMAG !RW CLVL<80]: %NAME%{%NAME%} // Show any skill
 // Axes
 ItemDisplay[(7wa OR 72a OR 7ax) !INF NMAG !RW !SOCK~1-3 ED>14]: %DOT-D6%%NAME%{%NAME%}
-ItemDisplay[(7wa OR 72a OR 7ax) !INF NMAG !RW !SOCK~1-3 ED>4 FILTLVL<4]: %DOT-D6%%TIER-2%%NAME%{%NAME%}
+ItemDisplay[(7wa OR 72a OR 7ax) !INF NMAG !RW !SOCK~1-3 ED>4]: %DOT-D6%%TIER-2%%NAME%{%NAME%}
 ItemDisplay[(7wa OR 72a OR 7ax) !INF NMAG !RW !SOCK~1-2 FILTLVL<3]: %NAME%{%NAME%} // Show
 ItemDisplay[2ax !INF NMAG !RW SOCK=5 FILTLVL<7]: %NAME%{%NAME%} // Show Double Axe
 ItemDisplay[wax !INF NMAG !RW SOCK=5 FILTLVL<6]: %NAME%{%NAME%} // Show War Axe
@@ -2656,10 +2657,10 @@ ItemDisplay[7wh !INF NMAG !RW !SOCK~1-2 ED>14 FILTLVL<4]: %DOT-D6%%TIER-2%%NAME%
 ItemDisplay[7wh !INF NMAG !RW !SOCK~1-2 ED>4 FILTLVL<4]: %DOT-D6%%TIER-2%%NAME%{%NAME%}
 ItemDisplay[7wh !INF NMAG !RW !SOCK~1-2 FILTLVL<3]: %NAME%{%NAME%} // Show
 // Scepters
-ItemDisplay[(SCEPTER !scp) (SK121>2 SK123>2) !INF NMAG !RW (SOCK=0 OR SOCK=3) FILTLVL<7]: %DOT-D6%%TIER-3%%BASE_T2% // FoH with Conviction for all
-ItemDisplay[(SCEPTER !scp) (SK121>2 (SK123>0 OR SK101>0)) PALADIN !INF NMAG !RW (SOCK=0 OR SOCK=3) FILTLVL<7]: %DOT-D6%%BASE_T1% // FoH with Holy Bolt or Conviction for Paladins
+ItemDisplay[(SCEPTER !scp) (SK121>2 SK123>2) !INF NMAG !RW (SOCK=0 OR SOCK=3) FILTLVL<7]: %DOT-D6%%TIER-3%%BASE_T2%{%NAME%} // FoH with Conviction for all
+ItemDisplay[(SCEPTER !scp) (SK121>2 (SK123>0 OR SK101>0)) PALADIN !INF NMAG !RW (SOCK=0 OR SOCK=3) FILTLVL<7]: %DOT-D6%%BASE_T1%{%NAME%} // FoH with Holy Bolt or Conviction for Paladins
 ItemDisplay[SCEPTER (SK101>2 OR SK112>2 OR SK121>2) PALADIN !INF NMAG !RW (SOCK=0 OR SOCK=2) FILTLVL<3]: %DOT-D6%%NAME%{%NAME%} // Notify +3 plain while leveling for Paladins
-ItemDisplay[wsp SK117>2 !INF NMAG !RW (SOCK=0 OR SOCK=5) FILTLVL<7]: %DOT-D6%%TIER-6%%BASE_T2% // Notify +3 Holy Shield War Scepter for all
+ItemDisplay[wsp SK117>2 !INF NMAG !RW (SOCK=0 OR SOCK=5) FILTLVL<7]: %DOT-D6%%TIER-6%%BASE_T2%{%NAME%} // Notify +3 Holy Shield War Scepter for all
 ItemDisplay[wsp SK117>0 !INF NMAG !RW (SOCK=0 OR SOCK=5) FILTLVL<7]: %NAME%{%NAME%} // Show +x Holy Shield War Scepter for all
 ItemDisplay[(9ws OR 7ws) SK117>0 !INF NMAG !RW (SOCK=0 OR SOCK=5) FILTLVL<5]: %NAME%{%NAME%} // Show +x Holy Shield Divine Scepter/Caduceus for all
 ItemDisplay[SCEPTER (SK101>2 OR SK112>2 OR SK121>2) !INF NMAG !RW !SOCK=1 FILTLVL<4]: %NAME%{%NAME%} // Show +3 Holy Bolt/FoH/Blessed Hammer plain
@@ -2676,15 +2677,15 @@ ItemDisplay[(7fb OR 7gd) !ETH NMAG !RW !INF !SOCK~1-2 ED>4 FILTLVL<4]: %DOT-D6%%
 ItemDisplay[fla NMAG !RW !INF (SOCK=0 OR SOCK>2 OR SOCK=3) CLVL<31]: %NAME%{%NAME%}
 ItemDisplay[fla NMAG !RW !INF SOCK>3 FILTLVL<7]: %NAME%{%NAME%}
 // Wands
-ItemDisplay[WAND !(wnd OR ywn OR 9wn) ((SK75>2 OR SK85>2 OR SK94>2) SK79>0) NMAG !RW !SOCK=1 FILTLVL<7]: %DOT-D6%%BASE_T2% // Dominion Bases with Golem Mastery
+ItemDisplay[WAND !(wnd OR ywn OR 9wn) ((SK75>2 OR SK85>2 OR SK94>2) SK79>0) NMAG !RW !SOCK=1 FILTLVL<7]: %DOT-D6%%BASE_T2%{%NAME%} // Dominion Bases with Golem Mastery
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) (SK67>2 OR SK70 OR SK73>2 OR SK74>2 OR SK75>2 OR SK80>2 OR SK83>2 OR SK84>2 OR SK85>2 OR SK89>2 OR SK92>2 OR SK94>2 OR SK95>2) !INF !ETH NECROMANCER !SOCK=1 NMAG !RW FILTLVL<3]: %DOT-D6%%NAME%{%NAME%} // Notify +3 plain for Necromancers while leveling
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) (SK67>2 OR SK70 OR SK73>2 OR SK74>2 OR SK75>2 OR SK80>2 OR SK83>2 OR SK84>2 OR SK85>2 OR SK89>2 OR SK92>2 OR SK94>2 OR SK95>2) !INF !ETH !SOCK=1 NMAG !RW FILTLVL<3]: %NAME%{%NAME%} // Show +3 for all
 ItemDisplay[WAND (SK66>0 OR SK67>0 OR SK68>0 OR SK69>0 OR SK70>0 OR SK71>0 OR SK72>0 OR SK73>0 OR SK74>0 OR SK75>0 OR SK76>0 OR SK77>0 OR SK78>0 OR SK79>0 OR SK80>0 OR SK81>0 OR SK82>0 OR SK83>0 OR SK84>0 OR SK85>0 OR SK86>0 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>0 OR SK91>0 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0 OR SK367>0 OR SK374>0 OR SK381>0) !INF !ETH NMAG !RW CLVL<80]: %NAME%{%NAME%} // Show any skill
 // Staves
-ItemDisplay[((STAFF ELT) !6ss) ((SK44>2 OR SK59>2 OR SK64>2 OR SK369>2) SK65>0) NMAG !RW (SOCK=0 OR SOCK=5) FILTLVL<7]: %DOT-D6%%BASE_T2% // Cold with mastery Doom bases
-ItemDisplay[6ws ((SK59>2 OR SK64>2) SK65>0) NMAG !RW (SOCK=0 OR SOCK=6) FILTLVL<7]: %DOT-D6%%BASE_T2% // Blizzard/Frozen Orb Archon Staff with mastery Obsession base
+ItemDisplay[((STAFF ELT) !6ss) ((SK44>2 OR SK59>2 OR SK64>2 OR SK369>2) SK65>0) NMAG !RW (SOCK=0 OR SOCK=5) FILTLVL<7]: %DOT-D6%%BASE_T2%{%NAME%} // Cold with mastery Doom bases
+ItemDisplay[6ws ((SK59>2 OR SK64>2) SK65>0) NMAG !RW (SOCK=0 OR SOCK=6) FILTLVL<7]: %DOT-D6%%BASE_T2%{%NAME%} // Blizzard/Frozen Orb Archon Staff with mastery Obsession base
 ItemDisplay[6ws (SK59>2 OR SK64>2) NMAG !RW (SOCK=0 OR SOCK=6) FILTLVL<7]: %DOT-D6%%NAME%{%NAME%} // Blizzard/Frozen Orb Archon Staff Obsession base
-ItemDisplay[((STAFF ELT) !6ss) (((SK38>2 OR SK48>2 OR SK54>2 OR SK53>2) SK63>0) OR (SK63>2 SK54>0)) NMAG !RW (SOCK=0 OR SOCK=4)]: %DOT-D6%%BASE_T2% // Lightning with mastery Infinity bases
+ItemDisplay[((STAFF ELT) !6ss) (((SK38>2 OR SK48>2 OR SK54>2 OR SK53>2) SK63>0) OR (SK63>2 SK54>0)) NMAG !RW (SOCK=0 OR SOCK=4)]: %DOT-D6%%BASE_T2%{%NAME%} // Lightning with mastery Infinity bases
 ItemDisplay[((STAFF ELT) !6ss) (SK38>2 OR SK48>2 OR SK53>2 OR SK63>2) NMAG !RW (SOCK=0 OR SOCK=4)]: %DOT-D6%%NAME%{%NAME%} // +3 Infinity basic bases
 ItemDisplay[(wst OR 8ws OR 6ws) (SK58>2 (SK50>0 OR SK57>0 OR SK60>0)) NMAG !RW (SOCK=0 OR SOCK=5)]: %DOT-D6%%GRAY%*%YELLOW%*%ORANGE%* %GRAY%%NAME% %ORANGE%*%YELLOW%*%GRAY%*{%NAME%} // +3 Energy Shield War/Rune/Archon Staff with either Shiver Armor, Thunder Storm or Chilling Armor CTA bases
 ItemDisplay[(cst OR 8cs OR 6cs OR bst OR 8bs OR 6bs OR 6ls) (SK57>2 OR SK58>2) NMAG !RW (SOCK=0 OR SOCK=4) FILTLVL<4]: %DOT-D6%%NAME%{%NAME%} // +3 Energy Shield basic bases with 0/4os
@@ -2692,8 +2693,8 @@ ItemDisplay[(cst OR 8cs OR 6cs OR bst OR 8bs OR 6bs OR 6ls) (SK38>2 OR SK41>2 OR
 ItemDisplay[(wst OR 8ws OR 6ws) SK58>2 NMAG !RW SOCK=0 FILTLVL<7]: %DOT-D6%%NAME%{%NAME%} // +3 Energy Shield War/Rune/Archon Staff with 0os
 ItemDisplay[(wst OR 8ws OR 6ws) SK58>2 NMAG !RW SOCK=5]: %DOT-D6%%NAME%{%NAME%} // +3 Energy Shield War/Rune/Archon Staff with 5os
 ItemDisplay[STAFF ELT NMAG !RW SOCK=3 FILTLVL<3]: %DOT-D6%%NAME%{%NAME%} // Purity Elite bases for A4 merc
-ItemDisplay[STAFF ELT ((SK41>2 OR SK51>2) SK61>0) NMAG !RW (SOCK=0 OR SOCK=2) FILTLVL<5]: %DOT-D6%%BASE_T2% // +3 Inferno/Fire Wall with mastery Leaf Elite bases
-ItemDisplay[STAFF !ELT ((SK41>2 OR SK51>2) SK61>0) NMAG !RW (SOCK=0 OR SOCK=2) FILTLVL<4]: %DOT-D6%%BASE_T2% // +3 Inferno/Fire Wall with mastery Leaf Normal/Exceptional bases
+ItemDisplay[STAFF ELT ((SK41>2 OR SK51>2) SK61>0) NMAG !RW (SOCK=0 OR SOCK=2) FILTLVL<5]: %DOT-D6%%BASE_T2%{%NAME%} // +3 Inferno/Fire Wall with mastery Leaf Elite bases
+ItemDisplay[STAFF !ELT ((SK41>2 OR SK51>2) SK61>0) NMAG !RW (SOCK=0 OR SOCK=2) FILTLVL<4]: %DOT-D6%%BASE_T2%{%NAME%} // +3 Inferno/Fire Wall with mastery Leaf Normal/Exceptional bases
 ItemDisplay[STAFF (SK41>2 OR SK51>2) NMAG !RW (SOCK=0 OR SOCK=2) SORCERESS FILTLVL<4]: %DOT-D6%%NAME%{%NAME%} // +3 Inferno/Fire Wall basic Leaf bases for Sorcs
 ItemDisplay[STAFF (SK41>2 OR SK51>2) NMAG !RW (SOCK=0 OR SOCK=2) FILTLVL<3]: %NAME%{%NAME%} // Show +3 Inferno basic Leaf bases for all
 ItemDisplay[(8cs OR 8bs OR 8ws) (SK38>2 OR SK41>2 OR SK44>2 OR SK48>2 OR SK51>2 OR SK53>2 OR SK59>2 OR SK62>2 OR SK64>2 OR SK369>2 OR SK376>2) NMAG !RW (SOCK=0 OR SOCK=4) FILTLVL<3]: %NAME%{%NAME%} // Leveling Insight and Memory
@@ -2705,30 +2706,30 @@ ItemDisplay[SOR (SK38>2 OR SK41>2 OR SK44>2 OR SK48>2 OR SK51>2 OR SK53>2 OR SK5
 ItemDisplay[SOR (SK38>2 OR SK41>2 OR SK44>2 OR SK47>2 OR SK48>2 OR SK49>2 OR SK51>2 OR SK53>2 OR SK56>2 OR SK59>2 OR SK62>2 OR SK64>2 OR SK369>2 OR SK376>2) !INF !ETH !SOCK=1 NMAG !RW FILTLVL<3]: %NAME%{%NAME%} // Show +3 for all
 ItemDisplay[SOR (SK36>0 OR SK37>0 OR SK38>0 OR SK39>0 OR SK40>0 OR SK41>0 OR SK42>0 OR SK43>0 OR SK44>0 OR SK45>0 OR SK46>0 OR SK47>0 OR SK48>0 OR SK49>0 OR SK50>0 OR SK51>0 OR SK52>0 OR SK53>0 OR SK54>0 OR SK55>0 OR SK56>0 OR SK57>0 OR SK58>0 OR SK59>0 OR SK60>0 OR SK61>0 OR SK62>0 OR SK63>0 OR SK64>0 OR SK65>0 OR SK369>0 OR SK376>0 OR SK383>0) NMAG !INF !RW CLVL<80]: %NAME%{%NAME%} // Show any skill
 // Polearms, Spears and Amazon Spears
-ItemDisplay[(7sr OR 7tr OR 7br OR 7st OR 7p7 OR 7o7 OR 7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG ETH !INF !RW !SOCK~1-3 ED>14]: %DOT-D6%%BASE_T2% // 15ed Ethereal Polearms and Spears
-ItemDisplay[(7sr OR 7tr OR 7br OR 7st OR 7p7 OR 7o7 OR 7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG ETH !INF !RW !SOCK~1-3 ED>4]: %DOT-D6%%BASE_T1% // 5+ ed Ethereal Polearms and Spears
+ItemDisplay[(7sr OR 7tr OR 7br OR 7st OR 7p7 OR 7o7 OR 7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG ETH !INF !RW !SOCK~1-3 ED>14]: %DOT-D6%%BASE_T2%{%NAME%} // 15ed Ethereal Polearms and Spears
+ItemDisplay[(7sr OR 7tr OR 7br OR 7st OR 7p7 OR 7o7 OR 7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG ETH !INF !RW !SOCK~1-3 ED>4]: %DOT-D6%%BASE_T1%{%NAME%} // 5+ ed Ethereal Polearms and Spears
 ItemDisplay[(7sr OR 7tr OR 7br OR 7st OR 7p7 OR 7o7 OR 7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG !INF !RW !SOCK~1-3 FILTLVL<4]: %NAME%{%NAME%}
 ItemDisplay[(7sr OR 7tr OR 7br OR 7st OR 7p7 OR 7o7 OR 7vo OR 7s8 OR 7pa OR 7h7 OR 7wc) NMAG ETH !INF !RW !SOCK~1-3 FILTLVL=6]: %NAME%{%NAME%} // Krampz: So there's a fucking problem with my fucking filter, and my fucking filter guy literally demanded that I put my fucking feedback in the fucking thingy. Can you make it so that I can find ethereal fucking threshers with my fucking filterlevel, fucking fluffy?
 ItemDisplay[(amd OR ame) TABSK2>2 !ETH !INF NMAG !RW (SOCK=0 OR SOCK=4 OR SOCK=5 OR SOCK=6) ED>4 AMAZON FILTLVL<7]: %DOT-D6%%TIER-3%%NAME%{%NAME%}
 ItemDisplay[(amd OR ame) TABSK2>2 ETH !INF NMAG !RW SOCK=6 ED>4 AMAZON FILTLVL<7]: %DOT-D6%%TIER-3%%NAME%{%NAME%}
 ItemDisplay[(amd OR ame) TABSK2>2 !INF NMAG !RW !SOCK~1-3 FILTLVL<4]: %NAME%{%NAME%}
 // Chaos claws
-ItemDisplay[7xf (SK252>2 OR SK278>2) !INF ETH NMAG !RW !SOCK~1-2]: %DOT-D6%%BASE_T2% // +3 Claw Mastery/Venom Ethereal War Fist for Chaos
+ItemDisplay[7xf (SK252>2 OR SK278>2) !INF ETH NMAG !RW !SOCK~1-2]: %DOT-D6%%BASE_T2%{%NAME%} // +3 Claw Mastery/Venom Ethereal War Fist for Chaos
 ItemDisplay[7xf (SK252>0 OR SK257>2 OR SK258>0 OR SK263>0 OR SK267>0 OR SK275>0 OR SK277>0 OR SK278>0 OR SK279>0) !INF ETH NMAG !RW !SOCK~1-2]: %DOT-D6%%TIER-6%%NAME%{%NAME%} // Decent Ethereal War Fist Chaos
 ItemDisplay[7xf !INF ETH NMAG !RW !SOCK~1-2 FILTLVL<4]: %DOT-D6%%NAME%{%NAME%} // Notify any Ethereal War Fist Chaos
 ItemDisplay[7xf !INF ETH NMAG !RW !SOCK~1-2 FILTLVL<7]: %NAME%{%NAME%} // Show any Ethereal War Fist Chaos
 ItemDisplay[(7ar OR 7qr) (SK252>2 OR SK257>2 OR SK258>2 OR SK263>2 OR SK267>2 OR SK275>0 OR SK277>0 OR SK278>2 OR SK279>0) !INF ETH NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%NAME%{%NAME%} // Decent Ethereal Suwayyah and Scissors Suwayyah Chaos
 // Good combo claws
-ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK268>2 SK278>2) !INF NMAG !RW !SOCK~1-2 FILTLVL<7]: %DOT-D6%%BASE_T2% // +3 Warrior and Venom
-ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK265>2 SK278>2) !INF NMAG !RW !SOCK~1-2 FILTLVL<7]: %DOT-D6%%BASE_T2% // +3 Cobra and Venom
-ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK269>2 (SK275>0 OR SK258>0 OR SK267>0 OR SK264>0 OR SK263>0 OR SK277>0 OR SK252>0)) !INF !ETH NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1% // +3 Claws of Thunder with adds
-ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK280>2 (SK275>0 OR SK258>0 OR SK267>0 OR SK264>0 OR SK263>0 OR SK277>0 OR SK252>0)) !INF !ETH NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1% // +3 Phoenix with adds
-ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces)) (SK256>2 (SK275>0 OR SK263>0 OR SK366>0 OR SK271>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1% // +3 Shock Web with adds
-ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces)) (SK271>2 (SK275>0 OR SK263>0 OR SK366>0 OR SK256>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1% // +3 Chain Lightning Sentry with adds
-ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces)) (SK366>2 (SK275>0 OR SK263>0 OR SK271>0 OR SK256>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1% // +3 Lightning Sentry with adds
-ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces)) (SK262>2 (SK275>0 OR SK263>0 OR SK272>0 OR SK276>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1% // +3 Wake of Fire with adds
-ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces)) (SK257>2 (SK275>0 OR SK263>0 OR SK277>0 OR SK252>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1% // +3 Sentinel with adds
-//ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK266>2 (SK275>0 OR SK263>0 OR SK277>0 OR SK252>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1% // +3 Fury with adds
+ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK268>2 SK278>2) !INF NMAG !RW !SOCK~1-2 FILTLVL<7]: %DOT-D6%%BASE_T2%{%NAME%} // +3 Warrior and Venom
+ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK265>2 SK278>2) !INF NMAG !RW !SOCK~1-2 FILTLVL<7]: %DOT-D6%%BASE_T2%{%NAME%} // +3 Cobra and Venom
+ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK269>2 (SK275>0 OR SK258>0 OR SK267>0 OR SK264>0 OR SK263>0 OR SK277>0 OR SK252>0)) !INF !ETH NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Claws of Thunder with adds
+ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK280>2 (SK275>0 OR SK258>0 OR SK267>0 OR SK264>0 OR SK263>0 OR SK277>0 OR SK252>0)) !INF !ETH NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Phoenix with adds
+ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces)) (SK256>2 (SK275>0 OR SK263>0 OR SK366>0 OR SK271>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Shock Web with adds
+ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces)) (SK271>2 (SK275>0 OR SK263>0 OR SK366>0 OR SK256>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Chain Lightning Sentry with adds
+ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces)) (SK366>2 (SK275>0 OR SK263>0 OR SK271>0 OR SK256>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Lightning Sentry with adds
+ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces)) (SK262>2 (SK275>0 OR SK263>0 OR SK272>0 OR SK276>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Wake of Fire with adds
+ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces)) (SK257>2 (SK275>0 OR SK263>0 OR SK277>0 OR SK252>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Sentinel with adds
+//ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK266>2 (SK275>0 OR SK263>0 OR SK277>0 OR SK252>0)) !INF NMAG !RW !SOCK~1-2 FILTLVL<5]: %DOT-D6%%BASE_T1%{%NAME%} // +3 Fury with adds
 ItemDisplay[SIN (SK273>2 (SK253>0 OR SK258>0 OR SK263>0 OR SK267>0 OR SK268>0 OR SK275>0)) !INF NMAG !RW ASSASSIN (SOCK=0 OR SOCK=2) FILTLVL<4]: %DOT-D6%%NAME%{%NAME%} // Mind Blast with adds claws
 ItemDisplay[SIN (SK251>2 OR SK252>2 OR SK253>2 OR SK254>2 OR SK255>2 OR SK256>2 OR SK257>2 OR SK259>2 OR SK260>2 OR SK261>2 OR SK262>2 OR SK265>2 OR SK266>2 OR SK268>2 OR SK269>2 OR SK270>2 OR SK271>2 OR SK273>2 OR SK274>2 OR SK276>2 OR SK279>2 OR SK280>2 OR SK366>2) !INF !ETH ASSASSIN !SOCK=1 NMAG !RW FILTLVL<4]: %DOT-D6%%NAME%{%NAME%} // Notify +3 plain for Assassins while leveling
 ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK251>2 OR SK252>2 OR SK253>2 OR SK254>2 OR SK255>2 OR SK256>2 OR SK257>2 OR SK259>2 OR SK260>2 OR SK261>2 OR SK262>2 OR SK265>2 OR SK266>2 OR SK267>2 OR SK268>2 OR SK269>2 OR SK270>2 OR SK271>2 OR SK272>2 OR SK273>2 OR SK274>2 OR SK275>2 OR SK276>2 OR SK278>2 OR SK279>2 OR SK280>2 OR SK366>2) !INF NMAG !RW !SOCK=1 FILTLVL<7]: %NAME%{%NAME%} // Show +3 claws
@@ -3086,7 +3087,7 @@ ItemDisplay[UNI OR SET OR RW OR CRAFT OR GEMMED]: %NAME%{%NAME%}
 ItemDisplay[(ILVL>1 OR QTY>0 OR PRICE>1 OR SELLPRICE>1) !(ARMOR OR WEAPON OR amu OR rin OR aqv OR aqv2 OR aqv3 OR cqv OR cqv2 OR cqv3 OR cm1 OR cm2 OR cm3 OR jew OR jewf OR RUNE>0 OR GEMTYPE>0 OR MAPTIER>-1 OR hp1 OR mp1 OR hp2 OR mp2 OR hp3 OR mp3 OR hp4 OR mp4 OR hp5 OR mp5 OR pvpp OR rvs OR rvl OR vps OR wms OR yps OR key OR tsc OR isc OR tbk OR ibk OR ear OR bks OR bkd OR box OR vip OR tr1 OR ass OR j34 OR g34 OR xyz OR bbb OR qbr OR qey OR qhr OR mss OR ice OR tr2 OR toa OR tes OR ceh OR bet OR fed OR dhn OR bey OR mbr OR pk1 OR pk2 OR pk3 OR std OR wss OR cwss OR lpp OR lbox OR lmal OR crfb OR crfc OR crfh OR crfs OR crfv OR crfu OR crfp OR rtp OR rid OR rkey OR lsvl OR llmr OR ubtm OR uba OR ubaa OR ubab OR ubac OR dcma OR dcso OR dcho OR dcbl OR rtma OR rtmv OR rtmo OR cm2f OR rtmf OR iwss OR scrb OR upmp OR scou OR irma OR irra OR urma OR rrra OR imma OR imra OR upma OR rera OR fort OR ram OR luca OR lucb OR lucc OR lucd OR imrn OR ivea OR ivez OR iveb OR ived OR iven OR ivep OR ives)]: %MAP-0A%%PX-62%%NAME%{%NAME%%CL%%WHITE%Item description will be adjusted later during the season.%CL%This item is recently added to the game.}	// notifications for unknown items (the first group of conditions including ilvl/qty/price is a workaround for !GOLD>0 since that doesn't work like other conditions)
 
 // Holy Grail (Discovery)
-ItemDisplay[(UNI OR SET) !DISCOVERED]: %NAME% %PURPLE%Grail{Holy Grailer}%CONTINUE%
+//ItemDisplay[(UNI OR SET) !OWNED]: %NAME% %PURPLE%Grail{Holy Grailer}%CONTINUE%
 
 // ============================== HIDE EVERYTHING ELSE =============================================================================================================================================================================
 // --- Quivers ---
