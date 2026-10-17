@@ -590,6 +590,7 @@ ItemDisplay[(HELM OR CHEST OR SHIELD OR GLOVES OR BELT OR BOOTS OR QUIVER) (RARE
 ItemDisplay[(CHEST OR SHIELD) (RARE OR CRAFT) STAT153>0 STATHLPOS]: %BLUE%CBF %NAME%%CONTINUE% // cbf
 ItemDisplay[(HELM OR SHIELD OR GLOVES OR BOOTS) (RARE OR CRAFT) STAT118>0 STATHLPOS]: %BLUE%hfd %NAME%%CONTINUE% // hfd
 ItemDisplay[(HELM OR GLOVES OR BOOTS OR QUIVER) (RARE OR CRAFT) MFIND>11 STATHLPOS !FILTLVL=6]: %PURPLE%%MFIND%mf %NAME%%CONTINUE% // mf
+ItemDisplay[(HELM OR GLOVES OR BOOTS OR QUIVER) (RARE OR CRAFT) MFIND~1-11 STATHLPOS (CLVL<80 OR FILTLVL<4)]: %PURPLE%%MFIND%mf %NAME%%CONTINUE% // mf
 //ItemDisplay[SHIELD (RARE OR CRAFT) DTM>0 STATHLPOS]: %BLUE%dtm %NAME%%CONTINUE%
 ItemDisplay[(GLOVES OR QUIVER OR SHIELD) (RARE OR CRAFT) STAT138>0 STATHLPOS !FILTLVL=6]: %BLUE%%STAT138%mpk %NAME%%CONTINUE%
 ItemDisplay[(GLOVES OR QUIVER OR SHIELD) (RARE OR CRAFT) STAT86>0 STATHLPOS !FILTLVL=6]: %RED%%STAT86%lpk %NAME%%CONTINUE%
@@ -613,7 +614,7 @@ ItemDisplay[(HELM OR CHEST OR SHIELD OR BELT) (RARE OR CRAFT) LIFE>30 STATHLPOS 
 ItemDisplay[(GLOVES OR QUIVER) (RARE OR CRAFT) DEX>0 STATHLPOS !FILTLVL=6]: %CORAL%%DEX%dex %NAME%%CONTINUE% // dex
 ItemDisplay[BELT (RARE OR CRAFT) STR>14 STATHLPOS FILTLVL=6]: %CORAL%%STR%str %NAME%%CONTINUE% // str
 ItemDisplay[(GLOVES OR BELT OR QUIVER) (RARE OR CRAFT) STR>0 STATHLPOS !FILTLVL=6]: %CORAL%%STR%str %NAME%%CONTINUE% // str
-ItemDisplay[QUIVER (RARE OR CRAFT) STAT81>0 STATHLPOS !FILTLVL=6]: %WHITE%kb %NAME%%CONTINUE%
+ItemDisplay[QUIVER (RARE OR CRAFT) STAT81>0 STATHLPOS !FILTLVL=6]: %LIGHT_GRAY%kb %NAME%%CONTINUE%
 ItemDisplay[GLOVES (RARE OR CRAFT) FBR>0 STATHLPOS !FILTLVL=6]: %LIGHT_GRAY%%FBR%fbr %NAME%%CONTINUE% // fbr
 ItemDisplay[GLOVES (RARE OR CRAFT) STAT20>0 STATHLPOS !FILTLVL=6]: %LIGHT_GRAY%%STAT20%blk %NAME%%CONTINUE% // block
 ItemDisplay[QUIVER (RARE OR CRAFT) STAT135>0 STATHLPOS]: %LIGHT_GRAY%ow %NAME%%CONTINUE%
@@ -623,9 +624,12 @@ ItemDisplay[(HELM OR GLOVES OR QUIVER) (RARE OR CRAFT) STAT136>0 STATHLPOS]: %LI
 ItemDisplay[(HELM OR GLOVES OR QUIVER) (RARE OR CRAFT) STAT62>0 STATHLPOS !FILTLVL=6]: %BLUE%%STAT62%ml %NAME%%CONTINUE% // mana leech
 ItemDisplay[(HELM OR GLOVES OR QUIVER) (RARE OR CRAFT) STAT60>0 STATHLPOS !FILTLVL=6]: %RED%%STAT60%ll %NAME%%CONTINUE% // life leech
 ItemDisplay[HELM (RARE OR CRAFT) STAT225>0 STATHLPOS !FILTLVL=6]: %TAN%vsn %NAME%%CONTINUE% // visionary
-ItemDisplay[QUIVER (RARE OR CRAFT) (MINDMG>0 MAXDMG>0) STATHLPOS !FILTLVL=6]: %GOLD%%MINDMG%-%MAXDMG%dmg %NAME%%CONTINUE% // min and max
-ItemDisplay[QUIVER (RARE OR CRAFT) (MAXDMG>0 !MINDMG>0) STATHLPOS !FILTLVL=6]: %GOLD%%MAXDMG%Max %NAME%%CONTINUE% // max
-ItemDisplay[QUIVER (RARE OR CRAFT) (MINDMG>0 !MAXDMG>0) STATHLPOS !FILTLVL=6]: %GOLD%%MINDMG%Min %NAME%%CONTINUE% // min
+ItemDisplay[(cqv OR cqv2 OR cqv3) (RARE OR CRAFT) (MINDMG>0 MAXDMG>0) STATHLPOS !FILTLVL=6]: %GOLD%%MINDMG%-%MAXDMG%dmg %NAME%%CONTINUE% // min and max, bolts
+ItemDisplay[(cqv OR cqv2 OR cqv3) (RARE OR CRAFT) (MAXDMG>0 !MINDMG>0) STATHLPOS !FILTLVL=6]: %GOLD%%MAXDMG%Max %NAME%%CONTINUE% // max, bolts
+ItemDisplay[(cqv OR cqv2 OR cqv3) (RARE OR CRAFT) (MINDMG>0 !MAXDMG>0) STATHLPOS !FILTLVL=6]: %GOLD%%MINDMG%Min %NAME%%CONTINUE% // min, bolts
+ItemDisplay[(aqv (MINDMG>0 MAXDMG>2)) OR (aqv2 (MINDMG>0 MAXDMG>10)) OR (aqv3 (MINDMG>0 MAXDMG>0)) (RARE OR CRAFT) STATHLPOS !FILTLVL=6]: %GOLD%%MINDMG%-%MAXDMG%dmg %NAME%%CONTINUE% // min and max, arrows
+ItemDisplay[(aqv (MAXDMG>2 !MINDMG>0)) OR (aqv2 (MAXDMG>10 !MINDMG>0)) OR (aqv3 (MAXDMG>18 !MINDMG>0)) (RARE OR CRAFT) STATHLPOS !FILTLVL=6]: %GOLD%%MAXDMG%Max %NAME%%CONTINUE% // max, arrows
+ItemDisplay[(aqv (MINDMG>0 !MAXDMG>2)) OR (aqv2 (MINDMG>0 !MAXDMG>10)) OR (aqv3 (MINDMG>0 !MAXDMG>0)) (RARE OR CRAFT) STATHLPOS !FILTLVL=6]: %GOLD%%MINDMG%Min %NAME%%CONTINUE% // min, arrows
 ItemDisplay[QUIVER (RARE OR CRAFT) STAT122>0 STATHLPOS !FILTLVL=6]: %GOLD%ud %NAME%%CONTINUE% // undead dmg
 ItemDisplay[QUIVER (RARE OR CRAFT) STAT121>0 STATHLPOS !FILTLVL=6]: %GOLD%dmn %NAME%%CONTINUE% // demon dmg
 ItemDisplay[(CHEST OR (SHIELD !NEC)) (RARE OR CRAFT) EDAM>79 STATHLPOS]: %GOLD%%EDAM%ed %NAME%%CONTINUE% // ed
@@ -905,6 +909,7 @@ ItemDisplay[GEMTYPE=2 GEM>3 QTY>0]: %NAME% %ORANGE%[%WHITE%O%ORANGE%] %TAN%x %WH
 // Skull
 ItemDisplay[GEMTYPE=7 GEM>3 QTY=1 GROUND !TOWN]: %NAME% %ORANGE%[%GRAY%O%ORANGE%]
 ItemDisplay[GEMTYPE=7 GEM>3 QTY>0]: %NAME% %ORANGE%[%GRAY%O%ORANGE%] %TAN%x %WHITE%%QTY%%CONTINUE%
+
 // --- Ping/Hide --------------------------------------------------------------------------------------------
 //hiding low ones
 ItemDisplay[GEM<3 FILTLVL>0 (DIFF>0 OR FILTLVL>3) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:{%NAME%}%CONTINUE%
@@ -912,6 +917,7 @@ ItemDisplay[GEM<4 FILTLVL>0 (DIFF>1 OR FILTLVL>3) !(gzv OR gpv OR glw OR gpw OR 
 // Ping for GEMS
 ItemDisplay[(gzv OR gly OR glb OR glg OR glr OR glw OR skl) FILTLVL<7]: %DOT-70%%TIER-4%%NAME%%CONTINUE%
 ItemDisplay[(gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz)]: %DOT-70%%TIER-4%%NAME%%CONTINUE%
+
 // --- Gems notes -------------------------------------------------------------------------------------------
 // Amethyst
 ItemDisplay[(gzv OR gpv) STASH]: %NAME%{%NAME%%WHITE%You can use %BLUE%magic%WHITE%/%YELLOW%rare %WHITE%items as bases%NL%Gloves: %ORANGE%Ort %WHITE%| Belt: %ORANGE%Ith %WHITE%| Boots: %ORANGE%Thul%NL%%WHITE%Weapon: %ORANGE%Tir %WHITE%| Chest: %ORANGE%Tal %WHITE%| Offhand: %ORANGE%Eth%NL%%WHITE%Helm: %ORANGE%Nef %WHITE%| Amulet: %ORANGE%Ral %WHITE%| Ring: %ORANGE%Amn%NL%%PURPLE%Caster %WHITE%crafting recipes: Perf %PURPLE%O%WHITE%, %BLUE%Jewel%WHITE%,}%CONTINUE%
@@ -931,6 +937,7 @@ ItemDisplay[(skl OR skz) STASH]: %NAME%{%NAME%%WHITE%You can use %BLUE%magic%WHI
 ItemDisplay[GEM>3 !STASH]: %NAME%{%NAME%}
 ItemDisplay[gzv OR glw OR glg OR glr OR glb OR gly OR skl]: %NAME%{%DARK_GREEN%Perfect Gem in currency tab to upgrade%NL%Use small arrow between Flawless and%NL%%NL%%NAME%}%CONTINUE%
 ItemDisplay[gzv OR glw OR glg OR glr OR glb OR gly OR skl]: %NAME%{%NAME%%NL%}%CONTINUE%
+
 // --- Crafting Infusions -----------------------------------------------------------------------------------
 // On the ground outside of Town and x1 quantity
 ItemDisplay[crfc GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Caster Inf %ORANGE%[%PURPLE%O%ORANGE%]
@@ -962,7 +969,7 @@ ItemDisplay[RUNE>27]: %BORDER-62%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YE
 // ==========================================================================================================
 // All Charms
 // ==========================================================================================================
-ItemDisplay[CHARM MAG ILVL>89 !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME% %GOLD%(%TEAL%%ILVL%%GOLD%)  %PURPLE%*
+ItemDisplay[CHARM MAG ILVL>89 !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME% %WHITE%x  %PURPLE%*
 ItemDisplay[(cm1 OR cm3) MAG ILVL<90 !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME%  %PURPLE%*
 ItemDisplay[cm2 MAG (ILVL<90 FILTLVL<3) !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME%  %PURPLE%*
 ItemDisplay[cm2 MAG (ILVL<90 FILTLVL=3) !ID]: %PURPLE%*%BLUE%  %NAME%  %PURPLE%*
@@ -1221,27 +1228,23 @@ ItemDisplay[SET !ID (FILTLVL<3 OR (CLVL<80 AND FILTLVL<4))]: %PX-84%%NAME%%CONTI
 // =================================================================================================================================================================================================================================
 
 // Highlight Good Magic items
-ItemDisplay[jew MAG ILVL>84 !ID]: %DOT-87%%DROPT2L% %GOLD%(%TEAL%%ILVL%%GOLD%)  %DROPT2R%
-ItemDisplay[jew MAG ILVL<85 !ID]: %DOT-87%%DROPS_T2%
-ItemDisplay[amu MAG ILVL>84 !ID]: %NAME% %GOLD%(%TEAL%%ILVL%%GOLD%)%BLUE%
+ItemDisplay[jew MAG !ID]: %DOT-87%%DROPS_T2%
+ItemDisplay[amu MAG ILVL>84 !ID]: %NAME% %WHITE%x%BLUE%
 ItemDisplay[amu MAG ILVL<85 CLVL>84 !ID]: {%NAME%}
 ItemDisplay[(ci2 OR ci3) MAG !ID !ETH FILTLVL<7]: %DOT-97%%NAME%{%NAME%} // Magic Tiara and Diadem
 ItemDisplay[(ci0 OR ci1) MAG !ID !ETH]: %NAME%
 
 // Highlight Good Rare items
-ItemDisplay[amu RARE ILVL>89 !ID]: %DOT-A8%%DROPT2L% %GOLD%(%TEAL%%ILVL%%GOLD%)  %DROPT2R%
+ItemDisplay[amu RARE ILVL>89 !ID]: %DOT-A8%%DROPT2L% %WHITE%x  %DROPT2R%
 ItemDisplay[amu RARE ILVL<90 !ID]: %DOT-A8%%DROPS_T2%
 ItemDisplay[(rin OR CIRC) RARE !ID]: %DOT-A8%%DROPS_T2%
 ItemDisplay[jew RARE !ID]: %DOT-87%%DROPS_T2%
 
 // --- Magic and Rare Armor slots ---
 // Chest Armor
-//ItemDisplay[CHEST RARE !uar !ID ALVL>84]: %DOT-6F%%PX-EF%%TIER-1%%DROP_T1% // ALVL85+
-//ItemDisplay[CHEST RARE !uar !ID ALVL<85]: %DOT-6F%%PX-EF%%TIER-1%%NAME% // ALVL<85
-//ItemDisplay[CHEST RARE !uar !ID ALVL>84 MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-4%%TAN%*%WHITE%* %NAME% %GOLD%(%TEAL%%ALVL%%GOLD%) %TAN%[%WHITE%%MAXSOCKETS%pos%TAN%] %WHITE%*%TAN%*%YELLOW% // 4os, ALVL85+
 ItemDisplay[CHEST RARE !uar !ID ALVL>84 MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-4%%TAN%*%WHITE%* %NAME% %TAN%[%WHITE%%MAXSOCKETS%os pos%TAN%] %WHITE%*%TAN%*%YELLOW% // 4os, ALVL85+
-ItemDisplay[CHEST RARE !uar !ID ALVL>84 MAXSOCKETS<4]: %DOT-6F%%PX-EF%%TIER-1%%TAN%* %NAME% %GOLD%(%TEAL%%ALVL%%GOLD%) %TAN%*%YELLOW% // 2-3os, ALVL85+
-ItemDisplay[CHEST RARE !uar !ID (ALVL>54 ALVL<85) MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-1%%NAME% %TAN%[%WHITE%%MAXSOCKETS%pos%TAN%] // 4os, ALVL<85
+ItemDisplay[CHEST RARE !uar !ID ALVL>84 MAXSOCKETS<4]: %DOT-6F%%PX-EF%%TIER-1%%NAME% %WHITE%x%YELLOW% // 2-3os, ALVL85+
+ItemDisplay[CHEST RARE !uar !ID (ALVL>54 ALVL<85) MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-1%%NAME% %TAN%[%WHITE%%MAXSOCKETS%pos%TAN%]%YELLOW% // 4os, ALVL<85
 ItemDisplay[CHEST RARE !uar !ID ALVL<85 MAXSOCKETS<4]: %DOT-6F%%PX-EF%%TIER-1%%NAME% // 2-3os, ALVL<85
 ItemDisplay[CHEST RARE !uar !ID]: %DOT-6F%%PX-EF%%TIER-1%%NAME%
 ItemDisplay[CHEST MAXSOCKETS=4 MAG ETH !ID]: %NAME% // Ethereal Magic Armors
@@ -1257,11 +1260,17 @@ ItemDisplay[uar MAG ETH !ID]: %GRAY%[%WHITE%eth%GRAY%] %BLUE%Fluffy's Demise
 ItemDisplay[uar MAG ID]: %BLUE%%NAME%
 ItemDisplay[uar MAG ETH ID]: %BLUE%%NAME%
 // Helmets
-ItemDisplay[(HELM !(BAR OR DRU)) RARE !ID]: %DOT-A8%%TIER-4%%DROP_T1%
+ItemDisplay[(HELM !(BAR OR DRU)) RARE !ID]: %DOT-A8%%TIER-3%%DROP_T1%
 ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) !BARBARIAN MAG !ID ILVL>71]: %DROP_T1% // Magic Arreat and Halaberd style
-ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) !BARBARIAN RARE !ID ILVL>71]: %DOT-A8%%TIER-4%%DROP_T1% // Rare Arreat and Halaberd style
-ItemDisplay[(BAR !(ba4 OR ba9 OR bae OR ba5 OR baa OR baf)) RARE !BARBARIAN !ID]: %DOT-A8%%TIER-4%%DROP_T1%
-ItemDisplay[DRU RARE !DRUID !ID]: %DOT-A8%%TIER-4%%DROP_T1%
+ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) !BARBARIAN RARE !ID ILVL>71]: %DOT-A8%%TIER-3%%DROP_T1% // Rare Arreat and Halaberd style
+ItemDisplay[(BAR !(ba4 OR ba9 OR bae OR ba5 OR baa OR baf)) RARE !BARBARIAN !ID]: %DOT-A8%%TIER-3%%DROP_T1%
+ItemDisplay[DRU RARE !DRUID !ID]: %DOT-A8%%TIER-3%%DROP_T1%
+// Shields
+ItemDisplay[(SHIELD !NEC) RARE !ID ALVL>84 MAXSOCKETS=4]: %DOT-A8%%TIER-3%%TAN%*%WHITE%* %NAME% %TAN%[%WHITE%%MAXSOCKETS%os pos%TAN%] %WHITE%*%TAN%*%YELLOW% // 4os, ALVL85+
+ItemDisplay[(SHIELD !NEC) RARE !ID ALVL>84 MAXSOCKETS<4]: %DOT-A8%%TIER-1%%NAME% %WHITE%x%YELLOW% // 2-3os, ALVL85+
+ItemDisplay[(SHIELD !NEC) RARE !ID (ALVL>54 ALVL<85) MAXSOCKETS=4]: %DOT-A8%%TIER-1%%NAME% %TAN%[%WHITE%%MAXSOCKETS%pos%TAN%]%YELLOW% // 4os, ALVL<85
+ItemDisplay[(SHIELD !NEC) RARE !ID ALVL<85 MAXSOCKETS<4]: %DOT-A8%%TIER-1%%NAME% // 2-3os, ALVL<85
+ItemDisplay[(SHIELD !NEC) RARE !ID !FILTLVL=6]: %DOT-A8%%TIER-1%%DROP_T1%
 // Gloves, Belts and Boots
 ItemDisplay[(GLOVES OR BELT OR BOOTS) RARE !ID]: %DOT-6F%%PX-EF%%TIER-1%%NAME%
 ItemDisplay[(GLOVES OR BELT OR BOOTS) MAG ETH !ID]: %NAME%
@@ -1315,20 +1324,18 @@ ItemDisplay[(ktr OR 9ar OR 7ar OR skr OR 9qr OR 7qr OR btl) MAG !ETH !ID ILVL>71
 ItemDisplay[(wrb OR 9wb OR 7wb OR clw OR 9lw OR 7lw OR 7tw) RARE !ID ILVL>71]: %DOT-A8%%NAME% // Rare Wrist Sword Family, Claws Family and Runic Talons
 
 // Class items
-ItemDisplay[(ZON OR (NEC !ETH) OR (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)) (MAG OR RARE) !ID]: %NAME%
+ItemDisplay[(ZON OR (NEC !ETH !FILTLVL=6) OR (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)) (MAG OR RARE) !ID]: %NAME%
 ItemDisplay[(ob5 OR oba OR obf) (MAG OR RARE) !ID]: %NAME%
 ItemDisplay[(wnd OR ywn OR 9wn) MAG !ID CLVL<80]: %NAME% // Hide 1os Wands after 80
 ItemDisplay[(WAND !(wnd OR ywn OR 9wn)) MAG !ID FILTLVL<4]: %NAME%
 ItemDisplay[WAND RARE !ID]: %NAME%
 ItemDisplay[(SCEPTER OR DRU OR BAR OR DIN) MAG !ID FILTLVL<4]: %NAME%
 ItemDisplay[SCEPTER RARE !ID FILTLVL<6]: %NAME%
-ItemDisplay[DIN RARE !ID]: %NAME%
 
 // Craftables
 ItemDisplay[(wax OR 9wa OR 7wa OR gma OR 9gm OR 7gm OR whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR pik OR 9p9 OR 7p7 OR gsd OR 9gd OR 7gd OR bsw OR 9b9 OR 7b7 OR 2ax OR 92a OR 72a) MAG ETH !ID ILVL>71]: %DOT-97%%TIER-2%%NAME%
 ItemDisplay[(wax OR 9wa OR 7wa OR gma OR 9gm OR 7gm OR whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR pik OR 9p9 OR 7p7 OR gsd OR 9gd OR 7gd OR flb OR 9fb OR 7fb OR bsw OR 9b9 OR 7b7 OR gis OR 9gs OR 7gs OR 2ax OR 92a OR 72a) RARE ETH !ID ILVL>71]: %DOT-A8%%TIER-2%%NAME%
-ItemDisplay[(glv OR 9gl OR 7gl) RARE ETH !ID ILVL>71]: %DROP_T2% // Higher end throw weapons
-ItemDisplay[(glv OR 9gl OR 7gl) MAG ETH !ID ILVL>71]: %DROP_T2% // Higher end throw weapons
+ItemDisplay[(glv OR 9gl OR 7gl) (MAG OR RARE) ETH !ID ILVL>71]: %DROP_T2% // Higher end throw weapons
 ItemDisplay[(2ax OR 92a OR 72a OR wax OR 9wa OR 7wa OR btx OR 9bt OR 7bt OR gax OR 9ga OR 7ga OR gix OR 9gi OR 7gi OR mst OR 9mt OR 7mt OR whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm OR gis OR 9gs OR 7gs OR bsw OR 9b9 OR 7b7 OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR bal OR 9b8 OR 7b8 OR jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts OR SPEAR OR POLEARM) MAG ETH !ID]: %NAME%
 ItemDisplay[(lwb OR 8lw OR 6lw) MAG !ID]: %NAME%
 ItemDisplay[(DAGGER !THROWING) MAG ETH !ID FILTLVL<4]: %NAME%
@@ -2747,8 +2754,8 @@ ItemDisplay[(SIN !(ktr OR wrb OR axf OR ces OR 9cs OR 7cs)) (SK251>2 OR SK252>2 
 ItemDisplay[SIN (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0) !INF NMAG !RW CLVL<80]: %NAME%{%NAME%} // Show any skill
 
 // --- Money bases
-ItemDisplay[((WAND NECSTAFF) OR (SOR SORSTAFF) OR (DAGGER (NECSTAFF OR ASNSTAFF))) NMAG !INF !RW SELLPRICE>34501 GROUND FILTLVL~4-5]: %GREEN%*%GRAY%money (%TAN%$%WHITE%35k%GRAY%){%NAME%} // 2 slotters, Ground
-ItemDisplay[(((clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (BARSTAFF OR DRUSTAFF)) OR (SCEPTER !(wsp OR 9ws OR 7ws) PALSTAFF)) NMAG !INF !RW SELLPRICE>34501 GROUND FILTLVL~4-5]: %GRAY%money (%TAN%$%WHITE%35k%GRAY%){%NAME%} // 3 slotters, Ground
+ItemDisplay[((WAND NECSTAFF) OR (SOR SORSTAFF) OR ((dgr OR 9dg OR 7dg OR dir OR 9di OR 7di) (NECSTAFF OR ASNSTAFF))) NMAG !INF !RW SELLPRICE>34501 (GROUND !TOWN) FILTLVL~4-5]: %GREEN%*%GRAY%money (%TAN%$%WHITE%35k%GRAY%){%NAME%} // 2 slotters, Ground
+ItemDisplay[(((clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (BARSTAFF OR DRUSTAFF)) OR ((kri OR 9kr OR 7kr OR bld OR 9bl OR 7bl) (NECSTAFF OR ASNSTAFF)) OR (SCEPTER !(wsp OR 9ws OR 7ws) PALSTAFF)) NMAG !INF !RW SELLPRICE>34501 (GROUND !TOWN) FILTLVL~4-5]: %GRAY%money (%TAN%$%WHITE%35k%GRAY%){%NAME%} // 3 slotters, Ground
 ItemDisplay[((WAND NECSTAFF) OR (SOR SORSTAFF) OR (DAGGER (NECSTAFF OR ASNSTAFF)) OR ((clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (BARSTAFF OR DRUSTAFF)) OR (SCEPTER !(wsp OR 9ws OR 7ws) PALSTAFF)) NMAG !INF !RW SELLPRICE>34501 (INVENTORY OR CUBE) FILTLVL~4-5]: %NAME%{%NAME%} // Inventory and Cube
 // Hide money bases on flvl6+
 ItemDisplay[((WAND NECSTAFF) OR (SOR SORSTAFF) OR (DAGGER (NECSTAFF OR ASNSTAFF)) OR ((clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (BARSTAFF OR DRUSTAFF)) OR (SCEPTER !(wsp OR 9ws OR 7ws) PALSTAFF)) NMAG !INF !RW SELLPRICE>34501 FILTLVL>5]: {%RED%at current filter level%NL%Warning! Hidden outside of town%CL%%NAME%}
@@ -3148,7 +3155,7 @@ ItemDisplay[BAR !BARSTAFF NMAG !INF NORM CLVL>4 FILTLVL>1]: {%NAME%} //
 ItemDisplay[DIN !(RES>0 OR EDAM>0) NMAG !INF NORM CLVL>4 FILTLVL>1]: {%NAME%} //
 ItemDisplay[NEC !NECSTAFF NMAG !INF NORM CLVL>4 FILTLVL>1]: {%NAME%} //
 ItemDisplay[(CHEST OR GLOVES OR BELT OR BOOTS) MAG !ID !ETH (CLVL>79 OR FILTLVL>2)]: {%NAME%} // Hide Magic Non-eth Armors, Gloves, Belts and Boots
-ItemDisplay[(SHIELD !(DIN OR NEC)) (MAG OR RARE) !ID (CLVL>79 OR FILTLVL>2)]: {%NAME%} // Hide Magic/Rare Non-Paladin/Necro Shields
+ItemDisplay[(SHIELD !(DIN OR NEC)) MAG !ID (CLVL>79 OR FILTLVL>2)]: {%NAME%} // Hide Magic Non-Paladin/Necro Shields
 ItemDisplay[(DIN OR NEC) (MAG OR RARE) !ID ETH (CLVL>79 OR FILTLVL>2)]: {%NAME%} // Hide Ethereal Magic/Rare Paladin/Necro Shields
 // --- Misc ---
 ItemDisplay[rin MAG !ID (CLVL>89 OR FILTLVL>2)]: {%NAME%} // Hide Magic Rings
