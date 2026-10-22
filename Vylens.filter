@@ -1260,7 +1260,7 @@ ItemDisplay[uar MAG ETH !ID]: %GRAY%[%WHITE%eth%GRAY%] %BLUE%Fluffy's Demise
 ItemDisplay[uar MAG ID]: %BLUE%%NAME%
 ItemDisplay[uar MAG ETH ID]: %BLUE%%NAME%
 // Helmets
-ItemDisplay[(HELM !(BAR OR DRU)) RARE !ID]: %DOT-A8%%TIER-3%%DROP_T1%
+ItemDisplay[(HELM !(BAR OR DRU)) RARE !ID]: %DOT-A8%%TIER-3%%NAME%
 ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) !BARBARIAN MAG !ID ILVL>71]: %DROP_T1% // Magic Arreat and Halaberd style
 ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) !BARBARIAN RARE !ID ILVL>71]: %DOT-A8%%TIER-3%%DROP_T1% // Rare Arreat and Halaberd style
 ItemDisplay[(BAR !(ba4 OR ba9 OR bae OR ba5 OR baa OR baf)) RARE !BARBARIAN !ID]: %DOT-A8%%TIER-3%%DROP_T1%
@@ -2954,7 +2954,7 @@ ItemDisplay[t17]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:75 %GREEN%P:85 %
 ItemDisplay[t53]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:65 %RED%F:70 %BLUE%C:75 %YELLOW%L:65 %GREEN%P:80 %ORANGE%M:80%NAME%}%CONTINUE% // Unique: Fallen Gardens 183
 ItemDisplay[t52]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:55 %RED%F:70 %BLUE%C:65 %YELLOW%L:65 %GREEN%P:75 %ORANGE%M:50%NAME%}%CONTINUE% // Unique: Warlord of Blood 181
 ItemDisplay[t2a]: %NAME%{%WHITE%Highest Res: %GOLD%Ph: %RED%F: %BLUE%C: %YELLOW%L: %GREEN%P: %ORANGE%M:%NAME%}%CONTINUE% // The Descent from Mount Arreat
-ItemDisplay[t29]: %NAME%{%WHITE%Highest Res: %GOLD%Ph: %RED%F: %BLUE%C: %YELLOW%L: %GREEN%P: %ORANGE%M:%NAME%}%CONTINUE% // The Dark Temple
+ItemDisplay[t29]: %NAME%{%WHITE%Highest Res: %GOLD%Ph: %RED%F: %BLUE%C: %YELLOW%L: %GREEN%P: %ORANGE%M:%NAME%}%CONTINUE% // Fortress of Aranoch
 // T3
 ItemDisplay[t35]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:65 %BLUE%C:65 %YELLOW%L:65 %GREEN%P:65 %ORANGE%M:33%NAME%}%CONTINUE% // Blood Moon 154
 ItemDisplay[t3b]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:66 %RED%F:75 %BLUE%C:75 %YELLOW%L:75 %GREEN%P:75 %ORANGE%M:50%NAME%}%CONTINUE% // Kyovoshad
@@ -3039,7 +3039,7 @@ ItemDisplay[t25]: Sewers of Harrogath{%NAME%}%CONTINUE%
 ItemDisplay[t26]: Shadows of Westmarch{%NAME%}%CONTINUE%
 ItemDisplay[t27]: Demon Road{%NAME%}%CONTINUE%
 ItemDisplay[t28]: Skovos Stronghold{%NAME%}%CONTINUE%
-ItemDisplay[t29]: Dark Temple{%NAME%}%CONTINUE%
+ItemDisplay[t29]: Fortress of Aranoch{%NAME%}%CONTINUE%
 ItemDisplay[t31]: River of Blood{%NAME%}%CONTINUE%
 ItemDisplay[t32]: Throne of Insanity{%NAME%}%CONTINUE%
 ItemDisplay[t33]: Lost Temple{%NAME%}%CONTINUE%
