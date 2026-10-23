@@ -2957,7 +2957,8 @@ ItemDisplay[t2a]: %NAME%{%WHITE%Highest Res: %GOLD%Ph: %RED%F: %BLUE%C: %YELLOW%
 ItemDisplay[t29]: %NAME%{%WHITE%Highest Res: %GOLD%Ph: %RED%F: %BLUE%C: %YELLOW%L: %GREEN%P: %ORANGE%M:%NAME%}%CONTINUE% // Fortress of Aranoch
 // T3
 ItemDisplay[t35]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:65 %BLUE%C:65 %YELLOW%L:65 %GREEN%P:65 %ORANGE%M:33%NAME%}%CONTINUE% // Blood Moon 154
-ItemDisplay[t3b]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:66 %RED%F:75 %BLUE%C:75 %YELLOW%L:75 %GREEN%P:75 %ORANGE%M:50%NAME%}%CONTINUE% // Kyovoshad
+//ItemDisplay[t3b]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:66 %RED%F:75 %BLUE%C:75 %YELLOW%L:75 %GREEN%P:75 %ORANGE%M:50%NAME%}%CONTINUE% // Kyovoshad
+ItemDisplay[t3b]: %NAME%{%RED%Highest Res values may be inaccurate%NL%%WHITE%Highest Res: %GOLD%Ph:66 %BLUE%C:75 %GREEN%P:75 %NL%%WHITE%Immunes: %RED%F:120 %YELLOW%L:120 %ORANGE%M:105%NAME%}%CONTINUE% // Kyovoshad
 ItemDisplay[t15]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %YELLOW%L:80 %GREEN%P:75 %ORANGE%M:45%NL%%WHITE%Immunes: %RED%F:120 %BLUE%C:120%NAME%}%CONTINUE% // Royal Crypts 170
 ItemDisplay[t23]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:75 %BLUE%C:75%NL%%WHITE%Immunes: %YELLOW%L:120 %GREEN%P:120 %ORANGE%M:105%NAME%}%CONTINUE% // Arreat Battlefield 139
 ItemDisplay[t13]: %NAME%{%RED%Witches%NL%%WHITE%Highest Res: %RED%F:75 %YELLOW%L:75 %GREEN%P:85%NL%%WHITE%Immunes: %GOLD%Ph:115 %BLUE%C:120 %ORANGE%M:105%NAME%}%CONTINUE% // Bastion Keep 149
