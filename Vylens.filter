@@ -663,7 +663,7 @@ ItemDisplay[BAR (RARE OR CRAFT) TABSK33>0 STATHLPOS]: %TEAL%%TABSK33%bma %NAME%%
 ItemDisplay[(HELM OR GLOVES) (RARE OR CRAFT) TABSK32>0 STATHLPOS !IAS>0 !FILTLVL=6]: %TEAL%%TABSK32%bc %NAME%%CONTINUE% // barb combat
 ItemDisplay[(HELM OR CHEST OR SHIELD) (RARE OR CRAFT) CLSK4>0 STATHLPOS]: %TEAL%%CLSK4%barb %NAME%%CONTINUE% // barbarian
 ItemDisplay[(SHIELD !NEC) (RARE OR CRAFT) TABSK26>0 STATHLPOS !FILTLVL=6]: %TEAL%%TABSK26%pdef %NAME%%CONTINUE% // defensive auras
-ItemDisplay[(SHIELD !NEC) (RARE OR CRAFT) TABSK25>0 STATHLPOS]: %TEAL%%TABSK25%poff %NAME%%CONTINUE% // offensive auras
+ItemDisplay[(SHIELD !NEC) (RARE OR CRAFT) TABSK25>0 STATHLPOS]: %TEAL%%TABSK25%off %NAME%%CONTINUE% // offensive auras
 ItemDisplay[(SHIELD !NEC) (RARE OR CRAFT) TABSK24>0 STATHLPOS]: %TEAL%%TABSK24%pcomb %NAME%%CONTINUE% // paly combat
 ItemDisplay[(HELM OR CHEST OR SHIELD OR DIN) (RARE OR CRAFT) CLSK3>0 STATHLPOS]: %TEAL%%CLSK3%paly %NAME%%CONTINUE% // paladin
 ItemDisplay[NEC (RARE OR CRAFT) TABSK16>0 STATHLPOS]: %TEAL%%TABSK16%curse %NAME%%CONTINUE% // curses
@@ -823,7 +823,7 @@ ItemDisplay[tr2]: %MAP-1F%%GOLD%>> Scroll of Resistance <<{%GRAY%10 to all resis
 // ==========================================================================================================
 // Utilities
 // ==========================================================================================================
-ItemDisplay[tsc]: %BLUE%  tp  %WHITE%{%RED%you will lose socketed runes/gems%NL%%NL%%WHITE%socketed item, %BLUE%tp %WHITE%scroll, %ORANGE%hel%NL%%WHITE%To remove runes/gems from item:}%CONTINUE%
+ItemDisplay[tsc]: %BLUE%  tp  %WHITE%{%RED%you will lose socketed runes/gems/jewels%NL%%NL%%WHITE%socketed item, %BLUE%tp %WHITE%scroll, %ORANGE%hel%NL%%WHITE%To remove runes/gems/jewels from item:}%CONTINUE%
 ItemDisplay[isc]: %RED%  id  %WHITE%{%WHITE%Use to identify an item}%CONTINUE%
 ItemDisplay[vps]: %YELLOW%!%WHITE%stam{%GRAY%(time stack)%NL%%WHITE%Gives infinite stamina for 30s%NL%Instantly restores stamina}%CONTINUE%
 ItemDisplay[wms]: %BLUE%!%WHITE%thaw{%GRAY%(time stack)%NL%%WHITE%Gives +25 Cold Res for 30s%NL%Instantly thaws character}%CONTINUE%
@@ -2556,7 +2556,7 @@ ItemDisplay[uar !ETH !SUP NMAG !RW SOCK~1-3]: Fluffy's Demise %TAN%[%WHITE%%SOCK
 
 // --- Helms ---
 // Non-Ethereal 15ed 0/3 socket Helms
-ItemDisplay[(xhm OR ulm OR uhl OR usk OR uh9 OR uhm OR urn OR ci3) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=3) ED>14]: %DOT-D6%%TIER-4%%BASE_T1%{%NAME%}
+ItemDisplay[(xhm OR usk OR uh9 OR uhm OR urn OR ci3) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=3) ED>14]: %DOT-D6%%TIER-4%%BASE_T1%{%NAME%}
 // Ethereal 5+ ed 0/3 socket helms
 ItemDisplay[(xhm OR ulm OR uhl OR usk OR uh9 OR uhm OR urn OR ci3) !INF ETH NMAG !RW (SOCK=0 OR SOCK=3) ED>4]: %DOT-D6%%TIER-6%%BASE_T2%{%NAME%}
 // Show Ethereal Elite Helms
@@ -2589,14 +2589,17 @@ ItemDisplay[DRU (SK222>2 (SK250>0 OR SK235>0 OR SK226>0 OR SK247>0 OR SK231>0 OR
 ItemDisplay[DRU (SK221>2 OR SK222>2 OR SK223>2 OR SK227>2 OR SK228>2 OR SK230>2 OR SK233>2 OR SK234>2 OR SK237>2 OR SK238>2 OR SK239>2 OR SK240>2 OR SK243>2 OR SK244>2 OR SK245>2 OR SK247>2 OR SK248>2 OR SK249>2 OR SK250>2) DRUID !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %DOT-D6%%NAME%{%NAME%} // Notify +3 plain while leveling for Druids
 ItemDisplay[DRU (SK221>2 OR SK222>2 OR SK223>2 OR SK227>2 OR SK228>2 OR SK230>2 OR SK233>2 OR SK234>2 OR SK237>2 OR SK238>2 OR SK239>2 OR SK240>2 OR SK243>2 OR SK244>2 OR SK245>2 OR SK247>2 OR SK248>2 OR SK249>2 OR SK250>2) !INF !ETH NMAG !RW !SOCK=1 FILTLVL<4]: %NAME%{%NAME%} // Show +3 plain
 ItemDisplay[DRU (SK221>0 OR SK222>0 OR SK223>0 OR SK224>0 OR SK225>0 OR SK226>0 OR SK227>0 OR SK228>0 OR SK229>0 OR SK230>0 OR SK231>0 OR SK232>0 OR SK233>0 OR SK234>0 OR SK235>0 OR SK236>0 OR SK237>0 OR SK238>0 OR SK239>0 OR SK240>0 OR SK241>0 OR SK242>0 OR SK243>0 OR SK244>0 OR SK245>0 OR SK246>0 OR SK247>0 OR SK248>0 OR SK249>0 OR SK250>0 OR SK370>0) !INF !ETH NMAG !RW CLVL<80]: %NAME%{%NAME%} // Show any skill
+
+// --- Shields ---
 // Paladin Shields Generally 55/60+ ed or 25@+
 ItemDisplay[DIN ELT !INF NMAG !RW (SOCK=0 OR SOCK=4) EDEF>4 (EDAM>59 OR RES>29)]: %DOT-D6%%BASE_T2%{%NAME%} // 5+ ed, 0/4os
 ItemDisplay[DIN ELT !INF NMAG !RW ETH (SOCK=0 OR SOCK=4) RES>24 FILTLVL<7]: %DOT-D6%%NAME%{%NAME%} // Ethereal 0/4os
 ItemDisplay[DIN ELT !INF !ETH NMAG !RW SOCK=3 EDEF>4 (EDAM>59 OR RES>24)]: %DOT-D6%%BASE_T2%{%NAME%} // Non-eth 5+ ed, 3os
-ItemDisplay[DIN ELT !INF NMAG !RW ((SOCK=0 (EDAM>54 OR RES>19)) OR (SOCK=3 RES>19 !ETH) OR (SOCK=4 (EDAM>54 OR RES>19))) FILTLVL<7]: %DOT-D6%%TIER-4%%NAME%{%NAME%} // 55+ ed or 20@+, 0/3/4os
+ItemDisplay[DIN ELT !INF NMAG !RW ((SOCK=0 (EDAM>54 OR RES>19)) OR (SOCK=3 RES>19 !ETH) OR (SOCK=4 (EDAM>54 OR RES>19))) FILTLVL<7]: %DOT-D6%%TIER-3%%NAME%{%NAME%} // 55+ ed or 20@+, 0/3/4os
 ItemDisplay[DIN !INF !ETH NMAG !RW !SOCK=1 (EDAM>44 OR RES>19) PALADIN FILTLVL<3]: %DOT-D6%%NAME%{%NAME%} // Notify for Paladins while leveling
 ItemDisplay[DIN !INF NMAG !RW !SOCK=1 RES>19 FILTLVL<3]: %NAME%{%NAME%} // Show 20@+ Paladin Shields for all
 ItemDisplay[DIN !INF !ETH NMAG !RW !SOCK=1 RES>0 CLVL<80]: %NAME%{%NAME%} // Show Resist Paladin Shields for all
+// Shields 4os
 ItemDisplay[(uit OR uow) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=4) ED>14]: %DOT-D6%%BASE_T2%{%NAME%} // Non-eth 15ed 0/4 socket Monarch/Aegis
 ItemDisplay[(uit OR uow) !INF !ETH NMAG !RW (SOCK=0 OR SOCK=4) ED>4]: %DOT-D6%%TIER-3%%BASE_T1%{%NAME%} // Non-eth 5+ ed 0/4 socket Monarch/Aegis
 ItemDisplay[(xsh OR ush OR upk) !INF NMAG !ETH !RW !SOCK=1 ED>4 FILTLVL<3]: %NAME%{%NAME%} // Show Grim Shield, Troll Nest and Blade Barrier
@@ -2685,7 +2688,8 @@ ItemDisplay[(9ws OR 7ws) SK117>0 !INF NMAG !RW (SOCK=0 OR SOCK=5) FILTLVL<5]: %N
 ItemDisplay[SCEPTER (SK101>2 OR SK112>2 OR SK121>2) !INF NMAG !RW !SOCK=1 FILTLVL<4]: %NAME%{%NAME%} // Show +3 Holy Bolt/FoH/Blessed Hammer plain
 ItemDisplay[SCEPTER (SK96>0 OR SK97>0 OR SK98>0 OR SK99>0 OR SK100>0 OR SK101>0 OR SK102>0 OR SK103>0 OR SK104>0 OR SK105>0 OR SK106>0 OR SK107>0 OR SK108>0 OR SK109>0 OR SK110>0 OR SK111>0 OR SK112>0 OR SK113>0 OR SK114>0 OR SK115>0 OR SK116>0 OR SK117>0 OR SK118>0 OR SK119>0 OR SK120>0 OR SK121>0 OR SK122>0 OR SK123>0 OR SK124>0 OR SK125>0 OR SK364>0 OR SK371>0 OR SK378>0) !INF !ETH NMAG !RW CLVL<80]: %NAME%{%NAME%} // Show any skill
 // Swords
-ItemDisplay[crs NMAG !INF !RW SOCK=5 FILTLVL<4]: %NAME%{%NAME%}
+ItemDisplay[crs NMAG !INF !RW SOCK=5 FILTLVL<7]: %NAME%{%NAME%}
+ItemDisplay[crs NMAG !INF !RW SOCK=6 FILTLVL<4]: %NAME%{%NAME%}
 ItemDisplay[((crs (ILVL>25 ILVL<41)) OR ((bsd OR lsd) ILVL>25)) NMAG !INF !RW (SOCK=0 OR SOCK=4) (CLVL<80 FILTLVL<3)]: %NAME%%GOLD%*{%NAME%}
 ItemDisplay[7cr NMAG !RW !INF !SOCK~1-2 ED>14 FILTLVL<4]: %DOT-D6%%NAME%{%NAME%} // 15ed Phase Blade
 ItemDisplay[7cr NMAG !RW !INF !SOCK~1-3 ED>4 FILTLVL<7]: %NAME%{%NAME%} // Show 4+ os Phase Blade with ed
@@ -2953,7 +2957,7 @@ ItemDisplay[t32]: %NAME%{%WHITE%Highest Res: %RED%F:75 %BLUE%C:75 %YELLOW%L:75 %
 ItemDisplay[t17]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:75 %GREEN%P:85 %ORANGE%M:35%NL%%WHITE%Immunes: %BLUE%C:120 %YELLOW%L:120%NAME%}%CONTINUE% // Halls of Torture 193
 ItemDisplay[t53]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:65 %RED%F:70 %BLUE%C:75 %YELLOW%L:65 %GREEN%P:80 %ORANGE%M:80%NAME%}%CONTINUE% // Unique: Fallen Gardens 183
 ItemDisplay[t52]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:55 %RED%F:70 %BLUE%C:65 %YELLOW%L:65 %GREEN%P:75 %ORANGE%M:50%NAME%}%CONTINUE% // Unique: Warlord of Blood 181
-ItemDisplay[t2a]: %NAME%{%WHITE%Highest Res: %GOLD%Ph: %RED%F: %BLUE%C: %YELLOW%L: %GREEN%P: %ORANGE%M:%NAME%}%CONTINUE% // The Descent from Mount Arreat
+ItemDisplay[t2a]: %NAME%{%RED%Witches%NL%%WHITE%Highest Res: %GOLD%Ph: %RED%F: %BLUE%C: %YELLOW%L: %GREEN%P: %ORANGE%M:%NAME%}%CONTINUE% // The Descent from Mount Arreat
 ItemDisplay[t29]: %NAME%{%WHITE%Highest Res: %GOLD%Ph: %RED%F: %BLUE%C: %YELLOW%L: %GREEN%P: %ORANGE%M:%NAME%}%CONTINUE% // Fortress of Aranoch
 // T3
 ItemDisplay[t35]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:65 %BLUE%C:65 %YELLOW%L:65 %GREEN%P:65 %ORANGE%M:33%NAME%}%CONTINUE% // Blood Moon 154
