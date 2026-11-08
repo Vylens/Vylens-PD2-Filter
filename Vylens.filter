@@ -81,20 +81,27 @@ Alias[HighestQuality]: (RARE OR CRAFT OR UNI OR SET)
 // Combined
 Alias[BASE_T1]: %GRAY%* %NAME% %GRAY%*
 Alias[BASE_T2]: %GRAY%*%WHITE%* %NAME% %WHITE%*%GRAY%*
-Alias[DROP_T1]: %TAN%* %NAME% %TAN%*%YELLOW%
-Alias[DROP_T2]: %TAN%*%WHITE%* %NAME% %WHITE%*%TAN%*%YELLOW%
-Alias[DROPS_T1]: %TAN%*  %NAME%  %TAN%*%YELLOW%
-Alias[DROPS_T2]: %TAN%*%WHITE%*  %NAME%  %WHITE%*%TAN%*%YELLOW%
+Alias[DROPMAGIC_T1]: %TAN%* %NAME% %TAN%*%BLUE%
+Alias[DROPMAGIC_T2]: %TAN%*%WHITE%*  %NAME%  %WHITE%*%TAN%*%BLUE%
+Alias[DROPRARE_T1]: %TAN%*  %NAME%  %TAN%*%YELLOW%
+Alias[DROPRARE_T2]: %TAN%*%WHITE%*  %NAME%  %WHITE%*%TAN%*%YELLOW%
 Alias[SET_T1]: %GREEN%* %NAME% %GREEN%*
+Alias[SETGRAIL_T1]: %GREEN%* %NAME% %TEAL%Grail %GREEN%*
 Alias[SET_T2]: %DARK_GREEN%*%GREEN%*  %NAME%  %GREEN%*%DARK_GREEN%*
+Alias[SETGRAIL_T2]: %DARK_GREEN%*%GREEN%*  %NAME% %TEAL%Grail  %GREEN%*%DARK_GREEN%*
 Alias[UNI_T1]: %TAN%*   %NAME%   %TAN%*
+Alias[UNIGRAIL_T1]: %TAN%*   %NAME% %TEAL%Grail   %TAN%*
 Alias[UNI_T2]: %DOT-68%%TAN%*%ORANGE%*   %NAME%   %ORANGE%*%TAN%*
+Alias[UNIGRAIL_T2]: %DOT-68%%TAN%*%ORANGE%*   %NAME% %TEAL%Grail   %ORANGE%*%TAN%*
 Alias[UNI_T3]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %NAME%     %YELLOW%*%ORANGE%*%TAN%*
+Alias[UNIGRAIL_T3]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %NAME% %TEAL%Grail     %YELLOW%*%ORANGE%*%TAN%*
 // Left and Right
 Alias[DROPT1L]: %TAN%* %NAME%
 Alias[DROPT1R]: %TAN%*%GRAY%
 Alias[DROPT2L]: %TAN%*%WHITE%*  %NAME%
 Alias[DROPT2R]: %WHITE%*%TAN%*%GRAY%
+// Grail
+Alias[GRAILER]: %TEAL%Grail
 
 // ==========================================================================================================
 // Assassin Claws and Daggers Aliases
@@ -387,10 +394,6 @@ ItemDisplay[ETH]: %GRAY%[%WHITE%eth%GRAY%] %NAME%%CONTINUE%
 
 // Show me number of sockets of every socketed item
 ItemDisplay[SOCK>0]: %NAME% %TAN%[%WHITE%%SOCKETS%%TAN%]%CONTINUE%
-
-// GRAIL
-ItemDisplay[UNI !ID !ALLDISCOVERED !jew]: %MAP-68%%GOLD%%NAME% %TEAL%Grail%CONTINUE%
-ItemDisplay[SET !ID !ALLDISCOVERED]: %MAP-84%%GREEN%%NAME% %TEAL%Grail%CONTINUE%
 
 // ==========================================================================================================
 // Show Item Names On Gheed Map Event
@@ -778,8 +781,8 @@ ItemDisplay[(((ARMOR OR WEAPON) HighQuality ID) OR (NMAG !RW (NECSTAFF OR ASNSTA
 // ==========================================================================================================
 ItemDisplay[rvl]: %PURPLE%R %WHITE%Full // Swap with line below to change to full purple name
 //ItemDisplay[rvl]: %PURPLE%R Full
-ItemDisplay[rvs]: %PURPLE%r %WHITE%35%{%WHITE%3x %PURPLE%r %WHITE%35% = %PURPLE%R %WHITE%Full} // Swap with line below to change to full purple name
-//ItemDisplay[rvs]: %PURPLE%r 35%{%WHITE%3x %PURPLE%r %WHITE%35% = %PURPLE%R %WHITE%Full}
+ItemDisplay[rvs FILTLVL<7]: %PURPLE%r %WHITE%35%{%WHITE%3x %PURPLE%r %WHITE%35% = %PURPLE%R %WHITE%Full} // Swap with line below to change to full purple name
+//ItemDisplay[rvs FILTLVL<7]: %PURPLE%r 35%{%WHITE%3x %PURPLE%r %WHITE%35% = %PURPLE%R %WHITE%Full}
 ItemDisplay[hp5]: %RED%!%WHITE%Hp{%NAME%}%CONTINUE% // Swap with line below to change to full red name
 //ItemDisplay[hp5]: %RED%Hp{%NAME%}%CONTINUE%
 ItemDisplay[mp5]: %BLUE%!%WHITE%Mp{%NAME%}%CONTINUE% // Swap with line below to change to full blue name
@@ -792,8 +795,10 @@ ItemDisplay[mp1]: %BLUE%!%WHITE%mp1{%NAME%}%CONTINUE%
 ItemDisplay[mp2]: %BLUE%!%WHITE%mp2{%NAME%}%CONTINUE%
 ItemDisplay[mp3]: %BLUE%!%WHITE%mp3{%NAME%}%CONTINUE%
 ItemDisplay[mp4]: %BLUE%!%WHITE%mp4{%NAME%}%CONTINUE%
-ItemDisplay[hp1 FILTLVL>0 (DIFF>0 OR FILTLVL>4 OR CLVL>12) !SHOP]: {%NAME%}
-ItemDisplay[(hp2 OR hp3 OR mp1 OR mp2 OR mp3) FILTLVL>0 (DIFF>0 OR FILTLVL>4) !SHOP]: {%NAME%}
+ItemDisplay[hp1 FILTLVL>0 (DIFF>0 OR FILTLVL>4 OR CLVL>11) !SHOP]: {%NAME%}
+ItemDisplay[mp1 FILTLVL>0 (DIFF>0 OR FILTLVL>4 OR CLVL>14) !SHOP]: {%NAME%}
+ItemDisplay[(hp2 OR mp2) FILTLVL>0 (DIFF>0 OR FILTLVL>4 OR CLVL>19) !SHOP]: {%NAME%}
+ItemDisplay[(hp3 OR mp3) FILTLVL>0 (DIFF>0 OR FILTLVL>4 OR CLVL>23) !SHOP]: {%NAME%}
 ItemDisplay[(hp4 OR mp4) FILTLVL>0 (DIFF>1 OR FILTLVL>5) !SHOP]: {%NAME%}
 ItemDisplay[(hp5 OR mp5) DIFF>1 FILTLVL>6 !SHOP]: {%NAME%} // Change the FILTLVL to 1 less than yours to hide
 
@@ -884,6 +889,14 @@ ItemDisplay[(tpfl OR tpgl OR tpcl OR tpll) FILTLVL>0 (CLVL>39 OR FILTLVL>3)]: {%
 // ==========================================================================================================
 // Gems and Crafting Infusion section
 // ==========================================================================================================
+// --- Ping/Hide --------------------------------------------------------------------------------------------
+//hiding low ones
+ItemDisplay[GEM<3 FILTLVL>0 (DIFF>0 OR FILTLVL>3) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:{%NAME%}%CONTINUE%
+ItemDisplay[GEM<4 FILTLVL>0 (DIFF>1 OR FILTLVL>3) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:{%NAME%}%CONTINUE%
+// Ping for GEMS
+ItemDisplay[(gzv OR gly OR glb OR glg OR glr OR glw OR skl) FILTLVL>6]: {%NAME%}
+ItemDisplay[(gzv OR gly OR glb OR glg OR glr OR glw OR skl) FILTLVL<7]: %DOT-70%%TIER-4%%NAME%%CONTINUE%
+ItemDisplay[(gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz)]: %DOT-70%%TIER-4%%NAME%%CONTINUE%
 // --- Descriptions for gems --------------------------------------------------------------------------------
 ItemDisplay[GEM<4]:%NAME%{%WHITE%the same type and level = 1x higher level gem%NL%Crafting recipes: 3x gem of}%CONTINUE%
 ItemDisplay[GEM=1]:%NAME%{%WHITE%3x any %RED%!%WHITE%Hp, 3x any %BLUE%!%WHITE%Mp + any chip. gem = %PURPLE%r %WHITE%35%%NL%%NAME%}%CONTINUE%
@@ -909,14 +922,6 @@ ItemDisplay[GEMTYPE=2 GEM>3 QTY>0]: %NAME% %ORANGE%[%WHITE%O%ORANGE%] %TAN%x %WH
 // Skull
 ItemDisplay[GEMTYPE=7 GEM>3 QTY=1 GROUND !TOWN]: %NAME% %ORANGE%[%GRAY%O%ORANGE%]
 ItemDisplay[GEMTYPE=7 GEM>3 QTY>0]: %NAME% %ORANGE%[%GRAY%O%ORANGE%] %TAN%x %WHITE%%QTY%%CONTINUE%
-
-// --- Ping/Hide --------------------------------------------------------------------------------------------
-//hiding low ones
-ItemDisplay[GEM<3 FILTLVL>0 (DIFF>0 OR FILTLVL>3) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:{%NAME%}%CONTINUE%
-ItemDisplay[GEM<4 FILTLVL>0 (DIFF>1 OR FILTLVL>3) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:{%NAME%}%CONTINUE%
-// Ping for GEMS
-ItemDisplay[(gzv OR gly OR glb OR glg OR glr OR glw OR skl) FILTLVL<7]: %DOT-70%%TIER-4%%NAME%%CONTINUE%
-ItemDisplay[(gpv OR gpy OR gpb OR gpg OR gpr OR gpw OR skz)]: %DOT-70%%TIER-4%%NAME%%CONTINUE%
 
 // --- Gems notes -------------------------------------------------------------------------------------------
 // Amethyst
@@ -969,7 +974,7 @@ ItemDisplay[RUNE>27]: %BORDER-62%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YE
 // ==========================================================================================================
 // All Charms
 // ==========================================================================================================
-ItemDisplay[CHARM MAG ILVL>89 !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME% %WHITE%x  %PURPLE%*
+ItemDisplay[CHARM MAG ILVL>89 !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME% %GREEN%x  %PURPLE%*
 ItemDisplay[(cm1 OR cm3) MAG ILVL<90 !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME%  %PURPLE%*
 ItemDisplay[cm2 MAG (ILVL<90 FILTLVL<3) !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME%  %PURPLE%*
 ItemDisplay[cm2 MAG (ILVL<90 FILTLVL=3) !ID]: %PURPLE%*%BLUE%  %NAME%  %PURPLE%*
@@ -1058,112 +1063,169 @@ ItemDisplay[((uh9 (MAPID=137 OR ILVL>95)) OR uth OR utb OR 7bs OR 7qr) UNI !ID]:
 // RATHMA UNIQUES
 ItemDisplay[(rar OR rbe OR ram) UNI !ID]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*%TEAL%*     %GOLD%%NAME%     %TEAL%*%YELLOW%*%ORANGE%*%RED%*%PURPLE%*%CORAL%*%TAN%*
 // SACRED ARMORS
-ItemDisplay[uar UNI !ETH !ID]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*%TEAL%*     %GOLD%IS IT HAPPENING???     %TEAL%*%YELLOW%*%ORANGE%*%RED%*%PURPLE%*%CORAL%*%TAN%*
-ItemDisplay[uar UNI ETH !ID]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*%TEAL%*     %GOLD%Another Templar's, my G     %TEAL%*%YELLOW%*%ORANGE%*%RED%*%PURPLE%*%CORAL%*%TAN%*
+ItemDisplay[uar UNI !ETH !ID !ALLDISCOVERED]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*%TEAL%*     %GOLD%IS IT HAPPENING??? %TEAL%Grail     %TEAL%*%YELLOW%*%ORANGE%*%RED%*%PURPLE%*%CORAL%*%TAN%*
+ItemDisplay[uar UNI !ETH !ID ALLDISCOVERED]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*%TEAL%*     %GOLD%IS IT HAPPENING???     %TEAL%*%YELLOW%*%ORANGE%*%RED%*%PURPLE%*%CORAL%*%TAN%*
+ItemDisplay[uar UNI ETH !ID !ALLDISCOVERED]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*%TEAL%*     %GOLD%Another Templar's, my G %TEAL%Grail     %TEAL%*%YELLOW%*%ORANGE%*%RED%*%PURPLE%*%CORAL%*%TAN%*
+ItemDisplay[uar UNI ETH !ID ALLDISCOVERED]: %BORDER-68%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*%TEAL%*     %GOLD%Another Templar's, my G     %TEAL%*%YELLOW%*%ORANGE%*%RED%*%PURPLE%*%CORAL%*%TAN%*
 
 // --- 5 STARS - VERY RARE AND HIGH VALUE ITEMS -------------------------------------------------------------
-// Veil of Steel, Griffon's Eye, Guardian Angel, Spectral Plate
-ItemDisplay[(uhm OR ci3 OR xlt OR urs) UNI !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
+// Veil of Steel, Griffon's Eye, Guardian Angel
+ItemDisplay[(uhm OR ci3 OR xlt) UNI !ID !ALLDISCOVERED]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME% %GRAILER%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
+ItemDisplay[(uhm OR ci3 OR xlt) UNI !ID ALLDISCOVERED]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
 // Ethereal Purgatory, Weapons
-ItemDisplay[(utp OR 7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7p7 OR 7s8 OR 7pa OR 7wc) UNI ETH !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
+ItemDisplay[(utp OR 7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7p7 OR 7s8 OR 7pa OR 7wc) UNI ETH !ID !ALLDISCOVERED]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME% %GRAILER%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
+ItemDisplay[(utp OR 7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7p7 OR 7s8 OR 7pa OR 7wc) UNI ETH !ID ALLDISCOVERED]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
 // Weapons 6ws mangsong, 7gw deathweb, obf deathfathom
-ItemDisplay[(6ws OR 7gw OR obf) UNI !ID]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
+ItemDisplay[(6ws OR 7gw OR obf) UNI !ID !ALLDISCOVERED]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME% %GRAILER%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
+ItemDisplay[(6ws OR 7gw OR obf) UNI !ID ALLDISCOVERED]: %BORDER-68%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
 
 // --- 3 STARS - UNCOMMON, BUT GOOD ITEMS -------------------------------------------------------------------
 // Helms+Kira's Guardian and Shako
-ItemDisplay[ulm UNI !ETH !ID]: %UNI_T3% // Non Ethereal
-ItemDisplay[(xh9 OR usk OR (uh9 !MAPID=137 ILVL<96) OR ci2 OR urn) UNI !ID]: %UNI_T3% // Any
-ItemDisplay[uap UNI ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Ghost Shako     %YELLOW%*%ORANGE%*%TAN%* // Ethereal Shako
-ItemDisplay[uap UNI !ETH !ID]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Shako is a lie     %YELLOW%*%ORANGE%*%TAN%* // Non Ethereal Shako
+ItemDisplay[(xh9 OR usk OR (uh9 !MAPID=137 ILVL<96) OR ci2 OR urn OR (ulm !ETH)) UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T3% // Any
+ItemDisplay[(xh9 OR usk OR (uh9 !MAPID=137 ILVL<96) OR ci2 OR urn OR (ulm !ETH)) UNI !ID ALLDISCOVERED]: %UNI_T3% // Any
+ItemDisplay[uap UNI ETH !ID !ALLDISCOVERED]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Ghost Shako %GRAILER%     %YELLOW%*%ORANGE%*%TAN%* // Ethereal Shako
+ItemDisplay[uap UNI ETH !ID ALLDISCOVERED]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Ghost Shako     %YELLOW%*%ORANGE%*%TAN%* // Ethereal Shako
+ItemDisplay[uap UNI !ETH !ID !ALLDISCOVERED]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Shako is a lie %GRAILER%     %YELLOW%*%ORANGE%*%TAN%* // Non Ethereal Shako
+ItemDisplay[uap UNI !ETH !ID ALLDISCOVERED]: %MAP-68%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %GOLD%Shako is a lie     %YELLOW%*%ORANGE%*%TAN%* // Non Ethereal Shako
 // Armors
-ItemDisplay[(xhn OR utu OR upl OR uld OR uul OR uui) UNI !ID]: %UNI_T3%
+ItemDisplay[(xhn OR utu OR upl OR uld OR uul OR uui OR urs) UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
+ItemDisplay[(xhn OR utu OR upl OR uld OR uul OR uui OR urs) UNI !ID ALLDISCOVERED]: %UNI_T3%
 // Shields
-ItemDisplay[(paf OR xow OR uit OR uts) UNI !ID]: %UNI_T3%
+ItemDisplay[(paf OR xow OR uit OR uts) UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
+ItemDisplay[(paf OR xow OR uit OR uts) UNI !ID ALLDISCOVERED]: %UNI_T3%
 // Gloves
-ItemDisplay[(xtg OR uvg OR umg OR utg OR uhg) UNI !ID]: %UNI_T3%
+ItemDisplay[(xtg OR uvg OR umg OR utg OR uhg) UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
+ItemDisplay[(xtg OR uvg OR umg OR utg OR uhg) UNI !ID ALLDISCOVERED]: %UNI_T3%
 // Boots
-ItemDisplay[(xvb OR xmb OR xtb OR xhb) UNI !ID]: %UNI_T3%
+ItemDisplay[(xvb OR xmb OR xtb OR xhb) UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
+ItemDisplay[(xvb OR xmb OR xtb OR xhb) UNI !ID ALLDISCOVERED]: %UNI_T3%
 // Belts
-ItemDisplay[(uhc OR zlb OR ztb OR zhb OR umc OR ulc) UNI !ID]: %UNI_T3%
+ItemDisplay[(uhc OR zlb OR ztb OR zhb OR umc OR ulc) UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
+ItemDisplay[(uhc OR zlb OR ztb OR zhb OR umc OR ulc) UNI !ID ALLDISCOVERED]: %UNI_T3%
 // Barbarian Helms
-ItemDisplay[(baf OR bae) UNI !ID]: %UNI_T3%
+ItemDisplay[(baf OR bae) UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
+ItemDisplay[(baf OR bae) UNI !ID ALLDISCOVERED]: %UNI_T3%
 // Ring, Amulet, Denmother, Herald of Zakarum and Fenris
-ItemDisplay[(rin OR amu OR drc OR pa9 OR dr6) UNI !ID]: %UNI_T3%
+ItemDisplay[(rin OR amu OR drc OR pa9 OR dr6) UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
+ItemDisplay[(rin OR amu OR drc OR pa9 OR dr6) UNI !ID ALLDISCOVERED]: %UNI_T3%
 // Ethereal Skullder's Ire, Weapons
-ItemDisplay[(xpl OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 9gm OR 9la OR 7wa) UNI ETH !ID]: %UNI_T3%
+ItemDisplay[(xpl OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 9gm OR 9la OR 7wa) UNI ETH !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
+ItemDisplay[(xpl OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 9gm OR 9la OR 7wa) UNI ETH !ID ALLDISCOVERED]: %UNI_T3%
 // Non-Ethereal Weapons
-ItemDisplay[(7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7s8 OR 7pa OR 7wc) UNI !ETH !ID]: %UNI_T3%
+ItemDisplay[(7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7s8 OR 7pa OR 7wc) UNI !ETH !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
+ItemDisplay[(7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7s8 OR 7pa OR 7wc) UNI !ETH !ID ALLDISCOVERED]: %UNI_T3%
 // Weapons
-ItemDisplay[(obe OR 7xf OR 7ga OR 7cr OR 7ts OR 6lw OR 8rx OR 8ws OR 6bs OR 7bw OR 7ws OR 7tw OR amb OR amf OR 6cs) UNI !ID]: %UNI_T3%
+ItemDisplay[(obe OR 7xf OR 7ga OR 7cr OR 7ts OR 6lw OR 8rx OR 8ws OR 6bs OR 7bw OR 7ws OR 7tw OR amb OR amf OR 6cs) UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
+ItemDisplay[(obe OR 7xf OR 7ga OR 7cr OR 7ts OR 6lw OR 8rx OR 8ws OR 6bs OR 7bw OR 7ws OR 7tw OR amb OR amf OR 6cs) UNI !ID ALLDISCOVERED]: %UNI_T3%
 
 // --- 2 STARS - LOWLVL OR NICHE ITEMS WITH LOW VALUE, BUT COMMONLY USED ------------------------------------
 // Helms
-ItemDisplay[(skp OR xkp OR xhm) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(skp OR xkp OR xhm) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(skp OR xkp OR xhm) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Armors
-ItemDisplay[(ltp OR xea OR xpl OR xld OR xth OR xtp OR ung) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(ltp OR xea OR xpl OR xld OR xth OR xtp OR ung) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(ltp OR xea OR xpl OR xld OR xth OR xtp OR ung) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Non eth Armors
-ItemDisplay[brs UNI !ETH !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[brs UNI !ETH !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[brs UNI !ETH !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Shields
-ItemDisplay[(uml OR uow OR urg OR ush OR xsh) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(uml OR uow OR urg OR ush OR xsh) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(uml OR uow OR urg OR ush OR xsh) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Gloves
-ItemDisplay[(mgl OR tgl OR hgl OR xvg OR xmg OR xhg) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(mgl OR tgl OR hgl OR xvg OR xmg OR xhg) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(mgl OR tgl OR hgl OR xvg OR xmg OR xhg) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Boots
-ItemDisplay[(mbt OR tbt OR ulb OR uvb OR umb OR uhb) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(mbt OR tbt OR ulb OR uvb OR umb OR uhb) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(mbt OR tbt OR ulb OR uvb OR umb OR uhb) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Belts
-ItemDisplay[(lbl OR vbl OR tbl OR zvb OR uvc) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(lbl OR vbl OR tbl OR zvb OR uvc) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(lbl OR vbl OR tbl OR zvb OR uvc) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Pelts
-ItemDisplay[(dr2 OR dra OR drb OR drd OR dre OR drf) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(dr2 OR dra OR drb OR drd OR dre OR drf) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(dr2 OR dra OR drb OR drd OR dre OR drf) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Barbarian Helms
-ItemDisplay[(baa OR bad) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(baa OR bad) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(baa OR bad) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Paladin Shields
-ItemDisplay[(pac OR pae) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(pac OR pae) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(pac OR pae) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Necro Heads
-ItemDisplay[(ned OR nee) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(ned OR nee) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(ned OR nee) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Ethereal Weapons
-ItemDisplay[(7ha OR 7gi OR 7sp OR 9bs OR 9gs OR 7sr OR 7br OR am5) UNI ETH !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(7ha OR 7gi OR 7sp OR 9bs OR 9gs OR 7sr OR 7br OR am5) UNI ETH !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(7ha OR 7gi OR 7sp OR 9bs OR 9gs OR 7sr OR 7br OR am5) UNI ETH !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Non-Ethereal Weapons
-ItemDisplay[(7p7 OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 7wa) UNI !ETH !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(7p7 OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 7wa) UNI !ETH !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(7p7 OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 7wa) UNI !ETH !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Weapons
-ItemDisplay[(obd OR 7yw OR 7mp OR 8hx OR 9wh OR 9ls OR 9gd OR 7ta OR 9s8 OR 8s8 OR 8lw OR 6sw OR 8mx OR 6hx OR 9gw OR 7qs OR 9tw OR 7wb OR 7cs OR 7lw OR oba OR ame OR 6l7 OR 7ls OR 9m9 OR 9bw) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(obd OR 7yw OR 7mp OR 8hx OR 9wh OR 9ls OR 9gd OR 7ta OR 9s8 OR 8s8 OR 8lw OR 6sw OR 8mx OR 6hx OR 9gw OR 7qs OR 9tw OR 7wb OR 7cs OR 7lw OR oba OR ame OR 6l7 OR 7ls OR 9m9 OR 9bw) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(obd OR 7yw OR 7mp OR 8hx OR 9wh OR 9ls OR 9gd OR 7ta OR 9s8 OR 8s8 OR 8lw OR 6sw OR 8mx OR 6hx OR 9gw OR 7qs OR 9tw OR 7wb OR 7cs OR 7lw OR oba OR ame OR 6l7 OR 7ls OR 9m9 OR 9bw) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Quivers Exceptional/Elite
-ItemDisplay[(aqv3 OR cqv2 OR cqv3) UNI !ID FILTLVL<7]: %UNI_T2%
+ItemDisplay[(aqv3 OR cqv2 OR cqv3) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(aqv3 OR cqv2 OR cqv3) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 
 // --- 1 STAR ITEMS -----------------------------------------------------------------------------------------
 // Helms
-ItemDisplay[(xap OR xlm OR xrn OR xsk OR (uhl !MAPID=137)) UNI !ID FILTLVL<3]: %DOT-68%%UNI_T1%
-ItemDisplay[(xrn OR xsk) UNI !ID FILTLVL>2]: %UNI_T1%
+ItemDisplay[(xap OR xlm OR xrn OR xsk OR (uhl !MAPID=137)) UNI !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[(xap OR xlm OR xrn OR xsk OR (uhl !MAPID=137)) UNI !ID FILTLVL<3 ALLDISCOVERED]: %DOT-68%%UNI_T1%
+ItemDisplay[(xrn OR xsk) UNI !ID FILTLVL>2 !ALLDISCOVERED]: %UNIGRAIL_T1%
+ItemDisplay[(xrn OR xsk) UNI !ID FILTLVL>2 ALLDISCOVERED]: %UNI_T1%
 // Armors
-ItemDisplay[(lea OR xul OR xar OR aar) UNI !ID FILTLVL<7]: %DOT-68%%UNI_T1%
-ItemDisplay[(stu OR fld OR gth OR xng OR xcl OR xrs) UNI !ID FILTLVL<3]: %DOT-68%%UNI_T1%
+ItemDisplay[(lea OR xul OR xar OR aar) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[(lea OR xul OR xar OR aar) UNI !ID FILTLVL<7 ALLDISCOVERED]: %DOT-68%%UNI_T1%
+ItemDisplay[(stu OR fld OR gth OR xng OR xcl OR xrs) UNI !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[(stu OR fld OR gth OR xng OR xcl OR xrs) UNI !ID FILTLVL<3 ALLDISCOVERED]: %DOT-68%%UNI_T1%
 // Shields
-ItemDisplay[(xml OR upk OR xpk) UNI !ID FILTLVL<3]: %DOT-68%%UNI_T1%
-ItemDisplay[(upk OR xpk) UNI !ID FILTLVL>2]: %UNI_T1%
-ItemDisplay[pab UNI !ID]: %UNI_T1%
-ItemDisplay[kit UNI !ID]: %DOT-68%%UNI_T1%
+ItemDisplay[(xml OR upk OR xpk) UNI !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[(xml OR upk OR xpk) UNI !ID FILTLVL<3 ALLDISCOVERED]: %DOT-68%%UNI_T1%
+ItemDisplay[(upk OR xpk) UNI !ID FILTLVL>2 !ALLDISCOVERED]: %UNIGRAIL_T1%
+ItemDisplay[(upk OR xpk) UNI !ID FILTLVL>2 ALLDISCOVERED]: %UNI_T1%
+ItemDisplay[pab UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T1%
+ItemDisplay[pab UNI !ID ALLDISCOVERED]: %UNI_T1%
+ItemDisplay[kit UNI !ID !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[kit UNI !ID ALLDISCOVERED]: %DOT-68%%UNI_T1%
 // Gloves
-ItemDisplay[(lgl OR vgl OR xlg OR ulg) UNI !ID FILTLVL<7]: %DOT-68%%UNI_T1%
+ItemDisplay[(lgl OR vgl OR xlg OR ulg) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[(lgl OR vgl OR xlg OR ulg) UNI !ID FILTLVL<7 ALLDISCOVERED]: %DOT-68%%UNI_T1%
 // Boots
-ItemDisplay[(lbt OR hbt) UNI !ID FILTLVL<4]: %DOT-68%%UNI_T1%
-ItemDisplay[xlb UNI !ID FILTLVL<5]: %DOT-68%%UNI_T1%
+ItemDisplay[(lbt OR hbt) UNI !ID FILTLVL<4 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[(lbt OR hbt) UNI !ID FILTLVL<4 ALLDISCOVERED]: %DOT-68%%UNI_T1%
+ItemDisplay[xlb UNI !ID FILTLVL<5 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[xlb UNI !ID FILTLVL<5 ALLDISCOVERED]: %DOT-68%%UNI_T1%
 // Belts
-ItemDisplay[(mbl OR zmb) UNI !ID FILTLVL<3]: %DOT-68%%UNI_T1%
+ItemDisplay[(mbl OR zmb) UNI !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[(mbl OR zmb) UNI !ID FILTLVL<3 ALLDISCOVERED]: %DOT-68%%UNI_T1%
 // Barbarian Helms
-ItemDisplay[(ba6 OR ba7) UNI !ID FILTLVL<5]: %DOT-68%%UNI_T1%
-ItemDisplay[bac UNI !ID FILTLVL<3]: %DOT-68%%UNI_T1%
+ItemDisplay[(ba6 OR ba7) UNI !ID FILTLVL<5 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[(ba6 OR ba7) UNI !ID FILTLVL<5 ALLDISCOVERED]: %DOT-68%%UNI_T1%
+ItemDisplay[bac UNI !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[bac UNI !ID FILTLVL<3 ALLDISCOVERED]: %DOT-68%%UNI_T1%
 // Necro Heads
-ItemDisplay[nef UNI !ID FILTLVL<5]: %DOT-68%%UNI_T1%
-ItemDisplay[(ne6 OR nea) UNI !ID FILTLVL<3]: %DOT-68%%UNI_T1%
-ItemDisplay[ne6 UNI !ID FILTLVL>2]: %UNI_T1%
+ItemDisplay[nef UNI !ID FILTLVL<5 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[nef UNI !ID FILTLVL<5 ALLDISCOVERED]: %DOT-68%%UNI_T1%
+ItemDisplay[(ne6 OR nea) UNI !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[(ne6 OR nea) UNI !ID FILTLVL<3 ALLDISCOVERED]: %DOT-68%%UNI_T1%
+ItemDisplay[ne6 UNI !ID FILTLVL>2 !ALLDISCOVERED]: %UNIGRAIL_T1%
+ItemDisplay[ne6 UNI !ID FILTLVL>2 ALLDISCOVERED]: %UNI_T1%
 // Non-Ethereal Weapons
-ItemDisplay[(9gm OR 9gs) UNI !ETH !ID FILTLVL<4]: %DOT-68%%UNI_T1%
-ItemDisplay[(9gm OR 9gs) UNI !ETH !ID FILTLVL>3]: %UNI_T1%
-ItemDisplay[(7ha OR 7gi OR 7sp OR 9bs OR 7sr OR 7br OR am5) UNI !ETH !ID FILTLVL<3]: %DOT-68%%UNI_T1%
-ItemDisplay[(7ha OR 7gi OR 7sr OR 7br) UNI !ETH !ID FILTLVL>2]: %UNI_T1%
+ItemDisplay[(9gm OR 9gs) UNI !ETH !ID FILTLVL<4 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[(9gm OR 9gs) UNI !ETH !ID FILTLVL<4 ALLDISCOVERED]: %DOT-68%%UNI_T1%
+ItemDisplay[(9gm OR 9gs) UNI !ETH !ID FILTLVL>3 !ALLDISCOVERED]: %UNIGRAIL_T1%
+ItemDisplay[(9gm OR 9gs) UNI !ETH !ID FILTLVL>3 ALLDISCOVERED]: %UNI_T1%
+ItemDisplay[(7ha OR 7gi OR 7sp OR 9bs OR 7sr OR 7br OR am5) UNI !ETH !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[(7ha OR 7gi OR 7sp OR 9bs OR 7sr OR 7br OR am5) UNI !ETH !ID FILTLVL<3 ALLDISCOVERED]: %DOT-68%%UNI_T1%
+ItemDisplay[(7ha OR 7gi OR 7sr OR 7br) UNI !ETH !ID FILTLVL>2 !ALLDISCOVERED]: %UNIGRAIL_T1%
+ItemDisplay[(7ha OR 7gi OR 7sr OR 7br) UNI !ETH !ID FILTLVL>2 ALLDISCOVERED]: %UNI_T1%
 // Weapons
-ItemDisplay[((7vo ETH) OR lst OR 7gs OR 9fl OR 9fc OR 7sm OR dgr OR 8cb OR 8lb OR 6hb OR 7bl OR obc) UNI !ID FILTLVL<7]: %DOT-68%%UNI_T1%
-ItemDisplay[((7vo !ETH) OR 9yw OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs OR 7dg OR ob7 OR 9b8 OR 7mt OR 92h OR 7sb OR 7cm OR 9di OR 9bl OR 7kr OR 7st OR scy OR 6rx OR lst OR wst OR 8bs OR 9ws OR 7sc OR 9ar OR ob6 OR am7 OR amc OR 9ba OR 72a OR 9kr OR 8sw) UNI !ID FILTLVL<3]: %DOT-68%%UNI_T1% // 1 star below flvl3
-ItemDisplay[(9wc OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs) UNI !ID FILTLVL>2]: %UNI_T1% // Show 1 star
-ItemDisplay[(scp OR hax OR ssd) UNI !ID FILTLVL=6]: %DOT-68%%UNI_T1% // Krampz Low level weapons
+ItemDisplay[((7vo ETH) OR lst OR 7gs OR 9fl OR 9fc OR 7sm OR dgr OR 8cb OR 8lb OR 7bl OR obc) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[((7vo ETH) OR lst OR 7gs OR 9fl OR 9fc OR 7sm OR dgr OR 8cb OR 8lb OR 7bl OR obc) UNI !ID FILTLVL<7 ALLDISCOVERED]: %DOT-68%%UNI_T1%
+ItemDisplay[((7vo !ETH) OR 9yw OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs OR 7dg OR ob7 OR 9b8 OR 7mt OR 92h OR 7sb OR 7cm OR 9di OR 9bl OR 7kr OR 7st OR scy OR 6rx OR lst OR wst OR 8bs OR 9ws OR 7sc OR 9ar OR ob6 OR am7 OR amc OR 9ba OR 72a OR 9kr OR 8sw) UNI !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1% // 1 star below flvl3
+ItemDisplay[((7vo !ETH) OR 9yw OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs OR 7dg OR ob7 OR 9b8 OR 7mt OR 92h OR 7sb OR 7cm OR 9di OR 9bl OR 7kr OR 7st OR scy OR 6rx OR lst OR wst OR 8bs OR 9ws OR 7sc OR 9ar OR ob6 OR am7 OR amc OR 9ba OR 72a OR 9kr OR 8sw) UNI !ID FILTLVL<3 ALLDISCOVERED]: %DOT-68%%UNI_T1% // 1 star below flvl3
+ItemDisplay[(9wc OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs) UNI !ID FILTLVL>2 !ALLDISCOVERED]: %UNIGRAIL_T1% // Show 1 star
+ItemDisplay[(9wc OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs) UNI !ID FILTLVL>2 ALLDISCOVERED]: %UNI_T1% // Show 1 star
+ItemDisplay[(scp OR hax OR ssd) UNI !ID FILTLVL=6 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1% // Krampz Low level weapons
+ItemDisplay[(scp OR hax OR ssd) UNI !ID FILTLVL=6 ALLDISCOVERED]: %DOT-68%%UNI_T1% // Krampz Low level weapons
 
 //Rainbow Facet
 ItemDisplay[jew UNI !ID]: %BORDER-68%%SOUNDID-4303%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w     %NAME%%PURPLE%     r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w
@@ -1172,43 +1234,66 @@ ItemDisplay[jew UNI !ID]: %BORDER-68%%SOUNDID-4303%%RED%r%ORANGE%a%YELLOW%in%GRE
 // SETS
 // =================================================================================================================================================================================================================================
 // Helms ----------------------------------------------------------------------------------------------------
-ItemDisplay[(xap OR urn OR xhm) SET !ID FILTLVL<7]: %DOT-84%%SET_T2%
-ItemDisplay[xh9 SET !ID FILTLVL<5]: %DOT-84%%SET_T1%
-ItemDisplay[(xsk OR uh9 OR uhm) SET !ID FILTLVL<4]: %DOT-84%%SET_T1%
+ItemDisplay[(xap OR urn OR xhm) SET !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T2%
+ItemDisplay[(xap OR urn OR xhm) SET !ID FILTLVL<7 ALLDISCOVERED]: %DOT-84%%SET_T2%
+ItemDisplay[xh9 SET !ID FILTLVL<5 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[xh9 SET !ID FILTLVL<5 ALLDISCOVERED]: %DOT-84%%SET_T1%
+ItemDisplay[(xsk OR uh9 OR uhm) SET !ID FILTLVL<4 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[(xsk OR uh9 OR uhm) SET !ID FILTLVL<4 ALLDISCOVERED]: %DOT-84%%SET_T1%
 // Armors ---------------------------------------------------------------------------------------------------
-ItemDisplay[ucl SET !ID FILTLVL<5]: %DOT-84%%SET_T2%
-ItemDisplay[(stu OR xul OR xar OR ult OR uld OR uth OR uul) SET !ID FILTLVL<3]: %DOT-84%%SET_T1%
-ItemDisplay[uar SET !ID]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GREEN%Anger Incarnate   %WHITE%*%GREEN%*%DARK_GREEN%*%CONTINUE%
-ItemDisplay[uar SET ETH !ID]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GRAY%[%WHITE%eth%GRAY%] %GREEN%Anger Incarnate   %WHITE%*%GREEN%*%DARK_GREEN%*%CONTINUE%
-ItemDisplay[uar SET ID]: %GREEN%%NAME%%CONTINUE%
-ItemDisplay[uar SET ETH ID]: %GREEN%%NAME%%CONTINUE%
+ItemDisplay[ucl SET !ID FILTLVL<5 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T2%
+ItemDisplay[ucl SET !ID FILTLVL<5 ALLDISCOVERED]: %DOT-84%%SET_T2%
+ItemDisplay[(stu OR xul OR xar OR ult OR uld OR uth OR uul) SET !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[(stu OR xul OR xar OR ult OR uld OR uth OR uul) SET !ID FILTLVL<3 ALLDISCOVERED]: %DOT-84%%SET_T1%
+ItemDisplay[uar SET !ID !ALLDISCOVERED]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GREEN%Anger Incarnate %GRAILER%   %WHITE%*%GREEN%*%DARK_GREEN%*
+ItemDisplay[uar SET !ID ALLDISCOVERED]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GREEN%Anger Incarnate   %WHITE%*%GREEN%*%DARK_GREEN%*
+ItemDisplay[uar SET ETH !ID !ALLDISCOVERED]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GRAY%[%WHITE%eth%GRAY%] %GREEN%Anger Incarnate %GRAILER%   %WHITE%*%GREEN%*%DARK_GREEN%*
+ItemDisplay[uar SET ETH !ID ALLDISCOVERED]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GRAY%[%WHITE%eth%GRAY%] %GREEN%Anger Incarnate   %WHITE%*%GREEN%*%DARK_GREEN%*
+ItemDisplay[uar SET ID]: %GREEN%%NAME%
+ItemDisplay[uar SET ETH ID]: %GREEN%%NAME%
 // Circlets -------------------------------------------------------------------------------------------------
-ItemDisplay[(ci0 OR ci3) SET !ID FILTLVL<3]: %DOT-84%%SET_T1%
+ItemDisplay[(ci0 OR ci3) SET !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[(ci0 OR ci3) SET !ID FILTLVL<3 ALLDISCOVERED]: %DOT-84%%SET_T1%
 // Shields --------------------------------------------------------------------------------------------------
-ItemDisplay[uts SET !ID FILTLVL<3]: %DOT-84%%SET_T1%
+ItemDisplay[uts SET !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[uts SET !ID FILTLVL<3 ALLDISCOVERED]: %DOT-84%%SET_T1%
 // Gloves ---------------------------------------------------------------------------------------------------
-ItemDisplay[(lgl OR xmg OR ulg) SET !ID FILTLVL<7]: %DOT-84%%SET_T2%
-ItemDisplay[(xtg OR xhg) SET !ID FILTLVL<3]: %DOT-84%%SET_T1%
+ItemDisplay[(lgl OR xmg OR ulg) SET !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T2%
+ItemDisplay[(lgl OR xmg OR ulg) SET !ID FILTLVL<7 ALLDISCOVERED]: %DOT-84%%SET_T2%
+ItemDisplay[(xtg OR xhg) SET !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[(xtg OR xhg) SET !ID FILTLVL<3 ALLDISCOVERED]: %DOT-84%%SET_T1%
 // Boots ----------------------------------------------------------------------------------------------------
-ItemDisplay[lbt SET !ID FILTLVL<7]: %DOT-84%%SET_T2%
-ItemDisplay[xmb SET !ID FILTLVL<5]: %DOT-84%%SET_T1%
-ItemDisplay[(mbt OR xlb OR xtb OR xhb) SET !ID FILTLVL<3]: %DOT-84%%SET_T1%
+ItemDisplay[lbt SET !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T2%
+ItemDisplay[lbt SET !ID FILTLVL<7 ALLDISCOVERED]: %DOT-84%%SET_T2%
+ItemDisplay[xmb SET !ID FILTLVL<5 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[xmb SET !ID FILTLVL<5 ALLDISCOVERED]: %DOT-84%%SET_T1%
+ItemDisplay[(mbt OR xlb OR xtb OR xhb) SET !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[(mbt OR xlb OR xtb OR xhb) SET !ID FILTLVL<3 ALLDISCOVERED]: %DOT-84%%SET_T1%
 ItemDisplay[xlb SET !ID FILTLVL=6]: // Hide Rite of Passage on Krampz
 // Belts ----------------------------------------------------------------------------------------------------
-ItemDisplay[lbl SET !ID FILTLVL<7]: %DOT-84%%SET_T2%
-ItemDisplay[(mbl OR zvb OR zmb OR zhb OR utc) SET !ID FILTLVL<3]: %DOT-84%%SET_T1%
+ItemDisplay[lbl SET !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T2%
+ItemDisplay[lbl SET !ID FILTLVL<7 ALLDISCOVERED]: %DOT-84%%SET_T2%
+ItemDisplay[(mbl OR zvb OR zmb OR zhb OR utc) SET !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[(mbl OR zvb OR zmb OR zhb OR utc) SET !ID FILTLVL<3 ALLDISCOVERED]: %DOT-84%%SET_T1%
 // Pelts ----------------------------------------------------------------------------------------------------
-ItemDisplay[dr8 SET !ID FILTLVL<7]: %DOT-84%%SET_T1%
+ItemDisplay[dr8 SET !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[dr8 SET !ID FILTLVL<7 ALLDISCOVERED]: %DOT-84%%SET_T1%
 // Barbarian Helms ------------------------------------------------------------------------------------------
-ItemDisplay[ba5 SET !ID FILTLVL<4]: %DOT-84%%SET_T1%
+ItemDisplay[ba5 SET !ID FILTLVL<4 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[ba5 SET !ID FILTLVL<4 ALLDISCOVERED]: %DOT-84%%SET_T1%
 // Paladin Shields ------------------------------------------------------------------------------------------
-ItemDisplay[paf SET !ID FILTLVL<7]: %DOT-84%%SET_T2%
+ItemDisplay[paf SET !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T2%
+ItemDisplay[paf SET !ID FILTLVL<7 ALLDISCOVERED]: %DOT-84%%SET_T2%
 // Necro Heads ----------------------------------------------------------------------------------------------
-ItemDisplay[ne9 SET !ID FILTLVL<3]: %DOT-84%%SET_T1%
+ItemDisplay[ne9 SET !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[ne9 SET !ID FILTLVL<3 ALLDISCOVERED]: %DOT-84%%SET_T1%
 // TEMPORARY FOR WEAPONS #FIXTHIS ---------------------------------------------------------------------------
-ItemDisplay[7qr SET !ID FILTLVL<5]: %DOT-84%%SET_T1%
-ItemDisplay[(9mt OR oba OR 7m7 OR 7ls OR 7fb OR 7gd OR 7ws OR amc) SET !ID FILTLVL<3]: %DOT-84%%SET_T1%
-ItemDisplay[6cs SET !ID FILTLVL<4]: %DOT-84%%SET_T1%
+ItemDisplay[7qr SET !ID FILTLVL<5 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[7qr SET !ID FILTLVL<5 ALLDISCOVERED]: %DOT-84%%SET_T1%
+ItemDisplay[(9mt OR oba OR 7m7 OR 7ls OR 7fb OR 7gd OR 7ws OR amc) SET !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[(9mt OR oba OR 7m7 OR 7ls OR 7fb OR 7gd OR 7ws OR amc) SET !ID FILTLVL<3 ALLDISCOVERED]: %DOT-84%%SET_T1%
+ItemDisplay[6cs SET !ID FILTLVL<4 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
+ItemDisplay[6cs SET !ID FILTLVL<4 ALLDISCOVERED]: %DOT-84%%SET_T1%
 // Ethereal Weapons -----------------------------------------------------------------------------------------
 //ItemDisplay[ SET ETH !ID]: %DOT-84%%DARK_GREEN%*%GREEN%* %GRAY%[%WHITE%eth%GRAY%] %GREEN%%NAME %GREEN%*%DARK_GREEN%*
 //ItemDisplay[ SET ETH !ID]: %DOT-84%%GREEN%* %GRAY%[%WHITE%eth%GRAY%] %GREEN%%NAME %GREEN%*
@@ -1216,38 +1301,45 @@ ItemDisplay[6cs SET !ID FILTLVL<4]: %DOT-84%%SET_T1%
 //ItemDisplay[ SET !ETH !ID]: %DOT-84%%DARK_GREEN%*%GREEN%* %NAME %GREEN%*%DARK_GREEN%*
 //ItemDisplay[ SET !ETH !ID]: %DOT-84%%GREEN%* %NAME %GREEN%*
 // Misc -----------------------------------------------------------------------------------------------------
-ItemDisplay[amu SET !ID FILTLVL<3]: %DOT-84%%SET_T2%
-ItemDisplay[rin SET !ID FILTLVL<7]: %DOT-84%%SET_T2%
+ItemDisplay[amu SET !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T2%
+ItemDisplay[amu SET !ID FILTLVL<3 ALLDISCOVERED]: %DOT-84%%SET_T2%
+ItemDisplay[rin SET !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T2%
+ItemDisplay[rin SET !ID FILTLVL<7 ALLDISCOVERED]: %DOT-84%%SET_T2%
 
 // Highlight all Sets and Uniques for low lvl characters
 ItemDisplay[UNI !ID (FILTLVL<3 OR (CLVL<80 AND FILTLVL<4))]: %PX-68%%NAME%%CONTINUE%
 ItemDisplay[SET !ID (FILTLVL<3 OR (CLVL<80 AND FILTLVL<4))]: %PX-84%%NAME%%CONTINUE%
+
+// GRAIL
+ItemDisplay[UNI !ID !ALLDISCOVERED !jew !(t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR t57 OR t58)]: %MAP-68%%NAME% %GRAILER%
+ItemDisplay[SET !ID !ALLDISCOVERED]: %MAP-84%%NAME% %GRAILER%
 
 // =================================================================================================================================================================================================================================
 // Magic, Rare and Craftables
 // =================================================================================================================================================================================================================================
 
 // Highlight Good Magic items
-ItemDisplay[jew MAG !ID]: %DOT-87%%DROPS_T2%
-ItemDisplay[amu MAG ILVL>84 !ID]: %NAME% %WHITE%x%BLUE%
+ItemDisplay[jew MAG !ID]: %DOT-87%%DROPMAGIC_T2%
+ItemDisplay[amu MAG ILVL>84 !ID FILTLVL<7]: %NAME% %GREEN%x%BLUE%
 ItemDisplay[amu MAG ILVL<85 CLVL>84 !ID]: {%NAME%}
 ItemDisplay[(ci2 OR ci3) MAG !ID !ETH FILTLVL<7]: %DOT-97%%NAME%{%NAME%} // Magic Tiara and Diadem
 ItemDisplay[(ci0 OR ci1) MAG !ID !ETH]: %NAME%
 
 // Highlight Good Rare items
 ItemDisplay[amu RARE ILVL>89 !ID]: %DOT-A8%%DROPT2L% %WHITE%x  %DROPT2R%
-ItemDisplay[amu RARE ILVL<90 !ID]: %DOT-A8%%DROPS_T2%
-ItemDisplay[(rin OR CIRC) RARE !ID]: %DOT-A8%%DROPS_T2%
-ItemDisplay[jew RARE !ID]: %DOT-87%%DROPS_T2%
+ItemDisplay[amu RARE ILVL<90 !ID]: %DOT-A8%%DROPRARE_T2%
+ItemDisplay[(rin OR CIRC) RARE !ID]: %DOT-A8%%DROPRARE_T2%
+ItemDisplay[jew RARE !ID]: %DOT-87%%DROPRARE_T2%
 
 // --- Magic and Rare Armor slots ---
 // Chest Armor
-ItemDisplay[CHEST RARE !uar !ID ALVL>84 MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-4%%TAN%*%WHITE%* %NAME% %TAN%[%WHITE%%MAXSOCKETS%os pos%TAN%] %WHITE%*%TAN%*%YELLOW% // 4os, ALVL85+
-ItemDisplay[CHEST RARE !uar !ID ALVL>84 MAXSOCKETS<4]: %DOT-6F%%PX-EF%%TIER-1%%NAME% %WHITE%x%YELLOW% // 2-3os, ALVL85+
-ItemDisplay[CHEST RARE !uar !ID (ALVL>54 ALVL<85) MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-1%%NAME% %TAN%[%WHITE%%MAXSOCKETS%pos%TAN%]%YELLOW% // 4os, ALVL<85
-ItemDisplay[CHEST RARE !uar !ID ALVL<85 MAXSOCKETS<4]: %DOT-6F%%PX-EF%%TIER-1%%NAME% // 2-3os, ALVL<85
+//ItemDisplay[CHEST RARE !uar !ID ALVL>54 MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-4%%TAN%*%WHITE%* %NAME% %GREEN%x %WHITE%*%TAN%*%YELLOW% // 4os, ALVL85+
+ItemDisplay[CHEST RARE !uar !ID ALVL>54 MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-4%%NAME% %GREEN%x%YELLOW% // 4os
+ItemDisplay[CHEST RARE !uar !ID ALVL>54 MAXSOCKETS<4]: %DOT-6F%%PX-EF%%TIER-1%%NAME%%YELLOW% // 2-3os
+//ItemDisplay[CHEST RARE !uar !ID (ALVL>54 ALVL<85) MAXSOCKETS=4]: %DOT-6F%%PX-EF%%TIER-1%%NAME% %GREEN%x%YELLOW% // 4os, ALVL<85
+//ItemDisplay[CHEST RARE !uar !ID ALVL<85 MAXSOCKETS<4]: %DOT-6F%%PX-EF%%TIER-1%%NAME% // 2-3os, ALVL<85
 ItemDisplay[CHEST RARE !uar !ID]: %DOT-6F%%PX-EF%%TIER-1%%NAME%
-ItemDisplay[CHEST MAXSOCKETS=4 MAG ETH !ID]: %NAME% // Ethereal Magic Armors
+ItemDisplay[CHEST MAG !uar ETH MAXSOCKETS=4 !ID]: %NAME% // Ethereal Magic Armors
 // Sacred Armors
 ItemDisplay[uar RARE !ETH !ID ALVL>84]: %DOT-6F%%PX-EF%%TIER-1%%TAN%*%WHITE%* %YELLOW%Fluffy's Demise %WHITE%*%TAN%*%YELLOW%
 ItemDisplay[uar RARE !ETH !ID ALVL<85]: %DOT-6F%%PX-EF%%TIER-1%%YELLOW%Fluffy's Demise
@@ -1261,16 +1353,16 @@ ItemDisplay[uar MAG ID]: %BLUE%%NAME%
 ItemDisplay[uar MAG ETH ID]: %BLUE%%NAME%
 // Helmets
 ItemDisplay[(HELM !(BAR OR DRU)) RARE !ID]: %DOT-A8%%TIER-3%%NAME%
-ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) !BARBARIAN MAG !ID ILVL>71]: %DROP_T1% // Magic Arreat and Halaberd style
-ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) !BARBARIAN RARE !ID ILVL>71]: %DOT-A8%%TIER-3%%DROP_T1% // Rare Arreat and Halaberd style
-ItemDisplay[(BAR !(ba4 OR ba9 OR bae OR ba5 OR baa OR baf)) RARE !BARBARIAN !ID]: %DOT-A8%%TIER-3%%DROP_T1%
-ItemDisplay[DRU RARE !DRUID !ID]: %DOT-A8%%TIER-3%%DROP_T1%
+ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) !BARBARIAN MAG !ID ILVL>71]: %DROPMAGIC_T1% // Magic Arreat and Halaberd style
+ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) !BARBARIAN RARE !ID ILVL>71]: %DOT-A8%%TIER-3%%DROPRARE_T1% // Rare Arreat and Halaberd style
+ItemDisplay[(BAR !(ba4 OR ba9 OR bae OR ba5 OR baa OR baf)) RARE !BARBARIAN !ID ILVL>71]: %DOT-A8%%TIER-3%%NAME%
+ItemDisplay[DRU RARE !DRUID !ID ILVL>71]: %DOT-A8%%TIER-3%%NAME%
 // Shields
-ItemDisplay[(SHIELD !NEC) RARE !ID ALVL>84 MAXSOCKETS=4]: %DOT-A8%%TIER-3%%TAN%*%WHITE%* %NAME% %TAN%[%WHITE%%MAXSOCKETS%os pos%TAN%] %WHITE%*%TAN%*%YELLOW% // 4os, ALVL85+
-ItemDisplay[(SHIELD !NEC) RARE !ID ALVL>84 MAXSOCKETS<4]: %DOT-A8%%TIER-1%%NAME% %WHITE%x%YELLOW% // 2-3os, ALVL85+
-ItemDisplay[(SHIELD !NEC) RARE !ID (ALVL>54 ALVL<85) MAXSOCKETS=4]: %DOT-A8%%TIER-1%%NAME% %TAN%[%WHITE%%MAXSOCKETS%pos%TAN%]%YELLOW% // 4os, ALVL<85
-ItemDisplay[(SHIELD !NEC) RARE !ID ALVL<85 MAXSOCKETS<4]: %DOT-A8%%TIER-1%%NAME% // 2-3os, ALVL<85
-ItemDisplay[(SHIELD !NEC) RARE !ID !FILTLVL=6]: %DOT-A8%%TIER-1%%DROP_T1%
+ItemDisplay[(SHIELD !NEC) RARE !ID ALVL>54 MAXSOCKETS=4]: %DOT-A8%%TIER-3%%NAME% %GREEN%x%YELLOW% // 4os
+ItemDisplay[(SHIELD !NEC) RARE !ID ALVL>54 MAXSOCKETS<4]: %DOT-A8%%TIER-1%%NAME%%YELLOW% // 2-3os
+//ItemDisplay[(SHIELD !NEC) RARE !ID (ALVL>54 ALVL<85) MAXSOCKETS=4]: %DOT-A8%%TIER-1%%NAME% %TAN%[%WHITE%%MAXSOCKETS%pos%TAN%]%YELLOW% // 4os, ALVL<85
+//ItemDisplay[(SHIELD !NEC) RARE !ID ALVL<85 MAXSOCKETS<4]: %DOT-A8%%TIER-1%%NAME% // 2-3os, ALVL<85
+ItemDisplay[(SHIELD !NEC) RARE !ID !FILTLVL=6]: %DOT-A8%%TIER-1%%NAME%
 // Gloves, Belts and Boots
 ItemDisplay[(GLOVES OR BELT OR BOOTS) RARE !ID]: %DOT-6F%%PX-EF%%TIER-1%%NAME%
 ItemDisplay[(GLOVES OR BELT OR BOOTS) MAG ETH !ID]: %NAME%
@@ -1287,13 +1379,13 @@ ItemDisplay[(gis OR 9gs OR 7gs OR bsw OR 9b9 OR 7b7) (BARBARIAN OR PALADIN) MAG 
 ItemDisplay[(bal OR 9b8 OR 7b8 OR jav OR 9ja OR 7ja OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts) BARBARIAN NMAG ETH ILVL>71 FILTLVL<3 !SOCK=1]: %DOT-D6%%TIER-1%%NAME%{%WHITE%Next: You Can %ORANGE%Craft %WHITE%With This Base%NL% You can %RED%Corrupt %WHITE%to Imbue into %YELLOW%Rare %GRAY%(%WHITE%50% Chance%GRAY%)}
 ItemDisplay[(2ax OR 92a OR 72a OR wax OR 9wa OR 7wa OR whm OR 9wh OR 7wh OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm OR pik OR 9p9 OR 7p7) BARBARIAN RARE ETH !ID ILVL>71 FILTLVL<4]: %DOT-A8%%TIER-2%%NAME% // Ettin Axe/Berserker Axe/Legendary Mallet/Colossus Sword/Colossus Blade/Ogre Maul/Thunder Maul/War Pike
 ItemDisplay[(2ax OR 92a OR 72a OR wax OR 9wa OR 7wa OR whm OR 9wh OR 7wh OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm OR pik OR 9p9 OR 7p7) BARBARIAN MAG ETH !ID ILVL>71 FILTLVL<4]: %DOT-97%%TIER-2%%NAME% // Ettin Axe/Berserker Axe/Legendary Mallet/Colossus Sword/Colossus Blade/Ogre Maul/Thunder Maul/War Pike
-ItemDisplay[(bal OR 9b8 OR 7b8 OR jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR tsp OR 9ts OR 7ts) BARBARIAN RARE ETH !ID ILVL>71 FILTLVL<7]: %DOT-A8%%DROP_T1% // Higher end throw weapons
-ItemDisplay[(bal OR 9b8 OR 7b8 OR jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR tsp OR 9ts OR 7ts) BARBARIAN MAG ETH !ID ILVL>71 FILTLVL<7]: %DOT-97%%TIER-3%%DROP_T1% // Higher end throw weapons
+ItemDisplay[(bal OR 9b8 OR 7b8 OR jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR tsp OR 9ts OR 7ts) BARBARIAN RARE ETH !ID ILVL>71 FILTLVL<7]: %DOT-A8%%DROPRARE_T1% // Higher end throw weapons
+ItemDisplay[(bal OR 9b8 OR 7b8 OR jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR tsp OR 9ts OR 7ts) BARBARIAN MAG ETH !ID ILVL>71 FILTLVL<7]: %DOT-97%%TIER-3%%DROPMAGIC_T1% // Higher end throw weapons
 ItemDisplay[(tax OR 9ta OR 7ta OR bkf OR 9bk OR 7bk) BARBARIAN RARE ETH !ID ILVL>71 FILTLVL<3]: %DOT-A8%%NAME% // Lower end throw weapons
 ItemDisplay[(tax OR 9ta OR 7ta OR bkf OR 9bk OR 7bk) BARBARIAN MAG ETH !ID ILVL>71 FILTLVL<3]: %DOT-97%%NAME% // Lower end throw weapons
-ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) BARBARIAN RARE !ID]: %DOT-A8%%TIER-4%%DROP_T1% // Rare Arreat and Halaberd style
+ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) BARBARIAN RARE !ID]: %DOT-A8%%TIER-4%%DROPRARE_T1% // Rare Arreat and Halaberd style
 ItemDisplay[(ba1 OR ba6 OR bab OR ba2 OR ba7 OR bac OR ba3 OR ba8 OR bad) BARBARIAN RARE !ID]: %DOT-A8%%TIER-4%%NAME% // Rare
-ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) BARBARIAN MAG !ID ILVL>71]: %DOT-97%%TIER-3%%DROP_T1% // Magic Arreat and Halaberd style
+ItemDisplay[(ba4 OR ba9 OR bae OR ba5 OR baa OR baf) BARBARIAN MAG !ID ILVL>71]: %DOT-97%%TIER-3%%DROPMAGIC_T1% // Magic Arreat and Halaberd style
 ItemDisplay[(ba1 OR ba6 OR bab OR ba2 OR ba7 OR bac OR ba3 OR ba8 OR bad) BARBARIAN MAG !ID ILVL>71]: %DOT-97%%TIER-3%%NAME% // Magic
 // Paladin
 ItemDisplay[DIN PALADIN RARE !ETH !ID ILVL>71]: %DOT-A8%%TIER-2%%NAME%
@@ -1316,11 +1408,11 @@ ItemDisplay[DRU DRUID !ETH MAG !ID]: %DOT-97%%TIER-3%%NAME%
 ItemDisplay[DRU DRUID RARE !ID]: %DOT-A8%%TIER-4%%NAME%
 ItemDisplay[(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) DRUID (MAG OR RARE) !ID]: %NAME%
 // Assassin claws
-ItemDisplay[(axf OR 9xf OR 7xf OR 9tw) RARE !ID ILVL>71]: %DOT-A8%%DROP_T2% // Rare War Fist Family and Greater Talons
-ItemDisplay[(axf OR 9xf OR 7xf OR 9tw) MAG !ID ILVL>71]: %DOT-97%%TIER-2%%DROP_T2% // Magic War Fist Family and Greater Talons
-ItemDisplay[(ktr OR 9ar OR 7ar OR skr OR 9qr OR 7qr OR btl) RARE !ID ILVL>71]: %DOT-A8%%DROP_T1% // Rare Suwayyah Family, Scissors Suwayyah Family and Blade Talons
-ItemDisplay[(ktr OR 9ar OR 7ar OR skr OR 9qr OR 7qr OR btl) MAG ETH !ID ILVL>71]: %DOT-97%%TIER-2%%DROP_T1% // Magic Suwayyah Family, Scissors Suwayyah Family and Blade Talons
-ItemDisplay[(ktr OR 9ar OR 7ar OR skr OR 9qr OR 7qr OR btl) MAG !ETH !ID ILVL>71 FILTLVL<4]: %DROP_T1% // Magic Suwayyah Family, Scissors Suwayyah Family and Blade Talons
+ItemDisplay[(axf OR 9xf OR 7xf OR 9tw) RARE !ID ILVL>71]: %DOT-A8%%DROPRARE_T2% // Rare War Fist Family and Greater Talons
+ItemDisplay[(axf OR 9xf OR 7xf OR 9tw) MAG !ID ILVL>71]: %DOT-97%%TIER-2%%DROPMAGIC_T2% // Magic War Fist Family and Greater Talons
+ItemDisplay[(ktr OR 9ar OR 7ar OR skr OR 9qr OR 7qr OR btl) RARE !ID ILVL>71]: %DOT-A8%%DROPRARE_T1% // Rare Suwayyah Family, Scissors Suwayyah Family and Blade Talons
+ItemDisplay[(ktr OR 9ar OR 7ar OR skr OR 9qr OR 7qr OR btl) MAG ETH !ID ILVL>71]: %DOT-97%%TIER-2%%DROPMAGIC_T1% // Magic Suwayyah Family, Scissors Suwayyah Family and Blade Talons
+ItemDisplay[(ktr OR 9ar OR 7ar OR skr OR 9qr OR 7qr OR btl) MAG !ETH !ID ILVL>71 FILTLVL<4]: %DROPMAGIC_T1% // Magic Suwayyah Family, Scissors Suwayyah Family and Blade Talons
 ItemDisplay[(wrb OR 9wb OR 7wb OR clw OR 9lw OR 7lw OR 7tw) RARE !ID ILVL>71]: %DOT-A8%%NAME% // Rare Wrist Sword Family, Claws Family and Runic Talons
 
 // Class items
@@ -1335,7 +1427,8 @@ ItemDisplay[SCEPTER RARE !ID FILTLVL<6]: %NAME%
 // Craftables
 ItemDisplay[(wax OR 9wa OR 7wa OR gma OR 9gm OR 7gm OR whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR pik OR 9p9 OR 7p7 OR gsd OR 9gd OR 7gd OR bsw OR 9b9 OR 7b7 OR 2ax OR 92a OR 72a) MAG ETH !ID ILVL>71]: %DOT-97%%TIER-2%%NAME%
 ItemDisplay[(wax OR 9wa OR 7wa OR gma OR 9gm OR 7gm OR whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR pik OR 9p9 OR 7p7 OR gsd OR 9gd OR 7gd OR flb OR 9fb OR 7fb OR bsw OR 9b9 OR 7b7 OR gis OR 9gs OR 7gs OR 2ax OR 92a OR 72a) RARE ETH !ID ILVL>71]: %DOT-A8%%TIER-2%%NAME%
-ItemDisplay[(glv OR 9gl OR 7gl) (MAG OR RARE) ETH !ID ILVL>71]: %DROP_T2% // Higher end throw weapons
+ItemDisplay[(glv OR 9gl OR 7gl) MAG ETH !ID ILVL>71]: %DROPMAGIC_T2% // Higher end throw weapons
+ItemDisplay[(glv OR 9gl OR 7gl) RARE ETH !ID ILVL>71]: %DROPRARE_T2% // Higher end throw weapons
 ItemDisplay[(2ax OR 92a OR 72a OR wax OR 9wa OR 7wa OR btx OR 9bt OR 7bt OR gax OR 9ga OR 7ga OR gix OR 9gi OR 7gi OR mst OR 9mt OR 7mt OR whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm OR gis OR 9gs OR 7gs OR bsw OR 9b9 OR 7b7 OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR bal OR 9b8 OR 7b8 OR jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts OR SPEAR OR POLEARM) MAG ETH !ID]: %NAME%
 ItemDisplay[(lwb OR 8lw OR 6lw) MAG !ID]: %NAME%
 ItemDisplay[(DAGGER !THROWING) MAG ETH !ID FILTLVL<4]: %NAME%
@@ -2623,6 +2716,7 @@ ItemDisplay[(am1 OR am6 OR amb OR am2 OR am7 OR amc) NMAG !INF !RW TABSK0>0 CLVL
 // Amazon Javelins
 ItemDisplay[amf NMAG !INF ETH !RW TABSK2>2 (SOCK=0 OR SOCK=3) ED>14]: %DOT-D6%%TIER-5%%BASE_T2%{%NAME%}
 ItemDisplay[amf NMAG !INF ETH !RW TABSK2>2 (SOCK=0 OR SOCK=3) ED>4 FILTLVL<7]: %DOT-D6%%TIER-5%%BASE_T1%{%NAME%}
+ItemDisplay[amf NMAG !INF ETH !RW TABSK2>2 (SOCK=0 OR SOCK=3) FILTLVL<5]: %NAME%{%NAME%} // Show +3
 ItemDisplay[amf NMAG !INF !ETH !RW TABSK2>2 (SOCK=0 OR SOCK=3) FILTLVL<4]: %NAME%{%NAME%} // Show +3
 ItemDisplay[(am5 OR ama OR amf) NMAG !INF !RW AMAZON TABSK2>2 !SOCK=1 FILTLVL<3]: %DOT-D6%%NAME%{%NAME%}
 ItemDisplay[(am5 OR ama OR amf) NMAG !INF !RW TABSK2>2 !SOCK=1 CLVL<80]: %NAME%{%NAME%} // Show +3
@@ -3162,6 +3256,7 @@ ItemDisplay[(SHIELD !(DIN OR NEC)) MAG !ID (CLVL>79 OR FILTLVL>2)]: {%NAME%} // 
 ItemDisplay[(DIN OR NEC) (MAG OR RARE) !ID ETH (CLVL>79 OR FILTLVL>2)]: {%NAME%} // Hide Ethereal Magic/Rare Paladin/Necro Shields
 // --- Misc ---
 ItemDisplay[rin MAG !ID (CLVL>89 OR FILTLVL>2)]: {%NAME%} // Hide Magic Rings
+ItemDisplay[rvs FILTLVL>6]: {%WHITE%3x %PURPLE%r %WHITE%35% = %PURPLE%R %WHITE%Full} // Hide mini juvies on Ultimate Tryhard
 // --- Pre-existing stuff ---
 ItemDisplay[(ARMOR OR WEAPON) (MAG OR RARE) !ID (FILTLVL<2 OR (CLVL<41 FILTLVL<4))]: %NAME%
 ItemDisplay[(ARMOR OR WEAPON) (EXC OR ELT) (MAG OR RARE) !ID (FILTLVL<2 OR (CLVL<80 AND (FILTLVL>1 AND FILTLVL<4)))]: %NAME%
