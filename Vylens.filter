@@ -1115,8 +1115,8 @@ ItemDisplay[(xpl OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 9gm OR 9la OR 7wa)
 ItemDisplay[(7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7s8 OR 7pa OR 7wc) UNI !ETH !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
 ItemDisplay[(7fl OR 7wh OR 7gm OR 7b7 OR 7gd OR 7s8 OR 7pa OR 7wc) UNI !ETH !ID ALLDISCOVERED]: %UNI_T3%
 // Weapons
-ItemDisplay[(obe OR 7xf OR 7ga OR 7cr OR 7ts OR 6lw OR 8rx OR 8ws OR 6bs OR 7bw OR 7ws OR 7tw OR amb OR amf OR 6cs) UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
-ItemDisplay[(obe OR 7xf OR 7ga OR 7cr OR 7ts OR 6lw OR 8rx OR 8ws OR 6bs OR 7bw OR 7ws OR 7tw OR amb OR amf OR 6cs) UNI !ID ALLDISCOVERED]: %UNI_T3%
+ItemDisplay[(obe OR 7xf OR 7ga OR 7cr OR 7ts OR 6lw OR 8rx OR 8ws OR 6bs OR 7bw OR 7ws OR 7tw OR 6cs) UNI !ID !ALLDISCOVERED]: %UNIGRAIL_T3%
+ItemDisplay[(obe OR 7xf OR 7ga OR 7cr OR 7ts OR 6lw OR 8rx OR 8ws OR 6bs OR 7bw OR 7ws OR 7tw OR 6cs) UNI !ID ALLDISCOVERED]: %UNI_T3%
 
 // --- 2 STARS - LOWLVL OR NICHE ITEMS WITH LOW VALUE, BUT COMMONLY USED ------------------------------------
 // Helms
@@ -1159,8 +1159,8 @@ ItemDisplay[(7ha OR 7gi OR 7sp OR 9bs OR 9gs OR 7sr OR 7br OR am5) UNI ETH !ID F
 ItemDisplay[(7p7 OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 7wa) UNI !ETH !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
 ItemDisplay[(7p7 OR 7bt OR 7m7 OR 7bk OR 7b8 OR 8ls OR amd OR 7wa) UNI !ETH !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Weapons
-ItemDisplay[(obd OR 7yw OR 7mp OR 8hx OR 9wh OR 9ls OR 9gd OR 7ta OR 9s8 OR 8s8 OR 8lw OR 6sw OR 8mx OR 6hx OR 9gw OR 7qs OR 9tw OR 7wb OR 7cs OR 7lw OR oba OR ame OR 6l7 OR 7ls OR 9m9 OR 9bw) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
-ItemDisplay[(obd OR 7yw OR 7mp OR 8hx OR 9wh OR 9ls OR 9gd OR 7ta OR 9s8 OR 8s8 OR 8lw OR 6sw OR 8mx OR 6hx OR 9gw OR 7qs OR 9tw OR 7wb OR 7cs OR 7lw OR oba OR ame OR 6l7 OR 7ls OR 9m9 OR 9bw) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
+ItemDisplay[(7yw OR 7mp OR 8hx OR 9wh OR 9ls OR 9gd OR 7ta OR 9s8 OR 8s8 OR 8lw OR 6sw OR 8mx OR 6hx OR 9gw OR 7qs OR 9tw OR 7wb OR 7cs OR 7lw OR oba OR ame OR 6l7 OR 7ls OR 9m9 OR 9bw OR amf OR amb) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
+ItemDisplay[(7yw OR 7mp OR 8hx OR 9wh OR 9ls OR 9gd OR 7ta OR 9s8 OR 8s8 OR 8lw OR 6sw OR 8mx OR 6hx OR 9gw OR 7qs OR 9tw OR 7wb OR 7cs OR 7lw OR oba OR ame OR 6l7 OR 7ls OR 9m9 OR 9bw OR amf OR amb) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
 // Quivers Exceptional/Elite
 ItemDisplay[(aqv3 OR cqv2 OR cqv3) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %UNIGRAIL_T2%
 ItemDisplay[(aqv3 OR cqv2 OR cqv3) UNI !ID FILTLVL<7 ALLDISCOVERED]: %UNI_T2%
@@ -1218,12 +1218,12 @@ ItemDisplay[(7ha OR 7gi OR 7sp OR 9bs OR 7sr OR 7br OR am5) UNI !ETH !ID FILTLVL
 ItemDisplay[(7ha OR 7gi OR 7sr OR 7br) UNI !ETH !ID FILTLVL>2 !ALLDISCOVERED]: %UNIGRAIL_T1%
 ItemDisplay[(7ha OR 7gi OR 7sr OR 7br) UNI !ETH !ID FILTLVL>2 ALLDISCOVERED]: %UNI_T1%
 // Weapons
-ItemDisplay[((7vo ETH) OR lst OR 7gs OR 9fl OR 9fc OR 7sm OR dgr OR 8cb OR 8lb OR 7bl OR obc) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
-ItemDisplay[((7vo ETH) OR lst OR 7gs OR 9fl OR 9fc OR 7sm OR dgr OR 8cb OR 8lb OR 7bl OR obc) UNI !ID FILTLVL<7 ALLDISCOVERED]: %DOT-68%%UNI_T1%
-ItemDisplay[((7vo !ETH) OR 9yw OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs OR 7dg OR ob7 OR 9b8 OR 7mt OR 92h OR 7sb OR 7cm OR 9di OR 9bl OR 7kr OR 7st OR scy OR 6rx OR lst OR wst OR 8bs OR 9ws OR 7sc OR 9ar OR ob6 OR am7 OR amc OR 9ba OR 72a OR 9kr OR 8sw) UNI !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1% // 1 star below flvl3
-ItemDisplay[((7vo !ETH) OR 9yw OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs OR 7dg OR ob7 OR 9b8 OR 7mt OR 92h OR 7sb OR 7cm OR 9di OR 9bl OR 7kr OR 7st OR scy OR 6rx OR lst OR wst OR 8bs OR 9ws OR 7sc OR 9ar OR ob6 OR am7 OR amc OR 9ba OR 72a OR 9kr OR 8sw) UNI !ID FILTLVL<3 ALLDISCOVERED]: %DOT-68%%UNI_T1% // 1 star below flvl3
-ItemDisplay[(9wc OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs) UNI !ID FILTLVL>2 !ALLDISCOVERED]: %UNIGRAIL_T1% // Show 1 star
-ItemDisplay[(9wc OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs) UNI !ID FILTLVL>2 ALLDISCOVERED]: %UNI_T1% // Show 1 star
+ItemDisplay[((7vo ETH) OR lst OR 7gs OR 9fl OR 9fc OR 7sm OR dgr OR 8cb OR 7bl OR obc) UNI !ID FILTLVL<7 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1%
+ItemDisplay[((7vo ETH) OR lst OR 7gs OR 9fl OR 9fc OR 7sm OR dgr OR 8cb OR 7bl OR obc) UNI !ID FILTLVL<7 ALLDISCOVERED]: %DOT-68%%UNI_T1%
+ItemDisplay[((7vo !ETH) OR 9yw OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs OR 7dg OR ob7 OR 9b8 OR 7mt OR 92h OR 7sb OR 7cm OR 9di OR 9bl OR 7kr OR 7st OR scy OR 6rx OR lst OR wst OR 8bs OR 9ws OR 7sc OR 9ar OR ob6 OR am7 OR amc OR 9ba OR 72a OR 9kr OR 8sw OR obd OR 8lb) UNI !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1% // 1 star below flvl3
+ItemDisplay[((7vo !ETH) OR 9yw OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs OR 7dg OR ob7 OR 9b8 OR 7mt OR 92h OR 7sb OR 7cm OR 9di OR 9bl OR 7kr OR 7st OR scy OR 6rx OR lst OR wst OR 8bs OR 9ws OR 7sc OR 9ar OR ob6 OR am7 OR amc OR 9ba OR 72a OR 9kr OR 8sw OR obd OR 8lb) UNI !ID FILTLVL<3 ALLDISCOVERED]: %DOT-68%%UNI_T1% // 1 star below flvl3
+ItemDisplay[(9wc OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs OR obd OR 8lb) UNI !ID FILTLVL>2 !ALLDISCOVERED]: %UNIGRAIL_T1% // Show 1 star
+ItemDisplay[(9wc OR mau OR lbb OR 7fb OR 7di OR 9wn OR cst OR 8cs OR obd OR 8lb) UNI !ID FILTLVL>2 ALLDISCOVERED]: %UNI_T1% // Show 1 star
 ItemDisplay[(scp OR hax OR ssd) UNI !ID FILTLVL=6 !ALLDISCOVERED]: %DOT-68%%UNIGRAIL_T1% // Krampz Low level weapons
 ItemDisplay[(scp OR hax OR ssd) UNI !ID FILTLVL=6 ALLDISCOVERED]: %DOT-68%%UNI_T1% // Krampz Low level weapons
 
@@ -3055,7 +3055,7 @@ ItemDisplay[t2a]: %NAME%{%RED%Witches%NL%%WHITE%Highest Res: %GOLD%Ph: %RED%F: %
 ItemDisplay[t29]: %NAME%{%WHITE%Highest Res: %GOLD%Ph: %RED%F: %BLUE%C: %YELLOW%L: %GREEN%P: %ORANGE%M:%NAME%}%CONTINUE% // Fortress of Aranoch
 // T3
 ItemDisplay[t35]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:65 %BLUE%C:65 %YELLOW%L:65 %GREEN%P:65 %ORANGE%M:33%NAME%}%CONTINUE% // Blood Moon 154
-ItemDisplay[t3b]: %NAME%{%RED%Highest Res values may be inaccurate%NL%%WHITE%Highest Res: %GOLD%Ph:66 %BLUE%C:75 %GREEN%P:75 %NL%%WHITE%Immunes: %RED%F:120 %YELLOW%L:120 %ORANGE%M:105%NAME%}%CONTINUE% // Kyovashad
+ItemDisplay[t3b]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:66 %BLUE%C:75 %GREEN%P:75 %NL%%WHITE%Immunes: %RED%F:120 %YELLOW%L:120 %ORANGE%M:105%NAME%}%CONTINUE% // Kyovashad
 ItemDisplay[t15]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %YELLOW%L:80 %GREEN%P:75 %ORANGE%M:45%NL%%WHITE%Immunes: %RED%F:120 %BLUE%C:120%NAME%}%CONTINUE% // Royal Crypts 170
 ItemDisplay[t23]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:75 %BLUE%C:75%NL%%WHITE%Immunes: %YELLOW%L:120 %GREEN%P:120 %ORANGE%M:105%NAME%}%CONTINUE% // Arreat Battlefield 139
 ItemDisplay[t13]: %NAME%{%RED%Witches%NL%%WHITE%Highest Res: %RED%F:75 %YELLOW%L:75 %GREEN%P:85%NL%%WHITE%Immunes: %GOLD%Ph:115 %BLUE%C:120 %ORANGE%M:105%NAME%}%CONTINUE% // Bastion Keep 149
